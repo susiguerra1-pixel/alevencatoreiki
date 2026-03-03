@@ -3,530 +3,522 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ale Vencato Reiki</title>
-<meta name="description" content="Ale Vencato Reiki — Terapia energética Reiki Usui em Caxias do Sul. Atendimento presencial e à distância.">
+<title>Reiki em Caxias do Sul | Ale Vencato Reiki — Terapia Energética</title>
+<meta name="description" content="Sessões de Reiki Usui em Caxias do Sul com Ale Vencato. Reduza ansiedade, melhore o sono e recupere sua energia. Agende pelo WhatsApp.">
+<meta name="keywords" content="reiki caxias do sul, terapia energética caxias do sul, reiki usui caxias, ansiedade reiki, terapia complementar caxias do sul">
+<meta property="og:title" content="Reiki em Caxias do Sul | Ale Vencato Reiki">
+<meta property="og:description" content="Reduza ansiedade, durma melhor e recupere sua energia com sessões de Reiki Usui em Caxias do Sul. Agende agora.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://alevencatoreiki.com.br">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+
 <style>
   :root {
-    --gold:       #B8956A;
-    --gold-light: #D4AF82;
-    --gold-pale:  #F0E6D6;
-    --lilac:      #D7CBD9;
-    --lilac-mid:  #C4B5C8;
-    --lilac-pale: #F0EBF2;
-    --off-white:  #FAFAF8;
-    --text:       #4A4040;
-    --text-light: #9A8E8E;
+    --gold:#B8956A; --gold-light:#D4AF82; --gold-pale:#F0E6D6;
+    --lilac:#D7CBD9; --lilac-mid:#C4B5C8; --lilac-pale:#F0EBF2;
+    --off-white:#FAFAF8; --text:#4A4040; --text-light:#7A6E6E;
+    --wa: "https://wa.me/54981178795?text=Ol%C3%A1%2C%20senti%20que%20preciso%20de%20uma%20sess%C3%A3o%20de%20Reiki.%20Pode%20me%20orientar%20sobre%20como%20funciona%3F";
   }
-  * { margin:0; padding:0; box-sizing:border-box; }
-  html { scroll-behavior:smooth; }
-  body { font-family:'Jost',sans-serif; background:var(--off-white); color:var(--text); overflow-x:hidden; }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Jost',sans-serif;background:var(--off-white);color:var(--text);overflow-x:hidden;font-size:16px;line-height:1.6;}
 
-  /* ── NAV ── */
-  nav {
-    position:fixed; top:0; left:0; right:0; z-index:100;
-    padding:22px 6%;
-    display:flex; align-items:center; justify-content:space-between;
-    background:rgba(250,250,248,0.94);
-    backdrop-filter:blur(14px);
-    border-bottom:1px solid rgba(184,149,106,0.15);
+  /* NAV */
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:18px 6%;display:flex;align-items:center;justify-content:space-between;background:rgba(250,250,248,0.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(184,149,106,0.15);}
+  .nav-brand{font-family:'Cormorant Garamond',serif;font-size:1.05rem;letter-spacing:4px;text-transform:uppercase;color:var(--text);}
+  .nav-brand span{color:var(--gold);font-size:.65rem;letter-spacing:5px;display:block;margin-top:1px;font-weight:300;}
+  .nav-links{display:flex;gap:28px;list-style:none;}
+  .nav-links a{font-size:.75rem;letter-spacing:2px;text-transform:uppercase;color:var(--text-light);text-decoration:none;transition:.3s;font-weight:300;}
+  .nav-links a:hover{color:var(--gold);}
+  .nav-cta{font-size:.75rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--off-white);background:var(--gold);text-decoration:none;padding:12px 24px;transition:.3s;font-weight:400;white-space:nowrap;box-shadow:0 4px 14px rgba(184,149,106,0.4);}
+  .nav-cta:hover{background:var(--gold-light);transform:translateY(-1px);}
+  .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;}
+  .hamburger span{width:22px;height:1.5px;background:var(--text);display:block;}
+
+  /* BOTÃO FLUTUANTE */
+  .whatsapp-float{position:fixed;bottom:28px;right:28px;z-index:999;display:flex;align-items:center;gap:10px;background:var(--gold);color:var(--off-white);text-decoration:none;padding:14px 22px;box-shadow:0 6px 24px rgba(184,149,106,0.5);transition:.3s;font-family:'Jost',sans-serif;}
+  .whatsapp-float:hover{background:var(--gold-light);transform:translateY(-3px);box-shadow:0 10px 32px rgba(184,149,106,0.55);}
+  .whatsapp-float .wa-text{font-size:.75rem;letter-spacing:1.5px;text-transform:uppercase;font-weight:400;}
+  .whatsapp-float .wa-icon{font-size:1.2rem;}
+
+  /* BOTÕES */
+  .btn-primary{font-size:.8rem;letter-spacing:2px;text-transform:uppercase;color:var(--off-white);background:var(--gold);padding:20px 44px;text-decoration:none;transition:.3s;display:inline-flex;align-items:center;gap:10px;font-weight:400;box-shadow:0 6px 24px rgba(184,149,106,0.45);border:none;cursor:pointer;font-family:'Jost',sans-serif;}
+  .btn-primary:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 10px 32px rgba(184,149,106,0.5);}
+  .btn-secondary{font-size:.75rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:.3s;font-weight:300;background:none;border:none;cursor:pointer;font-family:'Jost',sans-serif;}
+  .btn-secondary::after{content:'';width:20px;height:1px;background:var(--gold);transition:.3s;}
+  .btn-secondary:hover::after{width:36px;}
+  .btn-card{font-size:.75rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--off-white);background:var(--gold);padding:16px 28px;text-decoration:none;transition:.3s;display:inline-flex;align-items:center;gap:8px;font-weight:400;box-shadow:0 4px 16px rgba(184,149,106,0.35);border:none;cursor:pointer;font-family:'Jost',sans-serif;}
+  .btn-card:hover{background:var(--gold-light);transform:translateY(-2px);}
+
+  /* HERO */
+  .hero{min-height:100vh;background:var(--off-white);display:flex;align-items:center;padding:130px 6% 90px;position:relative;overflow:hidden;}
+  .hero-blob{position:absolute;right:-8%;top:5%;width:55vw;max-width:720px;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(215,203,217,0.45) 0%,rgba(240,230,214,0.2) 50%,transparent 70%);pointer-events:none;}
+  .hero-inner{display:grid;grid-template-columns:1.1fr 0.9fr;gap:70px;align-items:center;max-width:1100px;margin:0 auto;width:100%;position:relative;z-index:2;}
+  .hero-badge-top{display:inline-flex;align-items:center;gap:8px;background:rgba(184,149,106,0.1);border:1px solid rgba(184,149,106,0.25);padding:8px 18px;margin-bottom:26px;}
+  .hero-badge-top span{font-size:.7rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:300;}
+  .hero-badge-top .dot{width:6px;height:6px;border-radius:50%;background:var(--gold);animation:pulse 2s infinite;}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+  .hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,4.8vw,4.6rem);font-weight:300;color:var(--text);line-height:1.1;margin-bottom:22px;letter-spacing:.3px;}
+  .hero h1 em{font-style:italic;color:var(--gold);}
+  .hero-sub{font-size:1rem;line-height:1.9;color:var(--text-light);font-weight:300;max-width:460px;margin-bottom:38px;}
+  .hero-sub strong{color:var(--text);font-weight:400;}
+  .hero-ctas{display:flex;flex-direction:column;gap:16px;align-items:flex-start;}
+  .hero-img-wrap{position:relative;}
+  .hero-img-frame{width:100%;aspect-ratio:3/4;background:linear-gradient(150deg,var(--lilac-pale) 0%,var(--lilac) 100%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}
+  .hero-img-frame::after{content:'';position:absolute;top:16px;left:16px;right:-16px;bottom:-16px;border:1px solid rgba(184,149,106,0.2);pointer-events:none;}
+  .hero-img-frame p{font-size:.7rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:300;}
+  .hero-float{position:absolute;bottom:-16px;left:-16px;background:var(--off-white);padding:16px 20px;border:1px solid rgba(184,149,106,0.15);}
+  .hero-float-n{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--gold);font-weight:300;line-height:1;}
+  .hero-float-l{font-size:.62rem;letter-spacing:2px;text-transform:uppercase;color:var(--text-light);margin-top:3px;font-weight:300;}
+
+  /* PROVA SOCIAL */
+  .social-strip{background:var(--lilac-pale);padding:28px 6%;border-top:1px solid rgba(184,149,106,0.1);border-bottom:1px solid rgba(184,149,106,0.1);}
+  .social-strip-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:48px;flex-wrap:wrap;}
+  .strip-item{display:flex;align-items:center;gap:10px;}
+  .strip-item .icon{font-size:1.1rem;}
+  .strip-item p{font-size:.8rem;color:var(--text-light);font-weight:300;}
+  .strip-item p strong{color:var(--text);font-weight:400;}
+  .strip-div{width:1px;height:24px;background:rgba(184,149,106,0.2);}
+
+  /* UTILITÁRIOS */
+  .s-label{font-size:.65rem;letter-spacing:5px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;font-weight:300;}
+  .s-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.2vw,3rem);font-weight:300;color:var(--text);line-height:1.2;}
+  .s-title em{font-style:italic;color:var(--gold);}
+  .s-line{width:32px;height:1px;background:var(--gold-light);margin:18px 0 26px;}
+  .s-line.c{margin:18px auto 26px;}
+  .s-desc{font-size:1rem;line-height:1.9;color:var(--text-light);font-weight:300;}
+  section{padding:100px 6%;}
+
+  /* SOBRE */
+  #sobre{background:var(--off-white);}
+  .sobre-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;max-width:1100px;margin:0 auto;}
+  .sobre-img-wrap{position:relative;}
+  .sobre-img{width:100%;aspect-ratio:4/5;background:linear-gradient(160deg,var(--lilac-pale),var(--lilac));display:flex;align-items:center;justify-content:center;}
+  .sobre-img p{font-size:.7rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:300;}
+  .sobre-deco{position:absolute;top:-14px;right:-14px;width:55%;height:50%;border:1px solid rgba(184,149,106,0.18);pointer-events:none;}
+  .dor-list{list-style:none;margin:20px 0 28px;display:flex;flex-direction:column;gap:13px;}
+  .dor-list li{display:flex;align-items:flex-start;gap:12px;font-size:.95rem;color:var(--text-light);font-weight:300;line-height:1.65;}
+  .dor-list li::before{content:'✓';color:var(--gold);font-size:.85rem;flex-shrink:0;margin-top:2px;}
+
+  /* SESSÕES */
+  #sessoes{background:var(--lilac-pale);}
+  .sessoes-inner{max-width:1100px;margin:0 auto;}
+  .sessoes-header{text-align:center;margin-bottom:56px;}
+  .sessoes-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+  .s-card{background:var(--off-white);padding:48px 36px;position:relative;overflow:hidden;transition:.3s;display:flex;flex-direction:column;}
+  .s-card:hover{transform:translateY(-5px);box-shadow:0 20px 48px rgba(184,149,106,0.12);}
+  .s-card-accent{position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold-light),var(--lilac-mid));}
+  .s-card-type{font-size:.65rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;font-weight:300;display:block;}
+  .s-card h3{font-family:'Cormorant Garamond',serif;font-size:1.7rem;color:var(--text);font-weight:400;margin-bottom:12px;}
+  .s-card p{font-size:.95rem;line-height:1.9;color:var(--text-light);margin-bottom:24px;font-weight:300;flex:1;}
+  .s-card-hook{font-size:.85rem;color:var(--text);font-weight:300;font-style:italic;margin-bottom:24px;padding:14px 18px;background:rgba(184,149,106,0.07);border-left:2px solid var(--gold-light);}
+
+  /* FAQ */
+  #objecoes{background:var(--gold-pale);}
+  .obj-inner{max-width:960px;margin:0 auto;}
+  .obj-header{text-align:center;margin-bottom:52px;}
+  .obj-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:rgba(184,149,106,0.12);}
+  .obj-item{background:var(--gold-pale);padding:38px 34px;transition:.3s;}
+  .obj-item:hover{background:rgba(255,255,255,0.65);}
+  .obj-q{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--text);font-weight:400;margin-bottom:12px;font-style:italic;}
+  .obj-a{font-size:.92rem;line-height:1.9;color:var(--text-light);font-weight:300;}
+
+  /* DEPOIMENTOS */
+  #depoimentos{background:var(--off-white);}
+  .dep-inner{max-width:1100px;margin:0 auto;}
+  .dep-header{text-align:center;margin-bottom:52px;}
+  .dep-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  .d-card{background:var(--lilac-pale);padding:38px 34px;}
+  .d-stars{color:var(--gold);font-size:.75rem;letter-spacing:3px;margin-bottom:14px;display:block;}
+  .d-card p{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.85;color:var(--text);font-style:italic;font-weight:300;margin-bottom:18px;}
+  .d-autor{font-size:.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--text-light);font-weight:300;}
+  .d-resultado{font-size:.75rem;color:var(--gold);font-weight:400;margin-bottom:14px;display:block;}
+
+  /* SOBRE A ALE */
+  #ale{background:var(--lilac);}
+  .ale-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:80px;align-items:start;max-width:1100px;margin:0 auto;}
+  .ale-img{width:100%;aspect-ratio:1;background:linear-gradient(160deg,rgba(255,255,255,0.4),var(--lilac-mid));display:flex;align-items:center;justify-content:center;}
+  .ale-img p{font-size:.7rem;letter-spacing:3px;text-transform:uppercase;color:var(--text-light);font-weight:300;}
+  .ale-tags{display:flex;flex-wrap:wrap;gap:8px;}
+  .tag{font-size:.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--text-light);border:1px solid rgba(184,149,106,0.3);padding:7px 14px;font-weight:300;}
+  .jornada{display:flex;flex-direction:column;gap:0;margin:24px 0 0;}
+  .jornada-item{display:flex;gap:18px;padding:20px 0;border-bottom:1px solid rgba(255,255,255,0.4);position:relative;}
+  .jornada-item:first-child{padding-top:0;}
+  .jornada-item:last-child{border-bottom:none;}
+  .jornada-icon{font-size:1.3rem;flex-shrink:0;margin-top:2px;width:28px;text-align:center;}
+  .jornada-text strong{display:block;font-size:.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:6px;font-weight:400;}
+  .jornada-text p{font-size:.9rem;line-height:1.85;color:var(--text);font-weight:300;}
+
+  /* CTA */
+  .cta-wrap{background:var(--lilac-mid);padding:100px 6%;text-align:center;position:relative;overflow:hidden;}
+  .cta-wrap::before{content:'';position:absolute;top:-60px;left:50%;transform:translateX(-50%);width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,0.15),transparent 70%);pointer-events:none;}
+  .cta-inner{max-width:620px;margin:0 auto;position:relative;z-index:2;}
+  .cta-escassez{display:inline-block;background:rgba(184,149,106,0.2);border:1px solid rgba(184,149,106,0.3);padding:7px 20px;font-size:.68rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:26px;font-weight:300;}
+  .cta-note{font-size:.7rem;letter-spacing:.5px;color:rgba(74,64,64,0.55);margin-top:16px;display:block;font-weight:300;}
+  .cta-garantia{margin-top:14px;font-size:.82rem;color:rgba(74,64,64,0.65);font-weight:300;}
+
+  /* CONTATO */
+  #contato{background:var(--off-white);}
+  .contato-inner{max-width:1100px;margin:0 auto;}
+  .contato-header{margin-bottom:52px;}
+  .contato-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:stretch;}
+  .c-info-block{display:flex;flex-direction:column;}
+  .c-item{display:flex;align-items:flex-start;gap:18px;padding:24px 0;border-bottom:1px solid rgba(184,149,106,0.1);}
+  .c-item:first-child{border-top:1px solid rgba(184,149,106,0.1);}
+  .c-icon{width:40px;height:40px;border:1px solid rgba(184,149,106,0.22);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.95rem;}
+  .c-item-text h4{font-size:.62rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:6px;font-weight:300;}
+  .c-item-text p,.c-item-text a{font-size:.95rem;color:var(--text-light);font-weight:300;line-height:1.7;text-decoration:none;transition:.3s;display:block;}
+  .c-item-text a:hover{color:var(--gold);}
+  .c-map{width:100%;min-height:400px;border:1px solid rgba(184,149,106,0.15);overflow:hidden;background:var(--lilac-pale);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;}
+  .c-map p{font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--text-light);font-weight:300;}
+  .c-map a{font-size:.8rem;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(184,149,106,0.3);padding-bottom:2px;transition:.3s;}
+  .c-map a:hover{color:var(--gold-light);}
+
+  /* FOOTER */
+  footer{background:var(--lilac-pale);padding:44px 6% 26px;border-top:1px solid rgba(184,149,106,0.1);}
+  .footer-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;}
+  .f-brand{font-family:'Cormorant Garamond',serif;color:var(--text);font-size:.95rem;letter-spacing:4px;text-transform:uppercase;font-weight:300;}
+  .f-brand span{color:var(--gold);font-size:.6rem;letter-spacing:5px;display:block;margin-top:2px;}
+  .f-links{display:flex;gap:22px;list-style:none;}
+  .f-links a{font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--text-light);text-decoration:none;transition:.3s;font-weight:300;}
+  .f-links a:hover{color:var(--gold);}
+  .f-social{display:flex;gap:10px;}
+  .f-soc{width:34px;height:34px;border:1px solid rgba(184,149,106,0.22);display:flex;align-items:center;justify-content:center;color:var(--text-light);font-size:.65rem;text-decoration:none;transition:.3s;}
+  .f-soc:hover{border-color:var(--gold);color:var(--gold);}
+  .footer-copy{width:100%;text-align:center;padding-top:22px;border-top:1px solid rgba(184,149,106,0.1);margin-top:16px;}
+  .footer-copy p{font-size:.65rem;color:var(--text-light);font-weight:300;line-height:1.9;}
+
+  /* MOBILE */
+  @media(max-width:900px){
+    .nav-links{display:none;} .hamburger{display:flex;}
+    .hero-inner,.sobre-grid,.ale-grid,.contato-grid{grid-template-columns:1fr;gap:44px;}
+    .hero-img-wrap{order:-1;} .sessoes-grid,.dep-grid,.obj-grid{grid-template-columns:1fr;}
+    .social-strip-inner{gap:24px;} .strip-div{display:none;}
+    .footer-inner{flex-direction:column;text-align:center;} .f-links{justify-content:center;flex-wrap:wrap;}
+    section{padding:80px 6%;} .c-map{min-height:260px;}
+    .whatsapp-float .wa-text{display:none;} .whatsapp-float{padding:14px;}
   }
-  .nav-brand { font-family:'Cormorant Garamond',serif; font-size:1rem; letter-spacing:4px; text-transform:uppercase; color:var(--text); font-weight:400; }
-  .nav-brand span { color:var(--gold); font-size:.6rem; letter-spacing:5px; display:block; margin-top:2px; font-weight:300; }
-  .nav-links { display:flex; gap:32px; list-style:none; }
-  .nav-links a { font-size:.66rem; letter-spacing:2.5px; text-transform:uppercase; color:var(--text-light); text-decoration:none; transition:.3s; font-weight:300; }
-  .nav-links a:hover { color:var(--gold); }
-  .nav-cta { font-size:.66rem; letter-spacing:2px; text-transform:uppercase; color:var(--gold); text-decoration:none; border-bottom:1px solid rgba(184,149,106,0.35); padding-bottom:2px; transition:.3s; font-weight:300; }
-  .nav-cta:hover { border-color:var(--gold); }
-  .hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; }
-  .hamburger span { width:20px; height:1px; background:var(--text); display:block; }
-
-  /* ── HERO — off-white ── */
-  .hero {
-    min-height:100vh; background:var(--off-white);
-    display:flex; align-items:center;
-    padding:140px 6% 100px; position:relative; overflow:hidden;
-  }
-  .hero-blob {
-    position:absolute; right:-8%; top:5%;
-    width:55vw; max-width:720px; aspect-ratio:1; border-radius:50%;
-    background:radial-gradient(circle, rgba(215,203,217,0.4) 0%, rgba(240,230,214,0.2) 50%, transparent 70%);
-    pointer-events:none;
-  }
-  .hero-inner { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; max-width:1100px; margin:0 auto; width:100%; position:relative; z-index:2; }
-  .hero-eyebrow { font-size:.62rem; letter-spacing:5px; text-transform:uppercase; color:var(--gold); margin-bottom:26px; font-weight:300; }
-  .hero h1 { font-family:'Cormorant Garamond',serif; font-size:clamp(3rem,5vw,4.8rem); font-weight:300; color:var(--text); line-height:1.12; letter-spacing:.5px; margin-bottom:26px; }
-  .hero h1 em { font-style:italic; color:var(--gold); display:block; }
-  .hero-line { width:38px; height:1px; background:var(--gold-light); margin-bottom:22px; }
-  .hero p { font-size:.86rem; line-height:2; color:var(--text-light); font-weight:300; max-width:400px; margin-bottom:42px; }
-  .btn-main { font-size:.68rem; letter-spacing:3px; text-transform:uppercase; color:var(--off-white); background:var(--gold); padding:16px 38px; text-decoration:none; transition:.3s; display:inline-block; font-weight:300; }
-  .btn-main:hover { background:var(--gold-light); }
-  .btn-ghost { font-size:.66rem; letter-spacing:2px; text-transform:uppercase; color:var(--gold); text-decoration:none; display:flex; align-items:center; gap:10px; transition:.3s; font-weight:300; margin-top:14px; }
-  .btn-ghost::after { content:''; width:22px; height:1px; background:var(--gold); transition:.3s; }
-  .btn-ghost:hover::after { width:38px; }
-  .hero-img-frame {
-    width:100%; aspect-ratio:3/4; position:relative;
-    background:linear-gradient(150deg, var(--lilac-pale) 0%, var(--lilac) 100%);
-    display:flex; align-items:center; justify-content:center;
-  }
-  .hero-img-frame::after { content:''; position:absolute; top:18px; left:18px; right:-18px; bottom:-18px; border:1px solid rgba(184,149,106,0.18); pointer-events:none; }
-  /* Quando tiver foto: */
-  /* .hero-img-frame img { width:100%; height:100%; object-fit:cover; display:block; } */
-  .hero-img-frame p { font-size:.6rem; letter-spacing:3px; text-transform:uppercase; color:var(--gold); font-weight:300; }
-  .hero-badge { position:absolute; bottom:-18px; left:-18px; background:var(--off-white); padding:18px 22px; border:1px solid rgba(184,149,106,0.15); }
-  .hero-badge-n { font-family:'Cormorant Garamond',serif; font-size:2rem; color:var(--gold); font-weight:300; line-height:1; }
-  .hero-badge-l { font-size:.58rem; letter-spacing:2px; text-transform:uppercase; color:var(--text-light); margin-top:4px; font-weight:300; }
-
-  /* ── UTILITÁRIOS ── */
-  .s-label { font-size:.6rem; letter-spacing:5px; text-transform:uppercase; color:var(--gold); margin-bottom:14px; font-weight:300; }
-  .s-title { font-family:'Cormorant Garamond',serif; font-size:clamp(1.9rem,3.2vw,2.9rem); font-weight:300; color:var(--text); line-height:1.2; }
-  .s-title em { font-style:italic; color:var(--gold); }
-  .s-line { width:34px; height:1px; background:var(--gold-light); margin:18px 0 26px; }
-  .s-line.c { margin:18px auto 26px; }
-  .s-desc { font-size:.84rem; line-height:2; color:var(--text-light); font-weight:300; }
-  section { padding:110px 6%; }
-
-  /* ── SOBRE — lilás pálido ── */
-  #sobre { background:var(--lilac-pale); }
-  .sobre-grid { display:grid; grid-template-columns:5fr 6fr; gap:90px; align-items:center; max-width:1100px; margin:0 auto; }
-  .sobre-img-wrap { position:relative; }
-  .sobre-img { width:100%; aspect-ratio:3/4; background:linear-gradient(160deg, var(--off-white) 0%, var(--lilac) 100%); display:flex; align-items:center; justify-content:center; overflow:hidden; }
-  /* Quando tiver foto: */
-  /* .sobre-img img { width:100%; height:100%; object-fit:cover; display:block; } */
-  .sobre-img p { font-size:.6rem; letter-spacing:3px; text-transform:uppercase; color:var(--gold); font-weight:300; }
-  .sobre-deco { position:absolute; top:-14px; right:-14px; width:60%; height:55%; border:1px solid rgba(184,149,106,0.18); pointer-events:none; }
-  .sobre-text .s-desc { margin-bottom:14px; }
-  .sobre-tags { display:flex; flex-wrap:wrap; gap:8px; margin-top:26px; }
-  .tag { font-size:.6rem; letter-spacing:2px; text-transform:uppercase; color:var(--text-light); border:1px solid rgba(184,149,106,0.25); padding:7px 14px; font-weight:300; }
-
-  /* ── O QUE É REIKI — dourado pálido ── */
-  #reiki { background:var(--gold-pale); }
-  .reiki-inner { max-width:1100px; margin:0 auto; }
-  .reiki-header { display:grid; grid-template-columns:1fr 1fr; gap:70px; align-items:end; margin-bottom:60px; }
-  .reiki-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:rgba(184,149,106,0.15); }
-  .r-card { background:var(--gold-pale); padding:42px 34px; transition:.3s; }
-  .r-card:hover { background:rgba(255,255,255,0.6); }
-  .r-num { font-family:'Cormorant Garamond',serif; font-size:2.8rem; color:rgba(184,149,106,0.25); font-weight:300; line-height:1; margin-bottom:18px; }
-  .r-card h3 { font-family:'Cormorant Garamond',serif; font-size:1.25rem; color:var(--text); font-weight:400; margin-bottom:10px; }
-  .r-card p { font-size:.8rem; line-height:1.9; color:var(--text-light); font-weight:300; }
-  .principios { margin-top:60px; padding-top:50px; border-top:1px solid rgba(184,149,106,0.2); }
-  .p-title { font-family:'Cormorant Garamond',serif; font-size:1.4rem; color:var(--text); font-weight:300; font-style:italic; text-align:center; margin-bottom:36px; }
-  .p-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:1px; background:rgba(184,149,106,0.15); }
-  .p-item { background:var(--gold-pale); padding:26px 18px; text-align:center; }
-  .p-num { font-size:.56rem; letter-spacing:3px; color:var(--gold); font-weight:300; margin-bottom:8px; display:block; }
-  .p-item p { font-family:'Cormorant Garamond',serif; font-size:.92rem; color:var(--text); font-weight:300; line-height:1.55; }
-
-  /* ── SESSÕES — off-white ── */
-  #sessoes { background:var(--off-white); }
-  .sessoes-inner { max-width:1100px; margin:0 auto; }
-  .sessoes-header { text-align:center; margin-bottom:64px; }
-  .sessoes-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
-  .s-card { background:var(--lilac-pale); padding:48px 34px; position:relative; overflow:hidden; transition:.3s; }
-  .s-card:hover { transform:translateY(-5px); box-shadow:0 18px 44px rgba(184,149,106,0.1); }
-  .s-card-accent { position:absolute; top:0; left:0; right:0; height:2px; background:linear-gradient(90deg,var(--gold-light),var(--lilac-mid)); }
-  .s-card-type { font-size:.58rem; letter-spacing:3px; text-transform:uppercase; color:var(--gold); margin-bottom:18px; font-weight:300; display:block; }
-  .s-card h3 { font-family:'Cormorant Garamond',serif; font-size:1.5rem; color:var(--text); font-weight:400; margin-bottom:12px; }
-  .s-card p { font-size:.8rem; line-height:2; color:var(--text-light); margin-bottom:28px; font-weight:300; }
-  .s-link { font-size:.62rem; letter-spacing:2px; text-transform:uppercase; color:var(--gold); text-decoration:none; display:flex; align-items:center; gap:8px; transition:.3s; font-weight:300; }
-  .s-link::after { content:''; width:18px; height:1px; background:var(--gold); transition:.3s; }
-  .s-link:hover::after { width:34px; }
-
-  /* ── BENEFÍCIOS — lilás ── */
-  #beneficios { background:var(--lilac); }
-  .benef-inner { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:90px; align-items:start; }
-  .benef-list { display:flex; flex-direction:column; }
-  .benef-item { display:flex; align-items:flex-start; gap:18px; padding:18px 0; border-bottom:1px solid rgba(255,255,255,0.5); }
-  .benef-item:first-child { border-top:1px solid rgba(255,255,255,0.5); }
-  .b-dot { width:4px; height:4px; border-radius:50%; background:var(--gold); flex-shrink:0; margin-top:9px; }
-  .benef-item span { font-size:.83rem; line-height:1.8; color:var(--text); font-weight:300; }
-  .benef-right { padding-top:54px; }
-  .benef-stats { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:rgba(255,255,255,0.3); }
-  .b-stat { background:var(--lilac); padding:34px 26px; }
-  .b-stat .n { font-family:'Cormorant Garamond',serif; font-size:2.8rem; color:var(--gold); font-weight:300; line-height:1; display:block; }
-  .b-stat .l { font-size:.58rem; letter-spacing:2px; text-transform:uppercase; color:var(--text-light); margin-top:7px; display:block; font-weight:300; }
-  .benef-quote { margin-top:28px; padding:28px; border-left:2px solid var(--gold-light); background:rgba(255,255,255,0.4); }
-  .benef-quote p { font-family:'Cormorant Garamond',serif; font-size:1.1rem; color:var(--text); font-style:italic; font-weight:300; line-height:1.75; }
-
-  /* ── DEPOIMENTOS — dourado pálido ── */
-  #depoimentos { background:var(--gold-pale); }
-  .dep-inner { max-width:1000px; margin:0 auto; }
-  .dep-header { text-align:center; margin-bottom:64px; }
-  .dep-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
-  .d-card { background:var(--off-white); padding:42px 38px; }
-  .d-stars { color:var(--gold-light); font-size:.72rem; letter-spacing:4px; margin-bottom:18px; display:block; }
-  .d-card p { font-family:'Cormorant Garamond',serif; font-size:1.03rem; line-height:1.85; color:var(--text); font-style:italic; font-weight:300; margin-bottom:22px; }
-  .d-autor { font-size:.58rem; letter-spacing:3px; text-transform:uppercase; color:var(--text-light); font-weight:300; }
-
-  /* ── CTA — lilás médio ── */
-  .cta-wrap { background:var(--lilac-mid); padding:110px 6%; text-align:center; }
-  .cta-inner { max-width:580px; margin:0 auto; }
-  .cta-wrap .s-title { color:var(--text); }
-  .cta-wrap .s-desc { color:rgba(74,64,64,0.6); margin-bottom:44px; }
-  .cta-btn { font-size:.7rem; letter-spacing:4px; text-transform:uppercase; color:var(--off-white); background:var(--gold); padding:18px 52px; text-decoration:none; transition:.3s; display:inline-block; font-weight:300; font-family:'Jost',sans-serif; }
-  .cta-btn:hover { background:var(--gold-light); }
-  .cta-note { font-size:.6rem; letter-spacing:1px; color:rgba(74,64,64,0.4); margin-top:18px; display:block; font-weight:300; }
-
-  /* ── CONTATO — off-white ── */
-  #contato { background:var(--off-white); }
-  .contato-inner { max-width:1100px; margin:0 auto; }
-  .contato-header { margin-bottom:60px; }
-  .contato-grid { display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:stretch; }
-  .c-info-block { display:flex; flex-direction:column; }
-  .c-item { display:flex; align-items:flex-start; gap:20px; padding:28px 0; border-bottom:1px solid rgba(184,149,106,0.12); }
-  .c-item:first-child { border-top:1px solid rgba(184,149,106,0.12); }
-  .c-icon { width:40px; height:40px; border:1px solid rgba(184,149,106,0.25); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:var(--gold); font-size:.9rem; }
-  .c-item-text h4 { font-size:.58rem; letter-spacing:3px; text-transform:uppercase; color:var(--gold); margin-bottom:6px; font-weight:300; }
-  .c-item-text p, .c-item-text a { font-size:.83rem; color:var(--text-light); font-weight:300; line-height:1.7; text-decoration:none; transition:.3s; display:block; }
-  .c-item-text a:hover { color:var(--gold); }
-  .c-map { width:100%; height:100%; min-height:420px; border:1px solid rgba(184,149,106,0.15); overflow:hidden; }
-  .c-map iframe { width:100%; height:100%; border:none; filter:saturate(0.3) contrast(1.05); }
-
-  /* ── FOOTER — lilás pálido ── */
-  footer { background:var(--lilac-pale); padding:56px 6% 30px; border-top:1px solid rgba(184,149,106,0.12); }
-  .footer-inner { max-width:1100px; margin:0 auto; }
-  .footer-top { display:flex; justify-content:space-between; align-items:center; padding-bottom:36px; border-bottom:1px solid rgba(184,149,106,0.12); flex-wrap:wrap; gap:24px; }
-  .f-brand { font-family:'Cormorant Garamond',serif; color:var(--text); font-size:.9rem; letter-spacing:4px; text-transform:uppercase; font-weight:300; }
-  .f-brand span { color:var(--gold); font-size:.56rem; letter-spacing:5px; display:block; margin-top:3px; }
-  .f-links { display:flex; gap:26px; list-style:none; flex-wrap:wrap; }
-  .f-links a { font-size:.6rem; letter-spacing:2px; text-transform:uppercase; color:var(--text-light); text-decoration:none; transition:.3s; font-weight:300; }
-  .f-links a:hover { color:var(--gold); }
-  .f-social { display:flex; gap:12px; }
-  .f-soc { width:32px; height:32px; border:1px solid rgba(184,149,106,0.25); display:flex; align-items:center; justify-content:center; color:var(--text-light); font-size:.6rem; text-decoration:none; transition:.3s; }
-  .f-soc:hover { border-color:var(--gold); color:var(--gold); }
-  .footer-bottom { padding-top:26px; text-align:center; }
-  .footer-bottom p { font-size:.58rem; letter-spacing:1px; color:var(--text-light); font-weight:300; line-height:1.9; }
-
-  /* ── RESPONSIVO ── */
-  @media(max-width:900px) {
-    .nav-links { display:none; }
-    .hamburger { display:flex; }
-    .hero-inner,.sobre-grid,.reiki-header,.benef-inner,.contato-grid { grid-template-columns:1fr; gap:48px; }
-    .hero-img-wrap { order:-1; }
-    .reiki-cards,.sessoes-grid,.dep-grid { grid-template-columns:1fr; }
-    .p-grid { grid-template-columns:1fr 1fr; }
-    .benef-right { padding-top:0; }
-    .benef-stats { grid-template-columns:1fr 1fr; }
-    .footer-top { flex-direction:column; text-align:center; }
-    .f-links { justify-content:center; }
-    section { padding:80px 6%; }
-    .c-map { min-height:300px; }
-  }
-  @media(max-width:500px) {
-    .p-grid,.benef-stats { grid-template-columns:1fr; }
-    .hero h1 { font-size:2.6rem; }
-  }
+  @media(max-width:500px){.hero h1{font-size:2.6rem;}}
 </style>
 </head>
 <body>
 
-<!-- ══ NAV ══ -->
+<!-- WHATSAPP FLUTUANTE -->
+<a href="https://wa.me/54981178795?text=Ol%C3%A1%2C%20senti%20que%20preciso%20de%20uma%20sess%C3%A3o%20de%20Reiki.%20Pode%20me%20orientar%20sobre%20como%20funciona%3F" target="_blank" class="whatsapp-float" aria-label="Falar no WhatsApp">
+  <span class="wa-icon">💬</span>
+  <span class="wa-text">Agendar sessão</span>
+</a>
+
+<!-- NAV -->
 <nav>
   <div class="nav-brand">Ale Vencato <span>Reiki</span></div>
   <ul class="nav-links">
-    <li><a href="#sobre">Sobre</a></li>
-    <li><a href="#reiki">Reiki</a></li>
+    <li><a href="#sobre">Como funciona</a></li>
     <li><a href="#sessoes">Sessões</a></li>
-    <li><a href="#beneficios">Benefícios</a></li>
     <li><a href="#depoimentos">Depoimentos</a></li>
     <li><a href="#contato">Contato</a></li>
   </ul>
-  <a href="#contato" class="nav-cta">Agendar sessão</a>
+  <a href="https://wa.me/54981178795?text=Ol%C3%A1%2C%20senti%20que%20preciso%20de%20uma%20sess%C3%A3o%20de%20Reiki.%20Pode%20me%20orientar%20sobre%20como%20funciona%3F" target="_blank" class="nav-cta">💬 Agendar sessão</a>
   <div class="hamburger"><span></span><span></span><span></span></div>
 </nav>
 
-<!-- ══ HERO — off-white ══ -->
+<!-- HERO -->
 <section class="hero" id="inicio">
   <div class="hero-blob"></div>
   <div class="hero-inner">
     <div>
-      <div class="hero-eyebrow">Terapia Energética · Reiki Usui</div>
-      <h1>Energia sutil,<br><em>transformação real.</em></h1>
-      <div class="hero-line"></div>
-      <p>Um espaço de silêncio, cuidado e reconexão. Descubra como a energia vital pode equilibrar seu corpo, mente e espírito.</p>
-      <a href="#contato" class="btn-main">Agendar minha sessão</a>
-      <a href="#reiki" class="btn-ghost">Conhecer o Reiki</a>
+      <div class="hero-badge-top">
+        <div class="dot"></div>
+        <span>Vagas disponíveis para este mês</span>
+      </div>
+      <h1>Livre-se da ansiedade e do esgotamento com <em>uma sessão de Reiki</em> em Caxias do Sul.</h1>
+      <p class="hero-sub">Se você acorda cansada, vive na correria e sente que o seu corpo pede uma pausa, o Reiki é para você. <strong>Em 60 minutos, sem precisar acreditar em nada.</strong> Só relaxar e deixar acontecer.</p>
+      <div class="hero-ctas">
+        <a href="https://wa.me/54981178795?text=Ol%C3%A1%2C%20senti%20que%20preciso%20de%20uma%20sess%C3%A3o%20de%20Reiki.%20Pode%20me%20orientar%20sobre%20como%20funciona%3F" target="_blank" class="btn-primary">💬 Quero agendar minha sessão</a>
+        <a href="#sobre" class="btn-secondary">Ver como funciona</a>
+      </div>
     </div>
-    <div class="hero-img-wrap" style="position:relative;">
+    <div class="hero-img-wrap">
       <div class="hero-img-frame">
-        <!-- Substitua pelo caminho da sua foto: -->
-        <!-- <img src="foto-ale.jpg" alt="Ale Vencato"> -->
+        <!-- <img src="foto-ale.jpg" alt="Ale Vencato terapeuta de Reiki em Caxias do Sul"> -->
         <p>Sua foto aqui</p>
       </div>
-      <div class="hero-badge">
-        <div class="hero-badge-n">∞</div>
-        <div class="hero-badge-l">Energia Universal</div>
+      <div class="hero-float">
+        <div class="hero-float-n">∞</div>
+        <div class="hero-float-l">Energia Universal</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══ SOBRE — lilás pálido ══ -->
+<!-- PROVA SOCIAL -->
+<div class="social-strip">
+  <div class="social-strip-inner">
+    <div class="strip-item"><span class="icon">✨</span><p><strong>Reiki Usui</strong>, terapia reconhecida pelo Ministério da Saúde</p></div>
+    <div class="strip-div"></div>
+    <div class="strip-item"><span class="icon">📍</span><p>Presencial em <strong>Caxias do Sul, RS</strong></p></div>
+    <div class="strip-div"></div>
+    <div class="strip-item"><span class="icon">⚡</span><p>Resposta em <strong>até 24h</strong></p></div>
+  </div>
+</div>
+
+<!-- COMO FUNCIONA -->
 <section id="sobre">
   <div class="sobre-grid">
     <div class="sobre-img-wrap">
       <div class="sobre-img">
-        <!-- Substitua pelo caminho da sua foto: -->
-        <!-- <img src="foto-sobre.jpg" alt="Ale Vencato"> -->
-        <p>Foto da Ale</p>
+        <!-- <img src="foto-sessao.jpg" alt="Sessão de Reiki Usui em Caxias do Sul"> -->
+        <p>Foto da sessão</p>
       </div>
       <div class="sobre-deco"></div>
     </div>
-    <div class="sobre-text">
-      <div class="s-label">Quem sou eu</div>
-      <h2 class="s-title">Ale Vencato,<br><em>praticante de Reiki Usui</em></h2>
+    <div>
+      <div class="s-label">Você se identifica com isso?</div>
+      <h2 class="s-title">Quando o corpo fala,<br><em>é hora de ouvir.</em></h2>
       <div class="s-line"></div>
-      <p class="s-desc">Sou Ale Vencato, terapeuta energética certificada em Reiki Usui. Minha jornada com o Reiki começou como uma busca pessoal por equilíbrio e se transformou em uma missão: ajudar outras pessoas a encontrarem harmonia física, emocional e espiritual.</p>
-      <p class="s-desc" style="margin-top:14px;">Acredito que cada pessoa carrega dentro de si uma capacidade natural de cura. Meu papel é criar o espaço seguro e amoroso para que essa energia se manifeste com plenitude.</p>
-      <div class="sobre-tags">
-        <span class="tag">Reiki Usui — Níveis 1, 2 e 3</span>
-        <span class="tag">Atendimento Presencial</span>
-        <span class="tag">Atendimento à Distância</span>
+      <ul class="dor-list">
+        <li>Ansiedade que não passa, mesmo sem motivo aparente</li>
+        <li>Dificuldade para dormir ou acordar descansada</li>
+        <li>Sensação constante de peso emocional ou esgotamento</li>
+        <li>Estresse acumulado que o corpo já está sinalizando</li>
+        <li>Vontade de se cuidar, mas sem saber por onde começar</li>
+      </ul>
+      <p class="s-desc">O Reiki trabalha na raiz, equilibrando o campo energético para que seu corpo e mente encontrem o estado natural de harmonia. Sem medicamentos, sem julgamentos, sem contraindicações.</p>
+      <div style="margin-top:32px;">
+        <a href="https://wa.me/54981178795?text=Ol%C3%A1%2C%20senti%20que%20preciso%20de%20uma%20sess%C3%A3o%20de%20Reiki.%20Pode%20me%20orientar%20sobre%20como%20funciona%3F" target="_blank" class="btn-primary">💬 Quero experimentar</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══ O QUE É REIKI — dourado pálido ══ -->
-<section id="reiki">
-  <div class="reiki-inner">
-    <div class="reiki-header">
-      <div>
-        <div class="s-label">Terapia Energética</div>
-        <h2 class="s-title">O que é o<br><em>Reiki Usui?</em></h2>
-        <div class="s-line"></div>
-      </div>
-      <p class="s-desc">O Reiki Usui é um sistema de terapia energética criado no Japão por Mikao Usui em 1922. Por meio da canalização de energia universal, promove equilíbrio físico, emocional, mental e espiritual — complementando outros cuidados de saúde.</p>
-    </div>
-    <div class="reiki-cards">
-      <div class="r-card">
-        <div class="r-num">01</div>
-        <h3>Rei — Energia Universal</h3>
-        <p>Sabedoria divina presente em todas as coisas. A fonte que o praticante canaliza durante a sessão para promover equilíbrio e bem-estar.</p>
-      </div>
-      <div class="r-card">
-        <div class="r-num">02</div>
-        <h3>Ki — Energia Vital</h3>
-        <p>A força vital que anima cada ser. Equivalente ao "chi" na medicina chinesa. Quando flui livremente, há saúde e harmonia em todos os níveis.</p>
-      </div>
-      <div class="r-card">
-        <div class="r-num">03</div>
-        <h3>Como Funciona</h3>
-        <p>O praticante atua como canal, transmitindo energia por imposição das mãos. Sessão de 40–60 min, com a pessoa deitada, vestida, em ambiente tranquilo.</p>
-      </div>
-    </div>
-    <div class="principios">
-      <div class="p-title">Os Cinco Princípios do Reiki</div>
-      <div class="p-grid">
-        <div class="p-item"><span class="p-num">01</span><p>Só por hoje, não se irrite</p></div>
-        <div class="p-item"><span class="p-num">02</span><p>Só por hoje, não se preocupe</p></div>
-        <div class="p-item"><span class="p-num">03</span><p>Só por hoje, seja grato</p></div>
-        <div class="p-item"><span class="p-num">04</span><p>Só por hoje, trabalhe com dedicação</p></div>
-        <div class="p-item"><span class="p-num">05</span><p>Só por hoje, seja gentil</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ SESSÕES — off-white ══ -->
+<!-- SESSÕES -->
 <section id="sessoes">
   <div class="sessoes-inner">
     <div class="sessoes-header">
       <div class="s-label">Como posso te ajudar</div>
-      <h2 class="s-title">Tipos de <em>atendimento</em></h2>
+      <h2 class="s-title">Escolha o formato<br><em>ideal para você</em></h2>
       <div class="s-line c"></div>
-      <p class="s-desc" style="max-width:480px;margin:0 auto;">Cada sessão é conduzida com intenção, presença e cuidado único. Escolha o formato que mais se adequa à sua realidade.</p>
+      <p class="s-desc" style="max-width:500px;margin:0 auto;">Cada sessão dura entre 50 e 60 minutos. Você fica deitada, vestida, em silêncio. Não precisa fazer nada — só receber.</p>
     </div>
     <div class="sessoes-grid">
       <div class="s-card">
         <div class="s-card-accent"></div>
-        <span class="s-card-type">Presencial</span>
+        <span class="s-card-type">Presencial · Caxias do Sul</span>
         <h3>Sessão Individual</h3>
-        <p>Atendimento com 50 a 60 minutos em ambiente acolhedor e silencioso, preparado para a sua experiência de reconexão interior.</p>
-        <a href="#contato" class="s-link">Agendar sessão</a>
+        <div class="s-card-hook">"Quero sentir os resultados pessoalmente, num ambiente tranquilo."</div>
+        <p>Um espaço preparado para o seu relaxamento total. A Ale conduz cada sessão com atenção e cuidado exclusivos para você.</p>
+        <a href="https://wa.me/54981178795?text=Ol%C3%A1%2C%20senti%20que%20preciso%20de%20uma%20sess%C3%A3o%20de%20Reiki.%20Pode%20me%20orientar%20sobre%20como%20funciona%3F" target="_blank" class="btn-card">💬 Agendar sessão</a>
       </div>
       <div class="s-card">
         <div class="s-card-accent"></div>
-        <span class="s-card-type">Online · À Distância</span>
-        <h3>Reiki à Distância</h3>
-        <p>A energia não tem fronteiras. O Reiki à distância é tão eficaz quanto o presencial — você recebe no conforto de sua casa, em qualquer parte do Brasil.</p>
-        <a href="#contato" class="s-link">Agendar sessão</a>
-      </div>
-      <div class="s-card">
-        <div class="s-card-accent"></div>
-        <span class="s-card-type">Pacote</span>
+        <span class="s-card-type">Pacote · Resultados duradouros</span>
         <h3>Acompanhamento Mensal</h3>
-        <p>Para quem deseja aprofundar a jornada. Sessões regulares com acompanhamento personalizado do seu processo energético ao longo do tempo.</p>
-        <a href="#contato" class="s-link">Saiba mais</a>
+        <div class="s-card-hook">"Quero transformação de verdade, não só alívio momentâneo."</div>
+        <p>Para quem quer ir fundo. Sessões regulares com acompanhamento do processo, os resultados se aprofundam a cada encontro.</p>
+        <a href="https://wa.me/54981178795?text=Ol%C3%A1%2C%20senti%20que%20preciso%20de%20uma%20sess%C3%A3o%20de%20Reiki.%20Pode%20me%20orientar%20sobre%20como%20funciona%3F" target="_blank" class="btn-card">💬 Quero saber mais</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══ BENEFÍCIOS — lilás ══ -->
-<section id="beneficios">
-  <div class="benef-inner">
-    <div>
-      <div class="s-label">Por que fazer Reiki</div>
-      <h2 class="s-title">Benefícios que<br><em>transformam</em></h2>
-      <div class="s-line"></div>
-      <p class="s-desc" style="margin-bottom:28px;">Reconhecido no Brasil como terapia integrativa e complementar, o Reiki é praticado em contextos de saúde ao redor do mundo.</p>
-      <div class="benef-list">
-        <div class="benef-item"><div class="b-dot"></div><span>Redução de estresse e ansiedade</span></div>
-        <div class="benef-item"><div class="b-dot"></div><span>Relaxamento profundo e melhora do sono</span></div>
-        <div class="benef-item"><div class="b-dot"></div><span>Apoio emocional em momentos de luto ou transição</span></div>
-        <div class="benef-item"><div class="b-dot"></div><span>Sensação de bem-estar e leveza geral</span></div>
-        <div class="benef-item"><div class="b-dot"></div><span>Harmonização do campo energético</span></div>
-        <div class="benef-item"><div class="b-dot"></div><span>Complemento a tratamentos médicos e psicológicos</span></div>
-      </div>
-    </div>
-    <div class="benef-right">
-      <div class="benef-stats">
-        <div class="b-stat"><span class="n">+100</span><span class="l">Sessões realizadas</span></div>
-        <div class="b-stat"><span class="n">3</span><span class="l">Níveis de formação</span></div>
-        <div class="b-stat"><span class="n">60'</span><span class="l">Por sessão</span></div>
-        <div class="b-stat"><span class="n">∞</span><span class="l">Cuidado e presença</span></div>
-      </div>
-      <div class="benef-quote">
-        <p>"O Reiki não é apenas uma técnica — é uma filosofia de vida que nos convida a viver com mais leveza, gratidão e presença."</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ DEPOIMENTOS — dourado pálido ══ -->
+<!-- DEPOIMENTOS -->
 <section id="depoimentos">
   <div class="dep-inner">
     <div class="dep-header">
-      <div class="s-label">Experiências reais</div>
-      <h2 class="s-title">O que dizem <em>nossos clientes</em></h2>
+      <div class="s-label">Resultados reais</div>
+      <h2 class="s-title">O que mudou na vida<br><em>de quem já fez</em></h2>
       <div class="s-line c"></div>
     </div>
     <div class="dep-grid">
       <div class="d-card">
         <span class="d-stars">★★★★★</span>
-        <p>"A sessão com a Ale foi uma experiência transformadora. Entrei ansiosa e saí com uma leveza que não sentia há anos."</p>
+        <span class="d-resultado">→ Ansiedade reduziu em 2 sessões</span>
+        <p>"Entrei ansiosa e saí com uma leveza que não sentia há anos. Não sei explicar direito o que aconteceu, mas funcionou."</p>
         <div class="d-autor">Mariana S. · São Paulo</div>
       </div>
       <div class="d-card">
         <span class="d-stars">★★★★★</span>
-        <p>"Fiz o Reiki à distância sem muita expectativa e fui surpreendida. Senti calor nas mãos e uma paz indescritível."</p>
+        <span class="d-resultado">→ Dormiu bem pela primeira vez em meses</span>
+        <p>"Fiz sem muita expectativa. Na noite depois da sessão dormi de um jeito que não conseguia há meses."</p>
         <div class="d-autor">Juliana M. · Rio de Janeiro</div>
       </div>
       <div class="d-card">
         <span class="d-stars">★★★★★</span>
-        <p>"Estou fazendo o acompanhamento mensal e minha qualidade de sono melhorou muito. A Ale cria um espaço de muita segurança."</p>
+        <span class="d-resultado">→ Qualidade de vida transformada</span>
+        <p>"Faço o acompanhamento mensal há 4 meses. A diferença é visível — família e amigos perceberam."</p>
         <div class="d-autor">Carla F. · Curitiba</div>
       </div>
-      <div class="d-card">
-        <span class="d-stars">★★★★★</span>
-        <p>"Comecei como complemento ao meu tratamento de ansiedade e os resultados foram além do esperado. Recomendo de coração."</p>
-        <div class="d-autor">Renata L. · Florianópolis</div>
+    </div>
+    <div style="text-align:center;margin-top:48px;">
+      <p class="s-desc" style="margin-bottom:20px;">Sua experiência também importa. Deixe sua avaliação e ajude outras pessoas a encontrarem o equilíbrio que você encontrou.</p>
+      <a href="https://share.google/0sd7cJ3ECoBSqg5dL" target="_blank" class="btn-primary">⭐ Deixar minha avaliação no Google</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="objecoes">
+  <div class="obj-inner">
+    <div class="obj-header">
+      <div class="s-label">Dúvidas frequentes</div>
+      <h2 class="s-title">Ainda com <em>dúvidas?</em><br>É normal.</h2>
+      <div class="s-line c"></div>
+    </div>
+    <div class="obj-grid">
+      <div class="obj-item">
+        <div class="obj-q">"Preciso ter alguma crença religiosa?"</div>
+        <div class="obj-a">Não. O Reiki não é religião e não exige nenhuma crença. Funciona independentemente do que você acredita, assim como a gravidade.</div>
+      </div>
+      <div class="obj-item">
+        <div class="obj-q">"O atendimento é só presencial?"</div>
+        <div class="obj-a">Sim. O atendimento da Ale é exclusivamente presencial em Caxias do Sul. Isso garante uma experiência completa, com ambiente preparado e presença total durante toda a sessão.</div>
+      </div>
+      <div class="obj-item">
+        <div class="obj-q">"Vou sentir alguma coisa durante a sessão?"</div>
+        <div class="obj-a">A maioria das pessoas sente calor, formigamento, leveza ou um relaxamento profundo. Algumas adormecem. Cada experiência é única e válida.</div>
+      </div>
+      <div class="obj-item">
+        <div class="obj-q">"Quantas sessões preciso fazer?"</div>
+        <div class="obj-a">Muitas pessoas sentem diferença já na primeira sessão. Para resultados duradouros, recomendamos um ciclo de sessões mensais, mas a escolha é sempre sua.</div>
+      </div>
+      <div class="obj-item">
+        <div class="obj-q">"O Reiki substitui meu tratamento médico ou psicológico?"</div>
+        <div class="obj-a">Não, e nunca deve ser usado assim. O Reiki é uma terapia complementar, reconhecida pelo Ministério da Saúde, que potencializa outros tratamentos. Muitos médicos e psicólogos inclusive indicam para seus pacientes.</div>
+      </div>
+      <div class="obj-item">
+        <div class="obj-q">"Tenho medo de não conseguir relaxar."</div>
+        <div class="obj-a">Esse é o medo mais comum, e o Reiki cuida exatamente disso. O ambiente, a condução e a energia da sessão naturalmente induzem o relaxamento, mesmo em pessoas com a mente acelerada.</div>
+      </div>
+      <div class="obj-item">
+        <div class="obj-q">"Nunca ouvi falar disso antes. É seguro?"</div>
+        <div class="obj-a">Totalmente. O Reiki é uma prática não invasiva, sem contraindicações, sem substâncias e sem efeitos colaterais. É indicado para qualquer faixa etária, inclusive crianças e gestantes.</div>
+      </div>
+      <div class="obj-item">
+        <div class="obj-q">"Qual a diferença entre sessão avulsa e acompanhamento mensal?"</div>
+        <div class="obj-a">A sessão avulsa traz alívio imediato e é ótima para quem quer experimentar. O acompanhamento mensal vai mais fundo, trabalhando camadas mais antigas de bloqueio energético, com resultados progressivos e duradouros.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══ CTA — lilás médio ══ -->
+<!-- SOBRE A ALE -->
+<section id="ale">
+  <div class="ale-grid">
+    <div class="ale-img">
+      <!-- <img src="foto-ale.jpg" alt="Ale Vencato, terapeuta de Reiki Usui em Caxias do Sul"> -->
+      <p>Foto da Ale</p>
+    </div>
+    <div>
+      <div class="s-label">Quem vai te atender</div>
+      <h2 class="s-title">Ale Vencato,<br><em>sua guia nessa jornada.</em></h2>
+      <div class="s-line"></div>
+
+      <div class="jornada">
+        <div class="jornada-item">
+          <div class="jornada-icon">🌑</div>
+          <div class="jornada-text">
+            <strong>A cética</strong>
+            <p>Por muito tempo, Alessandra foi uma das pessoas que você conhece — racional, produtiva, desconfiante de qualquer coisa que não pudesse ser explicada. Terapias energéticas? "Não é para mim."</p>
+          </div>
+        </div>
+        <div class="jornada-item">
+          <div class="jornada-icon">🔥</div>
+          <div class="jornada-text">
+            <strong>O ponto de ruptura</strong>
+            <p>Até que o burnout chegou. Não como aviso — como parede. O corpo parou, a mente esgotou, e todas as saídas conhecidas deixaram de funcionar. Foi quando, quase sem acreditar, ela marcou sua primeira sessão de Reiki.</p>
+          </div>
+        </div>
+        <div class="jornada-item">
+          <div class="jornada-icon">🌱</div>
+          <div class="jornada-text">
+            <strong>A descoberta</strong>
+            <p>O que era para ser uma tentativa isolada virou um caminho. Sessão após sessão, algo foi se transformando — leveza que ela não conseguia explicar, mas que não conseguia mais ignorar. A cética havia se rendido.</p>
+          </div>
+        </div>
+        <div class="jornada-item">
+          <div class="jornada-icon">📖</div>
+          <div class="jornada-text">
+            <strong>A formação</strong>
+            <p>A curiosidade virou vocação. Ale completou as três formações em Reiki Usui, não para mudar de vida, mas porque a vida já havia mudado, e ela precisava entender o porquê.</p>
+          </div>
+        </div>
+        <div class="jornada-item">
+          <div class="jornada-icon">✨</div>
+          <div class="jornada-text">
+            <strong>O propósito</strong>
+            <p>Hoje, Alessandra espelha o que viveu. Cada sessão que conduz carrega a mesma intenção de quando era cliente: ajudar pessoas a viverem mais leves, felizes, completas e conectadas com sua espiritualidade. Não como missão distante, mas como sentido de vida.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ale-tags" style="margin-top:28px;">
+        <span class="tag">Reiki Usui Certificada</span>
+        <span class="tag">Terapia Complementar</span>
+        <span class="tag">Caxias do Sul, RS</span>
+      </div>
+      <div style="margin-top:32px;">
+        <a href="https://wa.me/54981178795?text=Ol%C3%A1%2C%20senti%20que%20preciso%20de%20uma%20sess%C3%A3o%20de%20Reiki.%20Pode%20me%20orientar%20sobre%20como%20funciona%3F" target="_blank" class="btn-primary">💬 Falar com a Ale</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
 <div class="cta-wrap">
   <div class="cta-inner">
-    <div class="s-label" style="text-align:center">Dê o primeiro passo</div>
-    <h2 class="s-title" style="text-align:center">Pronta para se<br><em>reconectar?</em></h2>
+    <div class="cta-escassez">🌿 Vagas limitadas por mês</div>
+    <div class="s-label" style="text-align:center">Não deixe para depois</div>
+    <h2 class="s-title" style="text-align:center;margin-bottom:16px;">O único momento<br>certo é <em>agora.</em></h2>
     <div class="s-line c"></div>
-    <p class="s-desc" style="text-align:center;margin-bottom:44px;">A sua primeira sessão pode ser o início de uma transformação profunda. Agende e descubra o poder do Reiki em sua vida.</p>
-    <a href="#contato" class="cta-btn">Quero agendar minha sessão</a>
-    <span class="cta-note">Presencial e à distância · Resposta em até 24h</span>
+    <p class="s-desc" style="text-align:center;margin-bottom:40px;">Você já adiou o seu cuidado vezes demais. Enquanto lê isso, outra pessoa está agendando a sessão que pode mudar como você se sente. Dê esse passo por você.</p>
+    <a href="https://wa.me/54981178795?text=Ol%C3%A1%2C%20senti%20que%20preciso%20de%20uma%20sess%C3%A3o%20de%20Reiki.%20Pode%20me%20orientar%20sobre%20como%20funciona%3F" target="_blank" class="btn-primary" style="margin:0 auto;">💬 Quero minha sessão agora</a>
+    <span class="cta-note">Atendimento presencial em Caxias do Sul, RS · Segunda a sexta, 8h às 19h</span>
+    <p class="cta-garantia">✦ Primeira conversa por WhatsApp para entender o que você precisa e indicar a melhor sessão</p>
   </div>
 </div>
 
-<!-- ══ CONTATO — off-white ══ -->
+<!-- CONTATO -->
 <section id="contato">
   <div class="contato-inner">
     <div class="contato-header">
-      <div class="s-label">Vamos conversar</div>
+      <div class="s-label">Fale comigo</div>
       <h2 class="s-title">Entre em <em>contato</em></h2>
       <div class="s-line"></div>
-      <p class="s-desc">Será um prazer receber você nessa jornada. Escolha o canal de sua preferência.</p>
+      <p class="s-desc">Prefere tirar uma dúvida antes? Estou aqui para te ajudar a dar o próximo passo no seu ritmo.</p>
     </div>
     <div class="contato-grid">
       <div class="c-info-block">
-        <div class="c-item">
-          <div class="c-icon">✉</div>
-          <div class="c-item-text">
-            <h4>E-mail</h4>
-            <!-- Substitua pelo seu e-mail -->
-            <a href="mailto:contato@alevencato.com.br">contato@alevencato.com.br</a>
-          </div>
-        </div>
-        <div class="c-item">
-          <div class="c-icon">📱</div>
-          <div class="c-item-text">
-            <h4>WhatsApp</h4>
-            <!-- Substitua pelo seu número no formato 55DDD999999999 -->
-            <a href="https://wa.me/5500000000000" target="_blank">(00) 00000-0000</a>
-          </div>
-        </div>
-        <div class="c-item">
-          <div class="c-icon">📍</div>
-          <div class="c-item-text">
-            <h4>Endereço</h4>
-            <p>R. Dal Canale, 2186 — Exposição<br>Caxias do Sul – RS, 95080-150<br>Sala 10022</p>
-          </div>
-        </div>
-        <div class="c-item">
-          <div class="c-icon">🕐</div>
-          <div class="c-item-text">
-            <h4>Horários</h4>
-            <p>Segunda a sexta: 9h às 18h<br>Sábados: 9h às 13h</p>
-          </div>
-        </div>
-        <div class="c-item">
-          <div class="c-icon">🌐</div>
-          <div class="c-item-text">
-            <h4>Atendimento à Distância</h4>
-            <p>Todo o Brasil</p>
-          </div>
-        </div>
+        <div class="c-item"><div class="c-icon">💬</div><div class="c-item-text"><h4>WhatsApp</h4><a href="https://wa.me/54981178795?text=Ol%C3%A1%2C%20senti%20que%20preciso%20de%20uma%20sess%C3%A3o%20de%20Reiki.%20Pode%20me%20orientar%20sobre%20como%20funciona%3F" target="_blank">(54) 98117-8795</a></div></div>
+        <div class="c-item"><div class="c-icon">📸</div><div class="c-item-text"><h4>Instagram</h4><a href="https://www.instagram.com/alevencato_reiki/" target="_blank">@alevencato_reiki</a></div></div>
+        <div class="c-item"><div class="c-icon">⭐</div><div class="c-item-text"><h4>Google</h4><a href="https://share.google/0sd7cJ3ECoBSqg5dL" target="_blank">Deixar uma avaliação</a></div></div>
+        <div class="c-item"><div class="c-icon">📍</div><div class="c-item-text"><h4>Endereço</h4><p>R. Dal Canale, 2186, Exposição<br>Caxias do Sul, RS, 95080-150, Sala 10022</p></div></div>
+        <div class="c-item"><div class="c-icon">🕐</div><div class="c-item-text"><h4>Horários</h4><p>Segunda a sexta: 8h às 19h</p></div></div>
       </div>
-      <!-- 
-        MAPA: Para gerar o embed correto:
-        1. Acesse maps.google.com
-        2. Pesquise o endereço
-        3. Clique em "Compartilhar" > "Incorporar um mapa"
-        4. Copie o código <iframe> e cole aqui substituindo o src abaixo
-      -->
       <div class="c-map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.12!2d-51.1793!3d-29.1681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519761c3e3f3f3f%3A0x0!2sR.+Dal+Canale%2C+2186+-+Exposi%C3%A7%C3%A3o%2C+Caxias+do+Sul+-+RS!5e0!3m2!1spt-BR!2sbr!4v1700000000000"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        <p>Mapa</p>
+        <a href="https://maps.google.com/?q=R.+Dal+Canale,+2186,+Exposição,+Caxias+do+Sul,+RS" target="_blank">Ver no Google Maps →</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══ FOOTER — lilás pálido ══ -->
+<!-- FOOTER -->
 <footer>
   <div class="footer-inner">
-    <div class="footer-top">
-      <div class="f-brand">Ale Vencato <span>Reiki</span></div>
-      <ul class="f-links">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#reiki">Reiki</a></li>
-        <li><a href="#sessoes">Sessões</a></li>
-        <li><a href="#beneficios">Benefícios</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-      <div class="f-social">
-        <!-- Substitua os # pelos links das suas redes -->
-        <a href="#" class="f-soc" target="_blank">ig</a>
-        <a href="#" class="f-soc" target="_blank">in</a>
-        <a href="#" class="f-soc" target="_blank">yt</a>
-      </div>
+    <div class="f-brand">Ale Vencato <span>Reiki</span></div>
+    <ul class="f-links">
+      <li><a href="#sobre">Como funciona</a></li>
+      <li><a href="#sessoes">Sessões</a></li>
+      <li><a href="#depoimentos">Depoimentos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <div class="f-social">
+      <a href="https://www.instagram.com/alevencato_reiki/" target="_blank" class="f-soc" aria-label="Instagram">ig</a>
+      <a href="https://wa.me/54981178795?text=Ol%C3%A1%2C%20senti%20que%20preciso%20de%20uma%20sess%C3%A3o%20de%20Reiki.%20Pode%20me%20orientar%20sobre%20como%20funciona%3F" target="_blank" class="f-soc" aria-label="WhatsApp">wa</a>
+      <a href="https://share.google/0sd7cJ3ECoBSqg5dL" target="_blank" class="f-soc" aria-label="Google">g</a>
     </div>
-    <div class="footer-bottom">
-      <p>© 2025 Ale Vencato Reiki · Todos os direitos reservados<br>O Reiki é uma terapia complementar e não substitui tratamento médico convencional.</p>
+    <div class="footer-copy">
+      <p>© 2025 Ale Vencato Reiki · Todos os direitos reservados · Reiki em Caxias do Sul, RS<br>O Reiki é uma terapia complementar e não substitui tratamento médico convencional.</p>
     </div>
   </div>
 </footer>
