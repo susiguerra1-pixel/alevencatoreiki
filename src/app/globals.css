@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* ── Paleta de cores ── */
+  --color-gold:           #B8956A;
+  --color-gold-light:     #D4AF82;
+  --color-gold-pale:      #F0E6D6;
+  --color-lilac:          #D7CBD9;
+  --color-lilac-mid:      #C4B5C8;
+  --color-lilac-pale:     #F0EBF2;
+  --color-off-white:      #FAFAF8;
+  --color-text-primary:   #4A4040;
+  --color-text-secondary: #7A6E6E;
+
+  /* ── Fontes ── */
+  --font-cormorant: var(--font-cormorant-var);
+  --font-jost:      var(--font-jost-var);
+}
+
+/* ── Smooth scroll ── */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── Body base ── */
+body {
+  font-family: var(--font-jost), "Jost", sans-serif;
+  background-color: #FAFAF8;
+  color: #4A4040;
+  overflow-x: hidden;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ── Utilitários de tipografia ── */
+.font-cormorant {
+  font-family: var(--font-cormorant), "Cormorant Garamond", serif;
+}
+
+.font-jost {
+  font-family: var(--font-jost), "Jost", sans-serif;
+}
+
+/* ── Gradientes e blobs decorativos ── */
+.hero-blob {
+  position: absolute;
+  right: -8%;
+  top: 5%;
+  width: 55vw;
+  max-width: 720px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(215, 203, 217, 0.45) 0%,
+    rgba(240, 230, 214, 0.2) 50%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+/* ── Animação pulse dourado ── */
+@keyframes pulse-gold {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
+
+.animate-pulse-gold {
+  animation: pulse-gold 2s infinite;
+}
+
+/* ── Decorador de linha dourada ── */
+.gold-line {
+  width: 32px;
+  height: 1px;
+  background-color: #D4AF82;
+  margin: 18px 0 26px;
+}
+
+.gold-line-center {
+  width: 32px;
+  height: 1px;
+  background-color: #D4AF82;
+  margin: 18px auto 26px;
+}
+
+/* ── Hover efeito nos cards ── */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 48px rgba(184, 149, 106, 0.12);
+}
+
+/* ── Botão secondary (estilo linha) ── */
+.btn-secondary-line::after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 1px;
+  background: #B8956A;
+  vertical-align: middle;
+  margin-left: 8px;
+  transition: width 0.3s;
+}
+.btn-secondary-line:hover::after {
+  width: 36px;
+}
+
+/* ── Frame de imagem com sombra deslocada ── */
+.image-frame-offset::after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: -16px;
+  bottom: -16px;
+  border: 1px solid rgba(184, 149, 106, 0.2);
+  pointer-events: none;
+}
+
+/* ── Overlay CTA radial ── */
+.cta-radial::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.15), transparent 70%);
+  pointer-events: none;
+}

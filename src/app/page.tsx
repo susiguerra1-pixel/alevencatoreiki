@@ -1,0 +1,33 @@
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import SocialStrip from "@/components/SocialStrip";
+import ComoFunciona from "@/components/ComoFunciona";
+import Sessoes from "@/components/Sessoes";
+import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
+import SobreAle from "@/components/SobreAle";
+import FinalCTA from "@/components/FinalCTA";
+import Contato from "@/components/Contato";
+import Footer from "@/components/Footer";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+
+export default function Home() {
+  return (
+    <>
+      <FloatingWhatsApp />
+      <Header />
+      <main>
+        <Hero />
+        <SocialStrip />
+        <ComoFunciona />
+        <Sessoes />
+        <Testimonials />
+        <FAQ />
+        <SobreAle />
+        <FinalCTA />
+        <Contato />
+      </main>
+      <Footer />
+    </>
+  );
+}
