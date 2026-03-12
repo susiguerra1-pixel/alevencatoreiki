@@ -8,7 +8,7 @@ const journey = [
   {
     icon: "🌑",
     title: "A cética",
-    text: "Por muito tempo, Alessandra foi uma das pessoas que você conhece — racional, produtiva, desconfiante de qualquer coisa que não pudesse ser explicada. Terapias energéticas? "Não é para mim."",
+    text: `Por muito tempo, Alessandra foi uma das pessoas que você conhece — racional, produtiva, desconfiante de qualquer coisa que não pudesse ser explicada. Terapias energéticas? "Não é para mim."`,
   },
   {
     icon: "🔥",
