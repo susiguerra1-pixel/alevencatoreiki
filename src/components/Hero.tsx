@@ -25,7 +25,7 @@ export default function Hero() {
               <div className="inline-flex items-center gap-2 bg-[rgba(184,149,106,0.1)] border border-[rgba(184,149,106,0.25)] px-4 py-2 mb-6">
                 <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#B8956A] animate-pulse-gold" />
                 <span className="text-[0.7rem] tracking-[3px] uppercase text-[#B8956A] font-light">
-                  Vagas disponíveis para este mês
+                  Agende sua sessão
                 </span>
               </div>
 
