@@ -7,28 +7,28 @@ import AnimatedSection from "./AnimatedSection";
 const journey = [
   {
     icon: "🌑",
-    title: "A cética",
-    text: `Por muito tempo, Alessandra foi uma das pessoas que você conhece — racional, produtiva, desconfiante de qualquer coisa que não pudesse ser explicada. Terapias energéticas? "Não é para mim."`,
+    title: "A origem",
+    text: "Desde cedo, Alessandra carregava algo difícil de explicar: uma sensibilidade fora do comum, uma presença que acolhia. Aos 12 anos já trabalhava. Aos 16, entrou para a área da saúde, onde cuidar de pessoas passou a ser sua segunda natureza.",
   },
   {
     icon: "🔥",
     title: "O ponto de ruptura",
-    text: "Até que o burnout chegou. Não como aviso — como parede. O corpo parou, a mente esgotou, e todas as saídas conhecidas deixaram de funcionar. Foi quando, quase sem acreditar, ela marcou sua primeira sessão de Reiki.",
+    text: "Aos 40 anos, uma mudança de carreira a levou para o setor administrativo. Ali viveu um de seus maiores desafios: uma liderança abusiva e um ambiente de trabalho que a esgotou por dentro. O burnout chegou sem avisar. O corpo parou.",
   },
   {
     icon: "🌱",
-    title: "A descoberta",
-    text: "O que era para ser uma tentativa isolada virou um caminho. Sessão após sessão, algo foi se transformando — leveza que ela não conseguia explicar, mas que não conseguia mais ignorar. A cética havia se rendido.",
+    title: "A virada",
+    text: "Em busca de equilíbrio, quase sem acreditar, ela marcou sua primeira sessão de Reiki. Não era o tipo de coisa que ela faria. Mas funcionou. Sessão após sessão, algo foi se transformando — e a cética se rendeu ao que sentia, não ao que entendia.",
   },
   {
     icon: "📖",
-    title: "A formação",
-    text: "A curiosidade virou vocação. Ale completou as três formações em Reiki Usui, não para mudar de vida, mas porque a vida já havia mudado, e ela precisava entender o porquê.",
+    title: "A vocação",
+    text: "A curiosidade se tornou estudo. Ale completou as três formações em Reiki Usui e percebeu que toda a sua história, cada dor, cada cuidado, cada conversa silenciosa com quem precisava, a havia preparado para isso.",
   },
   {
     icon: "✨",
     title: "O propósito",
-    text: "Hoje, Alessandra espelha o que viveu. Cada sessão que conduz carrega a mesma intenção de quando era cliente: ajudar pessoas a viverem mais leves, felizes, completas e conectadas com sua espiritualidade. Não como missão distante, mas como sentido de vida.",
+    text: "Hoje, Alessandra espelha o que viveu. Cada sessão carrega a intenção de ajudar pessoas a viverem mais leves, felizes, completas e conectadas com sua espiritualidade. Não como missão distante, mas como sentido de vida.",
   },
 ];
 
@@ -90,8 +90,13 @@ export default function SobreAle() {
               ))}
             </div>
 
+            {/* Tagline */}
+            <blockquote className="font-cormorant text-[1.3rem] italic text-[#4A4040] mt-7 px-6 py-6 bg-[rgba(255,255,255,0.4)] border-l-2 border-[#D4AF82] leading-[1.7] font-light">
+              ✨ &ldquo;Reconecte-se com a sua luz.&rdquo;
+            </blockquote>
+
             {/* Tags */}
-            <div className="flex flex-wrap gap-2 mt-7">
+            <div className="flex flex-wrap gap-2 mt-6">
               {tags.map((tag) => (
                 <span
                   key={tag}

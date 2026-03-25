@@ -25,23 +25,23 @@ export default function Hero() {
               <div className="inline-flex items-center gap-2 bg-[rgba(184,149,106,0.1)] border border-[rgba(184,149,106,0.25)] px-4 py-2 mb-6">
                 <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#B8956A] animate-pulse-gold" />
                 <span className="text-[0.7rem] tracking-[3px] uppercase text-[#B8956A] font-light">
-                  Agende sua sessão
+                  Vagas disponíveis para este mês
                 </span>
               </div>
 
               <h1 className="font-cormorant text-[clamp(2.8rem,4.8vw,4.6rem)] font-light text-[#4A4040] leading-[1.1] mb-5 tracking-[0.3px]">
-                Livre-se da ansiedade e do esgotamento com{" "}
-                <em className="italic text-[#B8956A]">uma sessão de Reiki</em>{" "}
-                em Caxias do Sul.
+                Equilibre sua energia e acalme sua mente com{" "}
+                <em className="italic text-[#B8956A]">Reiki em Caxias do Sul.</em>
               </h1>
 
-              <p className="text-[1rem] leading-[1.9] text-[#7A6E6E] font-light max-w-[460px] mb-9">
-                Se você acorda cansada, vive na correria e sente que o seu corpo
-                pede uma pausa, o Reiki é para você.{" "}
-                <strong className="text-[#4A4040] font-normal">
-                  Em 60 minutos, sem precisar acreditar em nada.
-                </strong>{" "}
-                Só relaxar e deixar acontecer.
+              <p className="text-[1rem] leading-[1.9] text-[#7A6E6E] font-light max-w-[480px] mb-4">
+                Sessões de Reiki para quem sente ansiedade, cansaço emocional ou
+                excesso de pensamentos. Um espaço de pausa, cuidado e reconexão
+                com você.
+              </p>
+
+              <p className="font-cormorant text-[1.15rem] italic text-[#B8956A] mb-9 font-light">
+                ✨ Reconecte-se com a sua luz.
               </p>
 
               {/* CTAs */}
@@ -72,7 +72,7 @@ export default function Hero() {
               <div className="relative w-full aspect-[3/4] bg-gradient-to-br from-[#F0EBF2] to-[#D7CBD9] flex items-center justify-center overflow-hidden image-frame-offset">
                 {/* Se tiver foto: <Image src="/images/ale-hero.jpg" alt="Ale Vencato — Terapeuta de Reiki em Caxias do Sul" fill className="object-cover object-top" priority /> */}
                 <p className="text-[0.7rem] tracking-[3px] uppercase text-[#B8956A] font-light">
-                  Foto da Ale
+                  Sua foto aqui
                 </p>
               </div>
 

@@ -5,11 +5,11 @@ import { whatsappLink, WHATSAPP_MESSAGES } from "@/lib/constants";
 import AnimatedSection from "./AnimatedSection";
 
 const symptoms = [
-  "Ansiedade que não passa, mesmo sem motivo aparente",
-  "Dificuldade para dormir ou acordar descansada",
-  "Sensação constante de peso emocional ou esgotamento",
-  "Estresse acumulado que o corpo já está sinalizando",
-  "Vontade de se cuidar, mas sem saber por onde começar",
+  "Ansiedade que aparece sem um motivo claro",
+  "Dificuldade para dormir ou sensação de não descansar de verdade",
+  "Cansaço emocional constante",
+  "Estresse acumulado que o corpo já começa a manifestar",
+  "A sensação de que precisa cuidar de si, mas não sabe por onde começar",
 ];
 
 export default function ComoFunciona() {
@@ -36,7 +36,7 @@ export default function ComoFunciona() {
         <AnimatedSection delay={0.15}>
           <div>
             <p className="text-[0.65rem] tracking-[5px] uppercase text-[#B8956A] mb-3 font-light">
-              Você se identifica com isso?
+              Você sente que algo dentro de você pede cuidado?
             </p>
             <h2 className="font-cormorant text-[clamp(2rem,3.2vw,3rem)] font-light text-[#4A4040] leading-[1.2] mb-0">
               Quando o corpo fala,
@@ -46,11 +46,17 @@ export default function ComoFunciona() {
 
             <div className="gold-line" />
 
-            <ul className="flex flex-col gap-3 mb-6 list-none">
+            <p className="text-[1rem] leading-[1.9] text-[#7A6E6E] font-light mb-5">
+              Muitas vezes o corpo começa a falar antes mesmo de entendermos o
+              que está acontecendo. Talvez você esteja passando por momentos
+              como:
+            </p>
+
+            <ul className="flex flex-col gap-3 mb-5 list-none">
               {symptoms.map((s, i) => (
                 <li
                   key={i}
-                  className="flex items-start gap-3 text-[0.95rem] text-[#7A6E6E] font-light leading-[1.65]"
+                  className="flex items-start gap-3 text-[0.95rem] text-[#4A4040] font-light leading-[1.65]"
                 >
                   <span className="text-[#B8956A] text-[0.85rem] mt-0.5 shrink-0">✓</span>
                   {s}
@@ -58,12 +64,28 @@ export default function ComoFunciona() {
               ))}
             </ul>
 
-            <p className="text-[1rem] leading-[1.9] text-[#7A6E6E] font-light mb-8">
-              O Reiki trabalha na raiz, equilibrando o campo energético para
-              que seu corpo e mente encontrem o estado natural de harmonia.{" "}
-              <strong className="text-[#4A4040] font-normal">
-                Sem medicamentos, sem julgamentos, sem contraindicações.
-              </strong>
+            <p className="text-[1rem] leading-[1.9] font-light italic mb-5" style={{color:"var(--gold,#B8956A)"}}>
+              Esses sinais não são fraqueza. São convites para desacelerar e se
+              reconectar consigo mesma.
+            </p>
+
+            <p className="text-[1rem] leading-[1.9] text-[#7A6E6E] font-light mb-5">
+              O Reiki é uma prática terapêutica que atua no equilíbrio do campo
+              energético, ajudando corpo e mente a voltarem ao seu estado natural
+              de harmonia e bem-estar.
+            </p>
+
+            <div className="flex flex-col gap-1.5 mb-5">
+              {["sem medicamentos", "sem julgamentos", "sem contraindicações"].map((item) => (
+                <span key={item} className="text-[0.95rem] text-[#7A6E6E] font-light">
+                  ✨ {item}
+                </span>
+              ))}
+            </div>
+
+            <p className="text-[1rem] leading-[1.9] text-[#7A6E6E] font-light italic mb-8">
+              Um momento para pausar, respirar e reconectar-se com a sua luz.
+              Permita-se viver essa experiência.
             </p>
 
             <a

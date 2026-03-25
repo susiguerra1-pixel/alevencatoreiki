@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import SocialStrip from "@/components/SocialStrip";
 import ComoFunciona from "@/components/ComoFunciona";
+import OqueEReiki from "@/components/OqueEReiki";
 import Sessoes from "@/components/Sessoes";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
@@ -20,6 +21,7 @@ export default function Home() {
         <Hero />
         <SocialStrip />
         <ComoFunciona />
+        <OqueEReiki />
         <Sessoes />
         <Testimonials />
         <FAQ />

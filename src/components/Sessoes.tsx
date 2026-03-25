@@ -27,7 +27,7 @@ const sessions = [
 
 export default function Sessoes() {
   return (
-    <section id="sessoes" className="bg-[#F0EBF2] py-24 px-[6%]">
+    <section id="sessoes" className="bg-white py-24 px-[6%]">
       <div className="max-w-[1100px] mx-auto">
 
         {/* Header */}
@@ -53,7 +53,7 @@ export default function Sessoes() {
         <div className="grid md:grid-cols-2 gap-5">
           {sessions.map((s, i) => (
             <AnimatedSection key={i} delay={i * 0.1}>
-              <div className="bg-[#FAFAF8] p-12 relative overflow-hidden flex flex-col card-hover">
+              <div className="bg-[#F3EEF5] p-12 relative overflow-hidden flex flex-col card-hover">
                 {/* Acento superior */}
                 <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-[#D4AF82] to-[#C4B5C8]" />
 
