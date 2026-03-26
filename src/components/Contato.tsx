@@ -78,7 +78,7 @@ const contactItems = [
 
 export default function Contato() {
   return (
-    <section id="contato" className="bg-[#FAFAF8] py-24 px-[6%]">
+    <section id="contato" className="bg-[#F5F0EB] py-24 px-[6%]">
       <div className="max-w-[1100px] mx-auto">
 
         {/* Header */}
@@ -92,8 +92,7 @@ export default function Contato() {
             </h2>
             <div className="gold-line" />
             <p className="text-[1rem] leading-[1.9] text-[#7A6E6E] font-light max-w-lg">
-              Prefere tirar uma dúvida antes? Estou aqui para te ajudar a dar o
-              próximo passo no seu ritmo.
+              Se você quiser conversar ou tirar alguma dúvida antes de agendar, estou aqui para te ajudar. Cada pessoa tem seu tempo e está tudo bem seguir no seu ritmo.
             </p>
           </div>
         </AnimatedSection>

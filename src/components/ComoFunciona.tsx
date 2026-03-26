@@ -16,7 +16,7 @@ export default function ComoFunciona() {
   const waHref = whatsappLink(WHATSAPP_MESSAGES.sobre);
 
   return (
-    <section id="sobre" className="bg-[#FAFAF8] py-24 px-[6%]">
+    <section id="sobre" className="bg-[#F5F0EB] py-24 px-[6%]">
       <div className="max-w-[1100px] mx-auto grid md:grid-cols-2 gap-20 items-center">
 
         {/* Imagem */}

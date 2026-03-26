@@ -4,34 +4,6 @@ import { MessageCircle } from "lucide-react";
 import { whatsappLink, WHATSAPP_MESSAGES } from "@/lib/constants";
 import AnimatedSection from "./AnimatedSection";
 
-const journey = [
-  {
-    icon: "🌑",
-    title: "A origem",
-    text: "Desde cedo, Alessandra carregava algo difícil de explicar: uma sensibilidade fora do comum, uma presença que acolhia. Aos 12 anos já trabalhava. Aos 16, entrou para a área da saúde, onde cuidar de pessoas passou a ser sua segunda natureza.",
-  },
-  {
-    icon: "🔥",
-    title: "O ponto de ruptura",
-    text: "Aos 40 anos, uma mudança de carreira a levou para o setor administrativo. Ali viveu um de seus maiores desafios: uma liderança abusiva e um ambiente de trabalho que a esgotou por dentro. O burnout chegou sem avisar. O corpo parou.",
-  },
-  {
-    icon: "🌱",
-    title: "A virada",
-    text: "Em busca de equilíbrio, quase sem acreditar, ela marcou sua primeira sessão de Reiki. Não era o tipo de coisa que ela faria. Mas funcionou. Sessão após sessão, algo foi se transformando — e a cética se rendeu ao que sentia, não ao que entendia.",
-  },
-  {
-    icon: "📖",
-    title: "A vocação",
-    text: "A curiosidade se tornou estudo. Ale completou as três formações em Reiki Usui e percebeu que toda a sua história, cada dor, cada cuidado, cada conversa silenciosa com quem precisava, a havia preparado para isso.",
-  },
-  {
-    icon: "✨",
-    title: "O propósito",
-    text: "Hoje, Alessandra espelha o que viveu. Cada sessão carrega a intenção de ajudar pessoas a viverem mais leves, felizes, completas e conectadas com sua espiritualidade. Não como missão distante, mas como sentido de vida.",
-  },
-];
-
 const tags = ["Reiki Usui Certificada", "Terapia Complementar", "Caxias do Sul, RS"];
 
 export default function SobreAle() {
@@ -58,36 +30,36 @@ export default function SobreAle() {
               Quem vai te atender
             </p>
             <h2 className="font-cormorant text-[clamp(2rem,3.2vw,3rem)] font-light text-[#4A4040] leading-[1.2]">
-              Ale Vencato,
-              <br />
-              <em className="italic text-[#B8956A]">sua guia nessa jornada.</em>
+              Sobre Ale Vencato
             </h2>
             <div className="gold-line" />
 
-            {/* Jornada */}
-            <div className="flex flex-col">
-              {journey.map((item, i) => (
-                <div
-                  key={i}
-                  className={`flex gap-4.5 py-5 ${
-                    i < journey.length - 1
-                      ? "border-b border-[rgba(255,255,255,0.4)]"
-                      : ""
-                  } ${i === 0 ? "pt-0" : ""}`}
-                >
-                  <div className="text-[1.3rem] shrink-0 w-7 text-center mt-0.5">
-                    {item.icon}
-                  </div>
-                  <div>
-                    <strong className="block text-[0.72rem] tracking-[2px] uppercase text-[#B8956A] mb-1.5 font-normal">
-                      {item.title}
-                    </strong>
-                    <p className="text-[0.9rem] leading-[1.85] text-[#4A4040] font-light">
-                      {item.text}
-                    </p>
-                  </div>
-                </div>
-              ))}
+            <p className="text-[0.72rem] tracking-[2.5px] uppercase text-[#B8956A] mb-5 font-light">
+              ✨ Minha jornada até o Reiki
+            </p>
+
+            <div className="flex flex-col gap-4">
+              <p className="text-[0.95rem] leading-[1.9] text-[#4A4040] font-light">
+                Desde muito cedo senti que existia algo maior guiando a vida. Sempre fui uma pessoa sensível, intuitiva e naturalmente procurada por quem precisava conversar, ser ouvido ou simplesmente encontrar acolhimento.
+              </p>
+              <p className="text-[0.95rem] leading-[1.9] text-[#4A4040] font-light">
+                Minha trajetória profissional começou cedo: aos 12 anos iniciei no trabalho e, aos 16, entrei para a área da saúde. Cuidar de pessoas sempre fez parte de quem eu sou.
+              </p>
+              <p className="text-[0.95rem] leading-[1.9] text-[#4A4040] font-light">
+                Mas a vida também traz momentos que nos convidam a olhar para dentro. Após algumas experiências desafiadoras e, mais tarde, um período de burnout, percebi que precisava parar e me reconectar comigo mesma.
+              </p>
+              <p className="text-[0.95rem] leading-[1.9] text-[#4A4040] font-light">
+                Foi nesse momento que o Reiki entrou na minha vida.
+              </p>
+              <p className="text-[0.95rem] leading-[1.9] text-[#4A4040] font-light">
+                O que começou como um caminho de cura pessoal rapidamente se transformou em algo maior. O Reiki me ajudou a reorganizar minha energia, reencontrar meu equilíbrio e voltar para a minha própria luz.
+              </p>
+              <p className="text-[0.95rem] leading-[1.9] text-[#4A4040] font-light">
+                Hoje compreendo que cada passo da minha história me trouxe até aqui.
+              </p>
+              <p className="text-[0.95rem] leading-[1.9] text-[#4A4040] font-light">
+                E é com essa experiência, presença e cuidado que conduzo cada sessão: ajudando outras pessoas a desacelerar, equilibrar sua energia e se reconectar com aquilo que existe de mais verdadeiro dentro delas.
+              </p>
             </div>
 
             {/* Tagline */}
@@ -112,7 +84,7 @@ export default function SobreAle() {
                 href={waHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2.5 text-[0.8rem] tracking-[2px] uppercase text-[#FAFAF8] bg-[#B8956A] px-11 py-5 shadow-[0_6px_24px_rgba(184,149,106,0.45)] hover:bg-[#D4AF82] hover:-translate-y-0.5 transition-all duration-300 font-normal"
+                className="inline-flex items-center gap-2.5 text-[0.8rem] tracking-[2px] uppercase text-[#F5F0EB] bg-[#B8956A] px-11 py-5 shadow-[0_6px_24px_rgba(184,149,106,0.45)] hover:bg-[#D4AF82] hover:-translate-y-0.5 transition-all duration-300 font-normal"
               >
                 <MessageCircle className="h-4 w-4" />
                 Falar com a Ale

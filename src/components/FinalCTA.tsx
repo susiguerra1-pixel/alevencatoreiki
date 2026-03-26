@@ -21,24 +21,29 @@ export default function FinalCTA() {
           </p>
 
           <h2 className="font-cormorant text-[clamp(2rem,3.2vw,3rem)] font-light text-[#4A4040] leading-[1.2] mb-4">
-            O único momento
+            O cuidado que você procura
             <br />
-            certo é <em className="italic text-[#B8956A]">agora.</em>
+            <em className="italic text-[#B8956A]">pode começar agora.</em>
           </h2>
 
           <div className="gold-line-center" />
 
-          <p className="text-[1rem] leading-[1.9] text-[#7A6E6E] font-light mb-10">
-            Você já adiou o seu cuidado vezes demais. Enquanto lê isso, outra
-            pessoa está agendando a sessão que pode mudar como você se sente.
-            Dê esse passo por você.
-          </p>
+          <div className="flex flex-col gap-4 text-[1rem] leading-[1.9] text-[#7A6E6E] font-light mb-10 text-left">
+            <p>
+              Muitas vezes adiamos o nosso próprio cuidado enquanto damos conta de tudo ao nosso redor. Mas chega um momento em que o corpo e a mente pedem pausa.
+            </p>
+            <p>Talvez este seja o seu momento.</p>
+            <p>
+              Enquanto você lê estas palavras, a possibilidade de se reconectar com a sua energia e encontrar mais equilíbrio já está disponível para você.
+            </p>
+            <p>Permita-se dar esse passo por si mesma. ✨</p>
+          </div>
 
           <a
             href={waHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2.5 text-[0.8rem] tracking-[2px] uppercase text-[#FAFAF8] bg-[#B8956A] px-11 py-5 shadow-[0_6px_24px_rgba(184,149,106,0.45)] hover:bg-[#D4AF82] hover:-translate-y-0.5 transition-all duration-300 font-normal mx-auto"
+            className="inline-flex items-center gap-2.5 text-[0.8rem] tracking-[2px] uppercase text-[#F5F0EB] bg-[#B8956A] px-11 py-5 shadow-[0_6px_24px_rgba(184,149,106,0.45)] hover:bg-[#D4AF82] hover:-translate-y-0.5 transition-all duration-300 font-normal mx-auto"
           >
             <MessageCircle className="h-4 w-4" />
             Quero minha sessão agora

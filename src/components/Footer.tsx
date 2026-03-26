@@ -56,7 +56,7 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-[rgba(184,149,106,0.1)] mt-4 pt-5 text-center">
           <p className="text-[0.65rem] text-[#7A6E6E] font-light leading-[1.9]">
-            © 2025 Ale Vencato Reiki · Todos os direitos reservados · Reiki em Caxias do Sul, RS
+            © 2026 Ale Vencato Reiki · Todos os direitos reservados · Reiki em Caxias do Sul, RS
             <br />
             O Reiki é uma terapia complementar e não substitui tratamento médico convencional.
           </p>

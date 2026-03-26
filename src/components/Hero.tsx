@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen bg-[#FAFAF8] flex items-center overflow-hidden pt-32 pb-20 px-[6%]"
+      className="relative min-h-screen bg-[#F5F0EB] flex items-center overflow-hidden pt-32 pb-20 px-[6%]"
     >
       {/* Blob decorativo */}
       <div className="hero-blob" />
@@ -77,7 +77,7 @@ export default function Hero() {
               </div>
 
               {/* Float card */}
-              <div className="absolute -bottom-4 -left-4 bg-[#FAFAF8] px-5 py-4 border border-[rgba(184,149,106,0.15)]">
+              <div className="absolute -bottom-4 -left-4 bg-[#F5F0EB] px-5 py-4 border border-[rgba(184,149,106,0.15)]">
                 <div className="font-cormorant text-[1.8rem] text-[#B8956A] font-light leading-none">
                   ∞
                 </div>

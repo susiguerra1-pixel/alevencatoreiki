@@ -30,19 +30,18 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="depoimentos" className="bg-[#FAFAF8] py-24 px-[6%]">
+    <section id="depoimentos" className="bg-[#F5F0EB] py-24 px-[6%]">
       <div className="max-w-[1100px] mx-auto">
 
         {/* Header */}
         <AnimatedSection>
           <div className="text-center mb-14">
             <p className="text-[0.65rem] tracking-[5px] uppercase text-[#B8956A] mb-3 font-light">
-              Resultados reais
+              Experiências reais
             </p>
             <h2 className="font-cormorant text-[clamp(2rem,3.2vw,3rem)] font-light text-[#4A4040] leading-[1.2]">
-              O que mudou na vida
-              <br />
-              <em className="italic text-[#B8956A]">de quem já fez</em>
+              Transformações que começaram com o{" "}
+              <em className="italic text-[#B8956A]">equilíbrio da energia através do Reiki</em>
             </h2>
             <div className="gold-line-center" />
           </div>
