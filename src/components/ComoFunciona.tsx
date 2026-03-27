@@ -70,9 +70,10 @@ export default function ComoFunciona() {
             </p>
 
             <p className="text-[1rem] leading-[1.9] text-[#524848] font-light mb-5">
-              O Reiki é uma prática terapêutica que atua no equilíbrio do campo
+              O Reiki é uma terapia energética que atua no equilíbrio do campo
               energético, ajudando corpo e mente a voltarem ao seu estado natural
-              de harmonia e bem-estar.
+              de harmonia e bem-estar — especialmente eficaz para ansiedade,
+              insônia e esgotamento emocional.
             </p>
 
             <div className="flex flex-col gap-1.5 mb-5">

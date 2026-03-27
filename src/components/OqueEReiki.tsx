@@ -31,13 +31,16 @@ export default function OqueEReiki() {
                 Embora utilize a imposição de mãos — gesto presente em diversas tradições culturais e espirituais — o Reiki não é uma religião e não exige qualquer tipo de crença. A prática é voltada ao bem-estar e pode ser recebida por qualquer pessoa.
               </p>
               <p>
-                Hoje, o Reiki é utilizado no mundo todo como terapia complementar, auxiliando na redução do estresse, da ansiedade, da insônia e de tensões físicas e emocionais.
+                Hoje, o Reiki Usui é utilizado no mundo todo como terapia complementar, auxiliando na redução do estresse, da ansiedade, da insônia e de tensões físicas e emocionais.
               </p>
               <p>
                 No Brasil, práticas de imposição de mãos passaram a integrar as Práticas Integrativas e Complementares em Saúde (PICS) oferecidas pelo Sistema Único de Saúde, reconhecendo seu potencial de apoio ao cuidado integral.
               </p>
               <p>
                 É importante destacar que o Reiki não substitui tratamentos médicos ou psicológicos, mas pode ser utilizado como complemento para promover mais equilíbrio, relaxamento e qualidade de vida.
+              </p>
+              <p>
+                Em Caxias do Sul, as sessões de Reiki Usui são realizadas por Ale Vencato com atendimento presencial, exclusivo e foco no cuidado integral de cada pessoa.
               </p>
             </div>
           </div>

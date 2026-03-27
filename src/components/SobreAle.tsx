@@ -27,7 +27,7 @@ export default function SobreAle() {
         <AnimatedSection delay={0.15}>
           <div>
             <p className="text-[0.65rem] tracking-[5px] uppercase text-[#B8956A] mb-3 font-light">
-              Quem vai te atender
+              Terapeuta de Reiki em Caxias do Sul
             </p>
             <h2 className="font-cormorant text-[clamp(2rem,3.2vw,3rem)] font-light text-[#4A4040] leading-[1.2]">
               Sobre Ale Vencato
@@ -58,7 +58,7 @@ export default function SobreAle() {
                 Hoje compreendo que cada passo da minha história me trouxe até aqui.
               </p>
               <p className="text-[0.95rem] leading-[1.9] text-[#4A4040] font-light">
-                E é com essa experiência, presença e cuidado que conduzo cada sessão: ajudando outras pessoas a desacelerar, equilibrar sua energia e se reconectar com aquilo que existe de mais verdadeiro dentro delas.
+                E é com essa experiência, presença e cuidado que conduzo cada sessão de Reiki em Caxias do Sul: ajudando outras pessoas a desacelerar, equilibrar sua energia e se reconectar com aquilo que existe de mais verdadeiro dentro delas.
               </p>
             </div>
 

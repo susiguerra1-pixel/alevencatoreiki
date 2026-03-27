@@ -11,10 +11,10 @@ const sessions = [
     title: "Sessão Individual",
     hook: '"Quero experimentar o Reiki e sentir como funciona."',
     paragraphs: [
-      "Uma sessão completa para relaxar, desacelerar e permitir que o corpo e a mente entrem em estado de equilíbrio.",
+      "Uma sessão de Reiki Usui completa para relaxar, desacelerar e permitir que o corpo e a mente entrem em estado de equilíbrio.",
       "Ideal para quem deseja conhecer o Reiki ou precisa de um momento de cuidado e pausa.",
     ],
-    bullets: ["✨ duração de 50 a 60 minutos", "✨ atendimento presencial em Caxias do Sul"],
+    bullets: ["✨ duração de 50 a 60 minutos", "✨ sessão de Reiki presencial em Caxias do Sul"],
     cta: "Agendar sessão",
     msg: WHATSAPP_MESSAGES.sessoes,
   },
