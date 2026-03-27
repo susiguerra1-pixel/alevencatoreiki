@@ -21,7 +21,7 @@ export default function LeadMagnet() {
         </h2>
 
         <p className="text-[0.97rem] leading-[1.85] text-[rgba(245,240,235,0.72)] font-light mb-8 max-w-[480px] mx-auto">
-          O atendimento é exclusivo e as vagas são poucas por design — para que cada sessão tenha a atenção e o cuidado que você merece.{" "}
+          O atendimento é exclusivo e as vagas são limitadas intencionalmente, para que cada sessão tenha a atenção e o cuidado que você merece.{" "}
           <span className="text-[rgba(245,240,235,0.9)]">
             Me mande uma mensagem e garanta seu lugar.
           </span>
