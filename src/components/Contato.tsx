@@ -125,17 +125,24 @@ export default function Contato() {
 
           {/* Mapa */}
           <AnimatedSection delay={0.15}>
-            <div className="w-full min-h-[400px] border border-[rgba(184,149,106,0.15)] bg-[#F0EBF2] flex flex-col items-center justify-center gap-3.5">
-              <p className="text-[0.7rem] tracking-[2px] uppercase text-[#524848] font-light">
-                Mapa
-              </p>
+            <div className="w-full h-full min-h-[400px] border border-[rgba(184,149,106,0.15)] overflow-hidden relative flex flex-col">
+              <iframe
+                src="https://maps.google.com/maps?q=R.+Dal+Canale,+2186,+Exposi%C3%A7%C3%A3o,+Caxias+do+Sul,+RS,+95080-150&z=16&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0, minHeight: "380px", flex: 1 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Localização Ale Vencato Reiki — R. Dal Canale, 2186, Caxias do Sul"
+              />
               <a
                 href={ADDRESS.mapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[0.8rem] text-[#B8956A] border-b border-[rgba(184,149,106,0.3)] pb-0.5 hover:text-[#D4AF82] transition-colors duration-300"
+                className="block text-center text-[0.72rem] tracking-[1.5px] uppercase text-[#B8956A] hover:text-[#D4AF82] transition-colors duration-300 py-3 bg-[#F5F0EB] border-t border-[rgba(184,149,106,0.15)]"
               >
-                Ver no Google Maps →
+                Abrir no Google Maps →
               </a>
             </div>
           </AnimatedSection>
