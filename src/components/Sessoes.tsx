@@ -63,7 +63,7 @@ export default function Sessoes() {
               <em className="italic text-[#B8956A]">para o seu momento</em>
             </h2>
             <div className="gold-line-center" />
-            <p className="text-[1rem] leading-[1.9] text-[#7A6E6E] font-light max-w-[500px] mx-auto">
+            <p className="text-[1rem] leading-[1.9] text-[#524848] font-light max-w-[500px] mx-auto">
               Cada sessão dura entre 50 e 60 minutos. Você permanece deitada, vestida, em um ambiente tranquilo. Não precisa fazer nada — apenas relaxar e receber.
             </p>
           </div>
@@ -92,14 +92,14 @@ export default function Sessoes() {
                 <blockquote className="text-[0.85rem] text-[#4A4040] font-light italic mb-5 px-4 py-3.5 bg-[rgba(184,149,106,0.07)] border-l-2 border-[#D4AF82]">
                   {s.hook}
                 </blockquote>
-                <div className="flex flex-col gap-3 text-[0.95rem] leading-[1.9] text-[#7A6E6E] font-light mb-5 flex-1">
+                <div className="flex flex-col gap-3 text-[0.95rem] leading-[1.9] text-[#524848] font-light mb-5 flex-1">
                   {s.paragraphs.map((p, j) => (
                     <p key={j}>{p}</p>
                   ))}
                   {s.bullets.length > 0 && (
                     <div className="flex flex-col gap-1 mt-1">
                       {s.bullets.map((b, k) => (
-                        <span key={k} className="text-[0.9rem] text-[#7A6E6E] font-light">{b}</span>
+                        <span key={k} className="text-[0.9rem] text-[#524848] font-light">{b}</span>
                       ))}
                     </div>
                   )}

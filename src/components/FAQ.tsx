@@ -66,7 +66,7 @@ export default function FAQ() {
                 </p>
                 <div className="flex flex-col gap-2">
                   {faq.a.map((para, j) => (
-                    <p key={j} className="text-[0.92rem] leading-[1.9] text-[#7A6E6E] font-light">
+                    <p key={j} className="text-[0.92rem] leading-[1.9] text-[#524848] font-light">
                       {para}
                     </p>
                   ))}

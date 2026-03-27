@@ -34,7 +34,7 @@ export default function Hero() {
                 <em className="italic text-[#B8956A]">Reiki em Caxias do Sul.</em>
               </h1>
 
-              <p className="text-[1rem] leading-[1.9] text-[#7A6E6E] font-light max-w-[480px] mb-4">
+              <p className="text-[1rem] leading-[1.9] text-[#524848] font-light max-w-[480px] mb-4">
                 Sessões de Reiki para quem sente ansiedade, cansaço emocional ou
                 excesso de pensamentos. Um espaço de pausa, cuidado e reconexão
                 com você.
@@ -81,7 +81,7 @@ export default function Hero() {
                 <div className="font-cormorant text-[1.8rem] text-[#B8956A] font-light leading-none">
                   ∞
                 </div>
-                <div className="text-[0.62rem] tracking-[2px] uppercase text-[#7A6E6E] mt-1 font-light">
+                <div className="text-[0.62rem] tracking-[2px] uppercase text-[#524848] mt-1 font-light">
                   Energia Universal
                 </div>
               </div>

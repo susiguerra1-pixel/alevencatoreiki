@@ -38,7 +38,7 @@ export default function SocialStrip() {
           {items.map((item, i) => (
             <div key={i} className="flex items-center gap-2.5">
               <span className="text-[1.1rem]">{item.icon}</span>
-              <p className="text-[0.8rem] text-[#7A6E6E] font-light">
+              <p className="text-[0.8rem] text-[#524848] font-light">
                 {item.text}
               </p>
             </div>

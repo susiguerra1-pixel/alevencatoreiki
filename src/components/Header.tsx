@@ -41,7 +41,7 @@ export default function Header() {
               <li key={item.href}>
                 <a
                   href={item.href}
-                  className="text-[0.75rem] tracking-[2px] uppercase text-[#7A6E6E] hover:text-[#B8956A] transition-colors duration-300 font-light"
+                  className="text-[0.75rem] tracking-[2px] uppercase text-[#524848] hover:text-[#B8956A] transition-colors duration-300 font-light"
                 >
                   {item.label}
                 </a>
@@ -78,7 +78,7 @@ export default function Header() {
                 <a
                   href={item.href}
                   onClick={closeMenu}
-                  className="text-[0.8rem] tracking-[2px] uppercase text-[#7A6E6E] hover:text-[#B8956A] transition-colors duration-300 font-light block"
+                  className="text-[0.8rem] tracking-[2px] uppercase text-[#524848] hover:text-[#B8956A] transition-colors duration-300 font-light block"
                 >
                   {item.label}
                 </a>

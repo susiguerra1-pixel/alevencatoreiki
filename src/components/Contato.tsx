@@ -22,7 +22,7 @@ const contactItems = [
         href={whatsappLink(WHATSAPP_MESSAGES.contato)}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-[0.95rem] text-[#7A6E6E] font-light hover:text-[#B8956A] transition-colors duration-300 block"
+        className="text-[0.95rem] text-[#524848] font-light hover:text-[#B8956A] transition-colors duration-300 block"
       >
         ({WHATSAPP_NUMBER.slice(0, 2)}) 9{WHATSAPP_NUMBER.slice(3, 7)}-{WHATSAPP_NUMBER.slice(7)}
       </a>
@@ -36,7 +36,7 @@ const contactItems = [
         href={INSTAGRAM_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-[0.95rem] text-[#7A6E6E] font-light hover:text-[#B8956A] transition-colors duration-300 block"
+        className="text-[0.95rem] text-[#524848] font-light hover:text-[#B8956A] transition-colors duration-300 block"
       >
         @{INSTAGRAM_HANDLE}
       </a>
@@ -50,7 +50,7 @@ const contactItems = [
         href={GOOGLE_REVIEW_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-[0.95rem] text-[#7A6E6E] font-light hover:text-[#B8956A] transition-colors duration-300 block"
+        className="text-[0.95rem] text-[#524848] font-light hover:text-[#B8956A] transition-colors duration-300 block"
       >
         Deixar uma avaliação
       </a>
@@ -60,7 +60,7 @@ const contactItems = [
     icon: <MapPin className="h-4 w-4" />,
     label: "Endereço",
     content: (
-      <p className="text-[0.95rem] text-[#7A6E6E] font-light leading-[1.7]">
+      <p className="text-[0.95rem] text-[#524848] font-light leading-[1.7]">
         {ADDRESS.street}, {ADDRESS.complement}
         <br />
         {ADDRESS.neighborhood}, {ADDRESS.city}, {ADDRESS.state}
@@ -71,7 +71,7 @@ const contactItems = [
     icon: <Clock className="h-4 w-4" />,
     label: "Horários",
     content: (
-      <p className="text-[0.95rem] text-[#7A6E6E] font-light">{HOURS}</p>
+      <p className="text-[0.95rem] text-[#524848] font-light">{HOURS}</p>
     ),
   },
 ];
@@ -91,7 +91,7 @@ export default function Contato() {
               Entre em <em className="italic text-[#B8956A]">contato</em>
             </h2>
             <div className="gold-line" />
-            <p className="text-[1rem] leading-[1.9] text-[#7A6E6E] font-light max-w-lg">
+            <p className="text-[1rem] leading-[1.9] text-[#524848] font-light max-w-lg">
               Se você quiser conversar ou tirar alguma dúvida antes de agendar, estou aqui para te ajudar. Cada pessoa tem seu tempo e está tudo bem seguir no seu ritmo.
             </p>
           </div>
@@ -126,7 +126,7 @@ export default function Contato() {
           {/* Mapa */}
           <AnimatedSection delay={0.15}>
             <div className="w-full min-h-[400px] border border-[rgba(184,149,106,0.15)] bg-[#F0EBF2] flex flex-col items-center justify-center gap-3.5">
-              <p className="text-[0.7rem] tracking-[2px] uppercase text-[#7A6E6E] font-light">
+              <p className="text-[0.7rem] tracking-[2px] uppercase text-[#524848] font-light">
                 Mapa
               </p>
               <a

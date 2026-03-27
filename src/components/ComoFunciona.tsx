@@ -46,7 +46,7 @@ export default function ComoFunciona() {
 
             <div className="gold-line" />
 
-            <p className="text-[1rem] leading-[1.9] text-[#7A6E6E] font-light mb-5">
+            <p className="text-[1rem] leading-[1.9] text-[#524848] font-light mb-5">
               Muitas vezes o corpo começa a falar antes mesmo de entendermos o
               que está acontecendo. Talvez você esteja passando por momentos
               como:
@@ -69,7 +69,7 @@ export default function ComoFunciona() {
               reconectar consigo mesma.
             </p>
 
-            <p className="text-[1rem] leading-[1.9] text-[#7A6E6E] font-light mb-5">
+            <p className="text-[1rem] leading-[1.9] text-[#524848] font-light mb-5">
               O Reiki é uma prática terapêutica que atua no equilíbrio do campo
               energético, ajudando corpo e mente a voltarem ao seu estado natural
               de harmonia e bem-estar.
@@ -77,13 +77,13 @@ export default function ComoFunciona() {
 
             <div className="flex flex-col gap-1.5 mb-5">
               {["sem medicamentos", "sem julgamentos", "sem contraindicações"].map((item) => (
-                <span key={item} className="text-[0.95rem] text-[#7A6E6E] font-light">
+                <span key={item} className="text-[0.95rem] text-[#524848] font-light">
                   ✨ {item}
                 </span>
               ))}
             </div>
 
-            <p className="text-[1rem] leading-[1.9] text-[#7A6E6E] font-light italic mb-8">
+            <p className="text-[1rem] leading-[1.9] text-[#524848] font-light italic mb-8">
               Um momento para pausar, respirar e reconectar-se com a sua luz.
               Permita-se viver essa experiência.
             </p>

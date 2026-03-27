@@ -17,7 +17,7 @@ export default function SobreAle() {
         <AnimatedSection>
           <div className="w-full aspect-square bg-gradient-to-br from-[rgba(255,255,255,0.4)] to-[#C4B5C8] flex items-center justify-center">
             {/* <Image src="/images/ale-sobre.jpg" alt="Ale Vencato, terapeuta de Reiki Usui em Caxias do Sul" fill className="object-cover" /> */}
-            <p className="text-[0.7rem] tracking-[3px] uppercase text-[#7A6E6E] font-light">
+            <p className="text-[0.7rem] tracking-[3px] uppercase text-[#524848] font-light">
               Foto da Ale
             </p>
           </div>
@@ -72,7 +72,7 @@ export default function SobreAle() {
               {tags.map((tag) => (
                 <span
                   key={tag}
-                  className="text-[0.65rem] tracking-[2px] uppercase text-[#7A6E6E] border border-[rgba(184,149,106,0.3)] px-3.5 py-1.5 font-light"
+                  className="text-[0.65rem] tracking-[2px] uppercase text-[#524848] border border-[rgba(184,149,106,0.3)] px-3.5 py-1.5 font-light"
                 >
                   {tag}
                 </span>

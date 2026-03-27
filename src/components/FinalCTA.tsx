@@ -28,7 +28,7 @@ export default function FinalCTA() {
 
           <div className="gold-line-center" />
 
-          <div className="flex flex-col gap-4 text-[1rem] leading-[1.9] text-[#7A6E6E] font-light mb-10 text-left">
+          <div className="flex flex-col gap-4 text-[1rem] leading-[1.9] text-[#524848] font-light mb-10 text-left">
             <p>
               Muitas vezes adiamos o nosso próprio cuidado enquanto damos conta de tudo ao nosso redor. Mas chega um momento em que o corpo e a mente pedem pausa.
             </p>
@@ -49,11 +49,11 @@ export default function FinalCTA() {
             Quero minha sessão agora
           </a>
 
-          <span className="text-[0.7rem] tracking-[0.5px] text-[rgba(74,64,64,0.55)] mt-4 block font-light">
+          <span className="text-[0.7rem] tracking-[0.5px] text-[#4A3F3F] mt-4 block font-light">
             Atendimento presencial em {ADDRESS.city}, {ADDRESS.state} · {HOURS}
           </span>
 
-          <p className="mt-3.5 text-[0.82rem] text-[rgba(74,64,64,0.65)] font-light">
+          <p className="mt-3.5 text-[0.82rem] text-[#4A3F3F] font-light">
             ✦ Primeira conversa por WhatsApp para entender o que você precisa e
             indicar a melhor sessão
           </p>

@@ -20,7 +20,7 @@ export default function Footer() {
               <li key={item.href}>
                 <a
                   href={item.href}
-                  className="text-[0.7rem] tracking-[2px] uppercase text-[#7A6E6E] hover:text-[#B8956A] transition-colors duration-300 font-light"
+                  className="text-[0.7rem] tracking-[2px] uppercase text-[#524848] hover:text-[#B8956A] transition-colors duration-300 font-light"
                 >
                   {item.label}
                 </a>
@@ -45,7 +45,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={s.label}
-                className="w-8.5 h-8.5 border border-[rgba(184,149,106,0.22)] flex items-center justify-center text-[#7A6E6E] text-[0.65rem] tracking-wider hover:border-[#B8956A] hover:text-[#B8956A] transition-all duration-300"
+                className="w-8.5 h-8.5 border border-[rgba(184,149,106,0.22)] flex items-center justify-center text-[#524848] text-[0.65rem] tracking-wider hover:border-[#B8956A] hover:text-[#B8956A] transition-all duration-300"
               >
                 {s.text}
               </a>
@@ -55,7 +55,7 @@ export default function Footer() {
 
         {/* Divider */}
         <div className="border-t border-[rgba(184,149,106,0.1)] mt-4 pt-5 text-center">
-          <p className="text-[0.65rem] text-[#7A6E6E] font-light leading-[1.9]">
+          <p className="text-[0.65rem] text-[#524848] font-light leading-[1.9]">
             © 2026 Ale Vencato Reiki · Todos os direitos reservados · Reiki em Caxias do Sul, RS
             <br />
             O Reiki é uma terapia complementar e não substitui tratamento médico convencional.

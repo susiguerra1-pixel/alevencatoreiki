@@ -70,7 +70,7 @@ export default function Testimonials() {
                   &ldquo;{t.text}&rdquo;
                 </p>
                 {/* Autor */}
-                <div className="text-[0.65rem] tracking-[2px] uppercase text-[#7A6E6E] font-light">
+                <div className="text-[0.65rem] tracking-[2px] uppercase text-[#524848] font-light">
                   {t.author} · {t.location}
                 </div>
               </div>
@@ -81,7 +81,7 @@ export default function Testimonials() {
         {/* CTA para avaliação */}
         <AnimatedSection delay={0.3}>
           <div className="text-center">
-            <p className="text-[1rem] leading-[1.9] text-[#7A6E6E] font-light mb-5 max-w-lg mx-auto">
+            <p className="text-[1rem] leading-[1.9] text-[#524848] font-light mb-5 max-w-lg mx-auto">
               Sua experiência também importa. Deixe sua avaliação e ajude outras
               pessoas a encontrarem o equilíbrio que você encontrou.
             </p>
