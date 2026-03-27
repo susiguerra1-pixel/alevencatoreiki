@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Menu, X, MessageCircle } from "lucide-react";
-import { NAV_ITEMS, whatsappLink, WHATSAPP_MESSAGES } from "@/lib/constants";
+import { Menu, X, MessageCircle, Phone } from "lucide-react";
+import { NAV_ITEMS, whatsappLink, WHATSAPP_MESSAGES, WHATSAPP_NUMBER } from "@/lib/constants";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -94,6 +94,14 @@ export default function Header() {
           >
             <MessageCircle className="h-4 w-4" />
             Agendar sessão
+          </a>
+          <a
+            href={`tel:+55${WHATSAPP_NUMBER}`}
+            onClick={closeMenu}
+            className="flex items-center justify-center gap-2 text-[0.75rem] tracking-[1.5px] uppercase text-[#B8956A] border border-[rgba(184,149,106,0.4)] px-6 py-3.5 w-full hover:bg-[rgba(184,149,106,0.06)] transition-all duration-300 font-light mt-3"
+          >
+            <Phone className="h-4 w-4" />
+            (54) 98117-8795
           </a>
         </div>
       )}
