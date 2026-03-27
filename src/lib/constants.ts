@@ -2,7 +2,7 @@
 export const WHATSAPP_NUMBER = "54981178795";
 export const INSTAGRAM_HANDLE = "alevencato.reiki";
 export const INSTAGRAM_URL = "https://www.instagram.com/alevencato.reiki/";
-export const GOOGLE_REVIEW_URL = "https://share.google/0sd7cJ3ECoBSqg5dL";
+export const GOOGLE_REVIEW_URL = "https://share.google/zb9aPHazDqkZ17Vc2";
 export const SITE_URL = "https://alevencatoreiki.com.br";
 
 /* ── Endereço ── */
