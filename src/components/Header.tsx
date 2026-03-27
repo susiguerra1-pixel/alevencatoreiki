@@ -27,12 +27,12 @@ export default function Header() {
     >
       <div className="mx-auto max-w-[1100px] px-6 flex items-center justify-between">
         {/* Brand */}
-        <div className="font-cormorant text-[1.05rem] tracking-[4px] uppercase text-[#4A4040]">
+        <a href="#inicio" className="font-cormorant text-[1.05rem] tracking-[4px] uppercase text-[#4A4040] hover:opacity-75 transition-opacity duration-300">
           Ale Vencato{" "}
           <span className="text-[#B8956A] text-[0.65rem] tracking-[5px] block mt-0.5 font-light">
             Reiki
           </span>
-        </div>
+        </a>
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-7">
