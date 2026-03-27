@@ -8,6 +8,7 @@ import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import SobreAle from "@/components/SobreAle";
 import FinalCTA from "@/components/FinalCTA";
+import LeadMagnet from "@/components/LeadMagnet";
 import Contato from "@/components/Contato";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
@@ -27,6 +28,7 @@ export default function Home() {
         <FAQ />
         <SobreAle />
         <FinalCTA />
+        <LeadMagnet />
         <Contato />
       </main>
       <Footer />

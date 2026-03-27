@@ -32,6 +32,8 @@ export const WHATSAPP_MESSAGES = {
   cta: "Olá! Quero reservar minha sessão de Reiki. Ainda há vagas disponíveis?",
   contato:
     "Olá! Tenho uma dúvida antes de agendar. Pode me ajudar?",
+  vagas:
+    "Olá, Ale! Quero ser avisada quando abrirem novas vagas para sessão de Reiki. Pode me incluir na lista?",
 };
 
 /* ── Função para gerar o link de WhatsApp ── */
