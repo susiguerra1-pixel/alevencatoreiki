@@ -8,7 +8,7 @@ export default function FinalCTA() {
   const waHref = whatsappLink(WHATSAPP_MESSAGES.cta);
 
   return (
-    <div className="relative bg-[#C4B5C8] py-24 px-[6%] text-center overflow-hidden cta-radial">
+    <div className="relative bg-[#EDE7EF] py-24 px-[6%] text-center overflow-hidden cta-radial">
       <AnimatedSection>
         <div className="relative z-10 max-w-[620px] mx-auto">
           {/* Escassez */}
