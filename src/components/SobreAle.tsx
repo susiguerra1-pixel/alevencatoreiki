@@ -10,12 +10,12 @@ export default function SobreAle() {
   const waHref = whatsappLink(WHATSAPP_MESSAGES.ale);
 
   return (
-    <section id="ale" className="bg-[#D7CBD9] py-24 px-[6%]">
+    <section id="ale" className="bg-[#EDE7EF] py-24 px-[6%]">
       <div className="max-w-[1100px] mx-auto grid md:grid-cols-[1fr_1.2fr] gap-20 items-start">
 
         {/* Foto */}
         <AnimatedSection>
-          <div className="w-full aspect-square bg-gradient-to-br from-[rgba(255,255,255,0.4)] to-[#C4B5C8] flex items-center justify-center">
+          <div className="w-full aspect-square bg-gradient-to-br from-[rgba(255,255,255,0.6)] to-[#D7CBD9] flex items-center justify-center">
             {/* <Image src="/images/ale-sobre.jpg" alt="Ale Vencato, terapeuta de Reiki Usui em Caxias do Sul" fill className="object-cover" /> */}
             <p className="text-[0.7rem] tracking-[3px] uppercase text-[#524848] font-light">
               Foto da Ale

@@ -39,7 +39,7 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <section id="objecoes" className="bg-[#F0E6D6] py-24 px-[6%]">
+    <section id="objecoes" className="bg-[#F8F3EC] py-24 px-[6%]">
       <div className="max-w-[960px] mx-auto">
 
         {/* Header */}
@@ -60,7 +60,7 @@ export default function FAQ() {
         <div className="grid md:grid-cols-2 gap-0.5 bg-[rgba(184,149,106,0.12)]">
           {faqs.map((faq, i) => (
             <AnimatedSection key={i} delay={Math.floor(i / 2) * 0.1}>
-              <div className="bg-[#F0E6D6] p-9 hover:bg-[rgba(255,255,255,0.65)] transition-colors duration-300 h-full">
+              <div className="bg-[#F8F3EC] p-9 hover:bg-[rgba(255,255,255,0.65)] transition-colors duration-300 h-full">
                 <p className="font-cormorant text-[1.15rem] text-[#4A4040] font-normal mb-3 italic">
                   {faq.q}
                 </p>
