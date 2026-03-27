@@ -33,7 +33,9 @@ const contactItems = [
     label: "Telefone",
     content: (
       <a
-        href={`tel:+55${WHATSAPP_NUMBER}`}
+        href={whatsappLink(WHATSAPP_MESSAGES.contato)}
+        target="_blank"
+        rel="noopener noreferrer"
         className="text-[0.95rem] text-[#524848] font-light hover:text-[#B8956A] transition-colors duration-300 block"
       >
         ({WHATSAPP_NUMBER.slice(0, 2)}) 9{WHATSAPP_NUMBER.slice(3, 7)}-{WHATSAPP_NUMBER.slice(7)}
