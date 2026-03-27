@@ -1,5 +1,5 @@
 import JsonLd from "@/components/JsonLd";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Jost } from "next/font/google";
 import "./globals.css";
 
@@ -94,7 +94,16 @@ export const metadata: Metadata = {
     icon: [
       { url: "/favicon.svg", type: "image/svg+xml" },
     ],
+    apple: "/favicon.svg",
   },
+};
+
+/* ── Viewport separado (padrão Next.js App Router) ──
+   Controla a barra do navegador no mobile e escala inicial */
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#F5F0EB",   // cor da barra do Chrome/Safari no mobile
 };
 
 export default function RootLayout({
