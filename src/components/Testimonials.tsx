@@ -7,24 +7,21 @@ import AnimatedSection from "./AnimatedSection";
 const testimonials = [
   {
     stars: 5,
-    result: "Ansiedade reduziu em 2 sessões",
-    text: "Entrei ansiosa e saí com uma leveza que não sentia há anos. Não sei explicar direito o que aconteceu, mas funcionou.",
-    author: "Mariana S.",
-    location: "São Paulo",
+    result: "Mais leve e com a mente equilibrada",
+    text: "Estou me sentindo realmente muito melhor, mais leve, com a mente mais equilibrada! Agradeço por todo o carinho e atenção.",
+    location: "Caxias do Sul, RS",
   },
   {
     stars: 5,
-    result: "Dormiu bem pela primeira vez em meses",
-    text: "Fiz sem muita expectativa. Na noite depois da sessão dormi de um jeito que não conseguia há meses.",
-    author: "Juliana M.",
-    location: "Rio de Janeiro",
+    result: "Entrou mal, saiu leve e restaurada",
+    text: "Eu nunca tinha feito Reiki antes, só ouvia falar. O seu atendimento foi algo maravilhoso — eu entrei no consultório muito mal e saí de lá leve, restaurada. Parece impossível, mas realmente foi essa sensação que tive.",
+    location: "Caxias do Sul, RS",
   },
   {
     stars: 5,
-    result: "Qualidade de vida transformada",
-    text: "Faço o acompanhamento mensal há 4 meses. A diferença é visível — família e amigos perceberam.",
-    author: "Carla F.",
-    location: "Curitiba",
+    result: "Depois de muito tempo, se sentiu feliz de novo",
+    text: "Fazia muito tempo que minha cabeça não parava pelo tempo que parou depois da sessão. Fazia muito tempo que eu não me sentia tão bem e feliz. Depois de muito tempo, posso dizer que estou feliz.",
+    location: "Caxias do Sul, RS",
   },
 ];
 
@@ -69,9 +66,9 @@ export default function Testimonials() {
                 <p className="font-cormorant text-[1.05rem] leading-[1.85] text-[#4A4040] italic font-light mb-4">
                   &ldquo;{t.text}&rdquo;
                 </p>
-                {/* Autor */}
+                {/* Localização */}
                 <div className="text-[0.65rem] tracking-[2px] uppercase text-[#524848] font-light">
-                  {t.author} · {t.location}
+                  {t.location}
                 </div>
               </div>
             </AnimatedSection>
