@@ -16,12 +16,14 @@ export default function SobreAle() {
 
         {/* Foto */}
         <AnimatedSection>
-          <div className="relative w-full aspect-[4/5] overflow-hidden">
+          <div className="w-full">
             <Image
               src="/images/ale-vencato.jpg"
               alt="Ale Vencato, terapeuta de Reiki Usui em Caxias do Sul"
-              fill
-              className="object-cover object-top"
+              width={0}
+              height={0}
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="w-full h-auto"
             />
           </div>
         </AnimatedSection>
