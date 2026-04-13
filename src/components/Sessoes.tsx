@@ -119,18 +119,6 @@ export default function Sessoes() {
           ))}
         </div>
 
-        {/* Foto da sala */}
-        <AnimatedSection delay={0.2}>
-          <div className="relative w-full aspect-[16/7] overflow-hidden mt-12">
-            <Image
-              src="/images/sala.png"
-              alt="Espaço de atendimento — Ale Vencato Reiki em Caxias do Sul"
-              fill
-              className="object-cover object-center"
-            />
-          </div>
-        </AnimatedSection>
-
       </div>
     </section>
   );

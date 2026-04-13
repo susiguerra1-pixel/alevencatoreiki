@@ -25,8 +25,8 @@ export default function ComoFunciona() {
           <div className="relative">
             <div className="relative w-full aspect-[4/5] overflow-hidden image-frame-offset">
               <Image
-                src="/images/ale-vencato.jpg"
-                alt="Ale Vencato — Sessão de Reiki Usui em Caxias do Sul"
+                src="/images/sala.png"
+                alt="Espaço de atendimento — Ale Vencato Reiki em Caxias do Sul"
                 fill
                 className="object-cover object-top"
               />
