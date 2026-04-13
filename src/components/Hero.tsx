@@ -72,7 +72,7 @@ export default function Hero() {
               {/* Frame principal */}
               <div className="relative w-full aspect-[3/4] overflow-hidden image-frame-offset">
                 <Image
-                  src="/images/ale-vencato.jpg"
+                  src="/images/ale-hero.jpg"
                   alt="Ale Vencato — Terapeuta de Reiki em Caxias do Sul"
                   fill
                   className="object-cover object-top"
