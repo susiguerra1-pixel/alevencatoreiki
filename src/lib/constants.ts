@@ -45,5 +45,6 @@ export const NAV_ITEMS = [
   { label: "Como funciona", href: "#sobre" },
   { label: "Sessões", href: "#sessoes" },
   { label: "Depoimentos", href: "#depoimentos" },
+  { label: "Dúvidas", href: "#objecoes" },
   { label: "Contato", href: "#contato" },
 ];
