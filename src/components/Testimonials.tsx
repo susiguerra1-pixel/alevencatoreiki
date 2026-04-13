@@ -31,15 +31,17 @@ export default function Testimonials() {
         </AnimatedSection>
 
         {/* Imagens dos depoimentos */}
-        <div className="grid md:grid-cols-3 gap-4 mb-12">
+        <div className="grid md:grid-cols-3 gap-4 mb-12 items-start">
           {images.map((img, i) => (
             <AnimatedSection key={i} delay={i * 0.1}>
-              <div className="relative w-full aspect-[9/16] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
+              <div className="shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
                 <Image
                   src={img.src}
                   alt={img.alt}
-                  fill
-                  className="object-cover object-top"
+                  width={0}
+                  height={0}
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="w-full h-auto"
                 />
               </div>
             </AnimatedSection>
