@@ -7,12 +7,12 @@ export default function Footer() {
         <div className="flex flex-wrap justify-between items-center gap-5 mb-0">
 
           {/* Brand */}
-          <div className="font-cormorant text-[0.95rem] tracking-[4px] uppercase text-[#4A4040] font-light">
+          <a href="#inicio" className="hover:opacity-75 transition-opacity duration-300 font-cormorant text-[0.95rem] tracking-[4px] uppercase text-[#4A4040] font-light">
             Ale Vencato{" "}
             <span className="text-[#B8956A] text-[0.6rem] tracking-[5px] block mt-0.5">
               Reiki
             </span>
-          </div>
+          </a>
 
           {/* Links */}
           <ul className="flex flex-wrap gap-5 list-none justify-center">
