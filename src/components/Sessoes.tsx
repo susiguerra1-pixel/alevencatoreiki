@@ -3,6 +3,7 @@
 import { MessageCircle } from "lucide-react";
 import { whatsappLink, WHATSAPP_MESSAGES } from "@/lib/constants";
 import AnimatedSection from "./AnimatedSection";
+import Image from "next/image";
 
 const sessions = [
   {
@@ -117,6 +118,19 @@ export default function Sessoes() {
             </AnimatedSection>
           ))}
         </div>
+
+        {/* Foto da sala */}
+        <AnimatedSection delay={0.2}>
+          <div className="relative w-full aspect-[16/7] overflow-hidden mt-12">
+            <Image
+              src="/images/sala.png"
+              alt="Espaço de atendimento — Ale Vencato Reiki em Caxias do Sul"
+              fill
+              className="object-cover object-center"
+            />
+          </div>
+        </AnimatedSection>
+
       </div>
     </section>
   );
