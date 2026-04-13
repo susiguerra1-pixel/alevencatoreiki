@@ -1,6 +1,6 @@
 "use client";
 
-import { MessageCircle, Instagram, Star, MapPin, Clock, Phone } from "lucide-react";
+import { MessageCircle, Instagram, Star, MapPin, Clock } from "lucide-react";
 import {
   whatsappLink,
   WHATSAPP_MESSAGES,
@@ -17,20 +17,6 @@ const contactItems = [
   {
     icon: <MessageCircle className="h-4 w-4" />,
     label: "WhatsApp",
-    content: (
-      <a
-        href={whatsappLink(WHATSAPP_MESSAGES.contato)}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-[0.95rem] text-[#524848] font-light hover:text-[#B8956A] transition-colors duration-300 block"
-      >
-        ({WHATSAPP_NUMBER.slice(0, 2)}) 9{WHATSAPP_NUMBER.slice(3, 7)}-{WHATSAPP_NUMBER.slice(7)}
-      </a>
-    ),
-  },
-  {
-    icon: <Phone className="h-4 w-4" />,
-    label: "Telefone",
     content: (
       <a
         href={whatsappLink(WHATSAPP_MESSAGES.contato)}
