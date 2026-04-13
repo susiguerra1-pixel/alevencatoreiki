@@ -13,7 +13,7 @@ const images = [
 
 export default function Testimonials() {
   return (
-    <section id="depoimentos" className="bg-[#F5F0EB] py-24 px-[6%]">
+    <section id="depoimentos" className="bg-[#F5F0EB] py-16 md:py-24 px-[6%]">
       <div className="max-w-[1100px] mx-auto">
 
         {/* Header */}
@@ -51,7 +51,7 @@ export default function Testimonials() {
         {/* CTA para avaliação */}
         <AnimatedSection delay={0.3}>
           <div className="text-center">
-            <p className="text-[1rem] leading-[1.9] text-[#524848] font-light mb-5 max-w-lg mx-auto">
+            <p className="text-[1rem] leading-[1.85] text-[#524848] font-normal mb-5 max-w-lg mx-auto">
               Sua experiência também importa. Deixe sua avaliação e ajude outras
               pessoas a encontrarem o equilíbrio que você encontrou.
             </p>

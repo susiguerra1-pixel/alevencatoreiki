@@ -11,7 +11,7 @@ export default function SobreAle() {
   const waHref = whatsappLink(WHATSAPP_MESSAGES.ale);
 
   return (
-    <section id="ale" className="bg-[#EDE7EF] py-24 px-[6%]">
+    <section id="ale" className="bg-[#EDE7EF] py-16 md:py-24 px-[6%]">
       <div className="max-w-[1100px] mx-auto grid md:grid-cols-[1fr_1.2fr] gap-20 items-start">
 
         {/* Foto */}
@@ -44,25 +44,25 @@ export default function SobreAle() {
             </p>
 
             <div className="flex flex-col gap-4">
-              <p className="text-[0.95rem] leading-[1.9] text-[#4A4040] font-light">
+              <p className="text-[1rem] leading-[1.85] text-[#4A4040] font-normal">
                 Desde muito cedo senti que existia algo maior guiando a vida. Sempre fui uma pessoa sensível, intuitiva e naturalmente procurada por quem precisava conversar, ser ouvido ou simplesmente encontrar acolhimento.
               </p>
-              <p className="text-[0.95rem] leading-[1.9] text-[#4A4040] font-light">
+              <p className="text-[1rem] leading-[1.85] text-[#4A4040] font-normal">
                 Minha trajetória profissional começou cedo: aos 12 anos iniciei no trabalho e, aos 16, entrei para a área da saúde. Cuidar de pessoas sempre fez parte de quem eu sou.
               </p>
-              <p className="text-[0.95rem] leading-[1.9] text-[#4A4040] font-light">
+              <p className="text-[1rem] leading-[1.85] text-[#4A4040] font-normal">
                 Mas a vida também traz momentos que nos convidam a olhar para dentro. Após algumas experiências desafiadoras e, mais tarde, um período de burnout, percebi que precisava parar e me reconectar comigo mesma.
               </p>
-              <p className="text-[0.95rem] leading-[1.9] text-[#4A4040] font-light">
+              <p className="text-[1rem] leading-[1.85] text-[#4A4040] font-normal">
                 Foi nesse momento que o Reiki entrou na minha vida.
               </p>
-              <p className="text-[0.95rem] leading-[1.9] text-[#4A4040] font-light">
+              <p className="text-[1rem] leading-[1.85] text-[#4A4040] font-normal">
                 O que começou como um caminho de cura pessoal rapidamente se transformou em algo maior. O Reiki me ajudou a reorganizar minha energia, reencontrar meu equilíbrio e voltar para a minha própria luz.
               </p>
-              <p className="text-[0.95rem] leading-[1.9] text-[#4A4040] font-light">
+              <p className="text-[1rem] leading-[1.85] text-[#4A4040] font-normal">
                 Hoje compreendo que cada passo da minha história me trouxe até aqui.
               </p>
-              <p className="text-[0.95rem] leading-[1.9] text-[#4A4040] font-light">
+              <p className="text-[1rem] leading-[1.85] text-[#4A4040] font-normal">
                 E é com essa experiência, presença e cuidado que conduzo cada sessão de Reiki em Caxias do Sul: ajudando outras pessoas a desacelerar, equilibrar sua energia e se reconectar com aquilo que existe de mais verdadeiro dentro delas.
               </p>
             </div>

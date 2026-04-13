@@ -8,7 +8,7 @@ export default function FinalCTA() {
   const waHref = whatsappLink(WHATSAPP_MESSAGES.cta);
 
   return (
-    <div className="relative bg-[#EDE7EF] py-24 px-[6%] text-center overflow-hidden cta-radial">
+    <div className="relative bg-[#EDE7EF] py-16 md:py-24 px-[6%] text-center overflow-hidden cta-radial">
       <AnimatedSection>
         <div className="relative z-10 max-w-[620px] mx-auto">
           {/* Escassez */}
@@ -28,7 +28,7 @@ export default function FinalCTA() {
 
           <div className="gold-line-center" />
 
-          <div className="flex flex-col gap-4 text-[1rem] leading-[1.9] text-[#524848] font-light mb-10 text-left">
+          <div className="flex flex-col gap-4 text-[1rem] leading-[1.85] text-[#524848] font-normal mb-10 text-left">
             <p>
               Muitas vezes adiamos o nosso próprio cuidado enquanto damos conta de tudo ao nosso redor. Mas chega um momento em que o corpo e a mente pedem pausa.
             </p>

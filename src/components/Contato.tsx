@@ -92,7 +92,7 @@ const contactItems = [
 
 export default function Contato() {
   return (
-    <section id="contato" className="bg-[#F5F0EB] py-24 px-[6%]">
+    <section id="contato" className="bg-[#F5F0EB] py-16 md:py-24 px-[6%]">
       <div className="max-w-[1100px] mx-auto">
 
         {/* Header */}
@@ -105,7 +105,7 @@ export default function Contato() {
               Entre em <em className="italic text-[#B8956A]">contato</em>
             </h2>
             <div className="gold-line" />
-            <p className="text-[1rem] leading-[1.9] text-[#524848] font-light max-w-lg">
+            <p className="text-[1rem] leading-[1.85] text-[#524848] font-normal max-w-lg">
               Se você quiser conversar ou tirar alguma dúvida antes de agendar, estou aqui para te ajudar. Cada pessoa tem seu tempo e está tudo bem seguir no seu ritmo.
             </p>
           </div>

@@ -2,7 +2,7 @@ import AnimatedSection from "./AnimatedSection";
 
 export default function OqueEReiki() {
   return (
-    <section id="oque" className="bg-[#F3EEF5] py-24 px-[6%]">
+    <section id="oque" className="bg-[#F3EEF5] py-16 md:py-24 px-[6%]">
       <div className="max-w-[900px] mx-auto text-center">
         <AnimatedSection>
           <p className="text-[0.65rem] tracking-[1.5px] uppercase text-[#4A2E0A] mb-3 font-light">
@@ -13,7 +13,7 @@ export default function OqueEReiki() {
           </h2>
           <div className="gold-line-center" />
           <div className="bg-white mt-10 border border-[rgba(184,149,106,0.15)] px-[52px] py-[48px] text-left">
-            <div className="flex flex-col gap-5 text-[1.02rem] leading-[2] text-[#4A4040] font-light">
+            <div className="flex flex-col gap-5 text-[1.02rem] leading-[1.95] text-[#4A4040] font-normal max-w-[65ch]">
               <p>
                 O Reiki é uma técnica japonesa de harmonização energética que busca equilibrar corpo, mente e emoções por meio da energia vital universal.
               </p>

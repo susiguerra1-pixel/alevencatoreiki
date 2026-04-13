@@ -39,7 +39,7 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <section id="objecoes" className="bg-[#F8F3EC] py-24 px-[6%]">
+    <section id="objecoes" className="bg-[#F8F3EC] py-16 md:py-24 px-[6%]">
       <div className="max-w-[960px] mx-auto">
 
         {/* Header */}
@@ -66,7 +66,7 @@ export default function FAQ() {
                 </p>
                 <div className="flex flex-col gap-2">
                   {faq.a.map((para, j) => (
-                    <p key={j} className="text-[0.92rem] leading-[1.9] text-[#524848] font-light">
+                    <p key={j} className="text-[0.95rem] leading-[1.85] text-[#524848] font-normal">
                       {para}
                     </p>
                   ))}

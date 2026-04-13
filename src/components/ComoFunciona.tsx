@@ -17,7 +17,7 @@ export default function ComoFunciona() {
   const waHref = whatsappLink(WHATSAPP_MESSAGES.sobre);
 
   return (
-    <section id="sobre" className="bg-[#F5F0EB] py-24 px-[6%]">
+    <section id="sobre" className="bg-[#F5F0EB] py-16 md:py-24 px-[6%]">
       <div className="max-w-[1100px] mx-auto grid md:grid-cols-2 gap-20 items-center">
 
         {/* Imagem */}
@@ -49,7 +49,7 @@ export default function ComoFunciona() {
 
             <div className="gold-line" />
 
-            <p className="text-[1rem] leading-[1.9] text-[#524848] font-light mb-5">
+            <p className="text-[1rem] leading-[1.85] text-[#524848] font-normal mb-5">
               Muitas vezes o corpo começa a falar antes mesmo de entendermos o
               que está acontecendo. Talvez você esteja passando por momentos
               como:
@@ -59,7 +59,7 @@ export default function ComoFunciona() {
               {symptoms.map((s, i) => (
                 <li
                   key={i}
-                  className="flex items-start gap-3 text-[0.95rem] text-[#4A4040] font-light leading-[1.65]"
+                  className="flex items-start gap-3 text-[1rem] text-[#4A4040] font-normal leading-[1.8]"
                 >
                   <span className="text-[#B8956A] text-[0.85rem] mt-0.5 shrink-0">✓</span>
                   {s}
@@ -72,7 +72,7 @@ export default function ComoFunciona() {
               reconectar consigo mesma.
             </p>
 
-            <p className="text-[1rem] leading-[1.9] text-[#524848] font-light mb-5">
+            <p className="text-[1rem] leading-[1.85] text-[#524848] font-normal mb-5">
               O Reiki é uma terapia energética que atua no equilíbrio do campo
               energético, ajudando corpo e mente a voltarem ao seu estado natural
               de harmonia e bem-estar — especialmente eficaz para ansiedade,
@@ -87,7 +87,7 @@ export default function ComoFunciona() {
               ))}
             </div>
 
-            <p className="text-[1rem] leading-[1.9] text-[#524848] font-light italic mb-8">
+            <p className="text-[1rem] leading-[1.85] text-[#524848] font-normal italic mb-8">
               Um momento para pausar, respirar e reconectar-se com a sua luz.
               Permita-se viver essa experiência.
             </p>
