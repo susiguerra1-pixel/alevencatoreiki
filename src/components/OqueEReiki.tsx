@@ -40,7 +40,7 @@ export default function OqueEReiki() {
                 É importante destacar que o Reiki não substitui tratamentos médicos ou psicológicos, mas pode ser utilizado como complemento para promover mais equilíbrio, relaxamento e qualidade de vida.
               </p>
               <p>
-                Em Caxias do Sul, as sessões de Reiki Usui são realizadas por Ale Vencato com atendimento presencial, exclusivo e foco no cuidado integral de cada pessoa.
+                Em Caxias do Sul, ofereço sessões de Reiki com atendimento presencial, exclusivo e foco no cuidado integral de cada pessoa.
               </p>
             </div>
           </div>
