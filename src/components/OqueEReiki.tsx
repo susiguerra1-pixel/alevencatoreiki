@@ -5,7 +5,7 @@ export default function OqueEReiki() {
     <section id="oque" className="bg-[#F3EEF5] py-24 px-[6%]">
       <div className="max-w-[900px] mx-auto text-center">
         <AnimatedSection>
-          <p className="text-[0.65rem] tracking-[5px] uppercase text-[#7A5230] mb-3 font-light">
+          <p className="text-[0.65rem] tracking-[5px] uppercase text-[#4A2E0A] mb-3 font-light">
             Entenda a técnica
           </p>
           <h2 className="font-cormorant text-[clamp(2rem,3.2vw,3rem)] font-light text-[#4A4040] leading-[1.2]">

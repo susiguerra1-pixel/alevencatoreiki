@@ -55,7 +55,7 @@ export default function Sessoes() {
         {/* Header */}
         <AnimatedSection>
           <div className="text-center mb-14">
-            <p className="text-[0.65rem] tracking-[5px] uppercase text-[#7A5230] mb-3 font-light">
+            <p className="text-[0.65rem] tracking-[5px] uppercase text-[#4A2E0A] mb-3 font-light">
               Como posso te ajudar
             </p>
             <h2 className="font-cormorant text-[clamp(2rem,3.2vw,3rem)] font-light text-[#4A4040] leading-[1.2]">
@@ -81,7 +81,7 @@ export default function Sessoes() {
                 {/* Badge "opção mais escolhida" */}
                 {s.featured && (
                   <div className="inline-flex items-center gap-1.5 mb-4 self-start">
-                    <span className="text-[0.62rem] tracking-[2px] uppercase text-[#7A5230] border border-[rgba(184,149,106,0.4)] px-3 py-1 font-light">
+                    <span className="text-[0.62rem] tracking-[2px] uppercase text-[#4A2E0A] border border-[rgba(184,149,106,0.4)] px-3 py-1 font-light">
                       ⭐ {s.featuredLabel}
                     </span>
                   </div>

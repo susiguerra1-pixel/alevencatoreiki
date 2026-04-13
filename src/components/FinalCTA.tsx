@@ -12,11 +12,11 @@ export default function FinalCTA() {
       <AnimatedSection>
         <div className="relative z-10 max-w-[620px] mx-auto">
           {/* Escassez */}
-          <div className="inline-block bg-[rgba(184,149,106,0.2)] border border-[rgba(184,149,106,0.3)] px-5 py-1.5 text-[0.68rem] tracking-[3px] uppercase text-[#7A5230] mb-6 font-light">
+          <div className="inline-block bg-[rgba(184,149,106,0.2)] border border-[rgba(184,149,106,0.3)] px-5 py-1.5 text-[0.68rem] tracking-[3px] uppercase text-[#4A2E0A] mb-6 font-light">
             🌿 Vagas limitadas por mês
           </div>
 
-          <p className="text-[0.65rem] tracking-[5px] uppercase text-[#7A5230] mb-3 font-light">
+          <p className="text-[0.65rem] tracking-[5px] uppercase text-[#4A2E0A] mb-3 font-light">
             Não deixe para depois
           </p>
 

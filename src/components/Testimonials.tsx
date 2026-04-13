@@ -19,7 +19,7 @@ export default function Testimonials() {
         {/* Header */}
         <AnimatedSection>
           <div className="text-center mb-14">
-            <p className="text-[0.65rem] tracking-[5px] uppercase text-[#7A5230] mb-3 font-light">
+            <p className="text-[0.65rem] tracking-[5px] uppercase text-[#4A2E0A] mb-3 font-light">
               Experiências reais
             </p>
             <h2 className="font-cormorant text-[clamp(2rem,3.2vw,3rem)] font-light text-[#4A4040] leading-[1.2]">

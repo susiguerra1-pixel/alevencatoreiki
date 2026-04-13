@@ -98,7 +98,7 @@ export default function Contato() {
         {/* Header */}
         <AnimatedSection>
           <div className="mb-14">
-            <p className="text-[0.65rem] tracking-[5px] uppercase text-[#7A5230] mb-3 font-light">
+            <p className="text-[0.65rem] tracking-[5px] uppercase text-[#4A2E0A] mb-3 font-light">
               Fale comigo
             </p>
             <h2 className="font-cormorant text-[clamp(2rem,3.2vw,3rem)] font-light text-[#4A4040] leading-[1.2]">
@@ -127,7 +127,7 @@ export default function Contato() {
                     {item.icon}
                   </div>
                   <div>
-                    <h4 className="text-[0.62rem] tracking-[3px] uppercase text-[#7A5230] mb-1.5 font-light">
+                    <h4 className="text-[0.62rem] tracking-[3px] uppercase text-[#4A2E0A] mb-1.5 font-light">
                       {item.label}
                     </h4>
                     {item.content}
@@ -154,7 +154,7 @@ export default function Contato() {
                 href={ADDRESS.mapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-center text-[0.72rem] tracking-[1.5px] uppercase text-[#7A5230] hover:text-[#D4AF82] transition-colors duration-300 py-3 bg-[#F5F0EB] border-t border-[rgba(184,149,106,0.15)]"
+                className="block text-center text-[0.72rem] tracking-[1.5px] uppercase text-[#4A2E0A] hover:text-[#D4AF82] transition-colors duration-300 py-3 bg-[#F5F0EB] border-t border-[rgba(184,149,106,0.15)]"
               >
                 Abrir no Google Maps →
               </a>

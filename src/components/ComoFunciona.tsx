@@ -38,7 +38,7 @@ export default function ComoFunciona() {
         {/* Conteúdo */}
         <AnimatedSection delay={0.15}>
           <div>
-            <p className="text-[0.65rem] tracking-[5px] uppercase text-[#7A5230] mb-3 font-light">
+            <p className="text-[0.65rem] tracking-[5px] uppercase text-[#4A2E0A] mb-3 font-light">
               Você sente que algo dentro de você pede cuidado?
             </p>
             <h2 className="font-cormorant text-[clamp(2rem,3.2vw,3rem)] font-light text-[#4A4040] leading-[1.2] mb-0">
