@@ -13,7 +13,7 @@ export default function OqueEReiki() {
           </h2>
           <div className="gold-line-center" />
           <div className="bg-white mt-10 border border-[rgba(184,149,106,0.15)] px-[52px] py-[48px] text-left">
-            <div className="flex flex-col gap-5 text-[1.02rem] leading-[1.95] text-[#4A4040] font-normal max-w-[65ch]">
+            <div className="flex flex-col gap-5 text-[1.02rem] leading-[1.95] text-[#4A4040] font-normal">
               <p>
                 O Reiki é uma técnica japonesa de harmonização energética que busca equilibrar corpo, mente e emoções por meio da energia vital universal.
               </p>
