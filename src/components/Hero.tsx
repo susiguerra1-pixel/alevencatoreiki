@@ -3,6 +3,7 @@
 import { MessageCircle, ChevronDown } from "lucide-react";
 import { whatsappLink, WHATSAPP_MESSAGES } from "@/lib/constants";
 import AnimatedSection from "./AnimatedSection";
+import Image from "next/image";
 
 export default function Hero() {
   const waHref = whatsappLink(WHATSAPP_MESSAGES.hero);
@@ -69,11 +70,14 @@ export default function Hero() {
           <AnimatedSection delay={0.2}>
             <div className="relative mx-auto max-w-md hidden lg:block">
               {/* Frame principal */}
-              <div className="relative w-full aspect-[3/4] bg-gradient-to-br from-[#F0EBF2] to-[#D7CBD9] flex items-center justify-center overflow-hidden image-frame-offset">
-                {/* <Image src="/images/ale-hero.jpg" alt="Ale Vencato — Terapeuta de Reiki em Caxias do Sul" fill className="object-cover object-top" priority /> */}
-                <p className="text-[0.7rem] tracking-[3px] uppercase text-[#B8956A] font-light">
-                  Sua foto aqui
-                </p>
+              <div className="relative w-full aspect-[3/4] overflow-hidden image-frame-offset">
+                <Image
+                  src="/images/ale-vencato.jpg"
+                  alt="Ale Vencato — Terapeuta de Reiki em Caxias do Sul"
+                  fill
+                  className="object-cover object-top"
+                  priority
+                />
               </div>
 
               {/* Float card */}

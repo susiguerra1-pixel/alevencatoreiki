@@ -3,6 +3,7 @@
 import { MessageCircle } from "lucide-react";
 import { whatsappLink, WHATSAPP_MESSAGES } from "@/lib/constants";
 import AnimatedSection from "./AnimatedSection";
+import Image from "next/image";
 
 const tags = ["Reiki Usui Certificada", "Terapia Complementar", "Caxias do Sul, RS"];
 
@@ -15,11 +16,13 @@ export default function SobreAle() {
 
         {/* Foto */}
         <AnimatedSection>
-          <div className="w-full aspect-square bg-gradient-to-br from-[rgba(255,255,255,0.6)] to-[#D7CBD9] flex items-center justify-center">
-            {/* <Image src="/images/ale-sobre.jpg" alt="Ale Vencato, terapeuta de Reiki Usui em Caxias do Sul" fill className="object-cover" /> */}
-            <p className="text-[0.7rem] tracking-[3px] uppercase text-[#524848] font-light">
-              Foto da Ale
-            </p>
+          <div className="relative w-full aspect-square overflow-hidden">
+            <Image
+              src="/images/ale-vencato.jpg"
+              alt="Ale Vencato, terapeuta de Reiki Usui em Caxias do Sul"
+              fill
+              className="object-cover object-top"
+            />
           </div>
         </AnimatedSection>
 

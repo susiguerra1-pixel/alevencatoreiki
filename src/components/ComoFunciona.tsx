@@ -3,6 +3,7 @@
 import { MessageCircle } from "lucide-react";
 import { whatsappLink, WHATSAPP_MESSAGES } from "@/lib/constants";
 import AnimatedSection from "./AnimatedSection";
+import Image from "next/image";
 
 const symptoms = [
   "Ansiedade que aparece sem um motivo claro",
@@ -22,11 +23,13 @@ export default function ComoFunciona() {
         {/* Imagem */}
         <AnimatedSection>
           <div className="relative">
-            <div className="w-full aspect-[4/5] bg-gradient-to-br from-[#F0EBF2] to-[#D7CBD9] flex items-center justify-center relative image-frame-offset">
-              {/* <Image src="/images/ale-sessao.jpg" alt="Sessão de Reiki Usui em Caxias do Sul" fill className="object-cover" /> */}
-              <p className="text-[0.7rem] tracking-[3px] uppercase text-[#B8956A] font-light">
-                Foto da sessão
-              </p>
+            <div className="relative w-full aspect-[4/5] overflow-hidden image-frame-offset">
+              <Image
+                src="/images/ale-vencato.jpg"
+                alt="Ale Vencato — Sessão de Reiki Usui em Caxias do Sul"
+                fill
+                className="object-cover object-top"
+              />
             </div>
             <div className="absolute top-[-14px] right-[-14px] w-[55%] h-[50%] border border-[rgba(184,149,106,0.18)] pointer-events-none" />
           </div>
