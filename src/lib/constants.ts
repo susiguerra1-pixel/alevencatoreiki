@@ -8,7 +8,7 @@ export const SITE_URL = "https://alevencatoreiki.com.br";
 /* ── Endereço ── */
 export const ADDRESS = {
   street: "R. Dal Canale, 2186",
-  complement: "Sala 10022",
+  complement: "Conjunto Comercial Alvorada, Sala 10022",
   neighborhood: "Exposição",
   city: "Caxias do Sul",
   state: "RS",
