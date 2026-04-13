@@ -43,9 +43,9 @@ export const whatsappLink = (message: string) =>
 /* ── Itens de navegação ── */
 export const NAV_ITEMS = [
   { label: "Como funciona", href: "#sobre" },
+  { label: "Sobre Ale", href: "#ale" },
   { label: "Sessões", href: "#sessoes" },
   { label: "Depoimentos", href: "#depoimentos" },
-  { label: "Sobre Ale", href: "#ale" },
   { label: "Dúvidas", href: "#objecoes" },
   { label: "Contato", href: "#contato" },
 ];

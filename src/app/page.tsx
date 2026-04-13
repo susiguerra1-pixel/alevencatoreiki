@@ -2,11 +2,11 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import SocialStrip from "@/components/SocialStrip";
 import ComoFunciona from "@/components/ComoFunciona";
-import OqueEReiki from "@/components/OqueEReiki";
+import SobreAle from "@/components/SobreAle";
 import Sessoes from "@/components/Sessoes";
 import Testimonials from "@/components/Testimonials";
+import OqueEReiki from "@/components/OqueEReiki";
 import FAQ from "@/components/FAQ";
-import SobreAle from "@/components/SobreAle";
 import FinalCTA from "@/components/FinalCTA";
 import LeadMagnet from "@/components/LeadMagnet";
 import Contato from "@/components/Contato";
@@ -22,10 +22,10 @@ export default function Home() {
         <Hero />
         <SocialStrip />
         <ComoFunciona />
-        <OqueEReiki />
+        <SobreAle />
         <Sessoes />
         <Testimonials />
-        <SobreAle />
+        <OqueEReiki />
         <FAQ />
         <FinalCTA />
         <LeadMagnet />
