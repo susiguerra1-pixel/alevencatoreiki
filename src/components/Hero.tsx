@@ -63,6 +63,19 @@ export default function Hero() {
                   Ver como funciona
                 </a>
               </div>
+
+              {/* Foto — mobile only, abaixo do CTA */}
+              <div className="block lg:hidden mt-10 relative">
+                <div className="relative w-full aspect-[3/4] overflow-hidden image-frame-offset">
+                  <Image
+                    src="/images/ale-hero.jpg"
+                    alt="Ale Vencato — Terapeuta de Reiki em Caxias do Sul"
+                    fill
+                    className="object-cover object-top"
+                    priority
+                  />
+                </div>
+              </div>
             </div>
           </AnimatedSection>
 
