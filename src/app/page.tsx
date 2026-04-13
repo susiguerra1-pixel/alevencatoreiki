@@ -25,8 +25,8 @@ export default function Home() {
         <OqueEReiki />
         <Sessoes />
         <Testimonials />
-        <FAQ />
         <SobreAle />
+        <FAQ />
         <FinalCTA />
         <LeadMagnet />
         <Contato />
