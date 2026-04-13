@@ -31,7 +31,7 @@ export default function SobreAle() {
         {/* Conteúdo */}
         <AnimatedSection delay={0.15}>
           <div>
-            <p className="text-[0.65rem] tracking-[5px] uppercase text-[#4A2E0A] mb-3 font-light">
+            <p className="text-[0.65rem] tracking-[1.5px] uppercase text-[#4A2E0A] mb-3 font-light">
               Terapeuta de Reiki em Caxias do Sul
             </p>
             <h2 className="font-cormorant text-[clamp(2rem,3.2vw,3rem)] font-light text-[#4A4040] leading-[1.2]">
@@ -39,7 +39,7 @@ export default function SobreAle() {
             </h2>
             <div className="gold-line" />
 
-            <p className="text-[0.72rem] tracking-[2.5px] uppercase text-[#4A2E0A] mb-5 font-light">
+            <p className="text-[0.72rem] tracking-[1px] uppercase text-[#4A2E0A] mb-5 font-light">
               ✨ Minha jornada até o Reiki
             </p>
 
