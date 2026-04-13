@@ -3,26 +3,12 @@
 import { Star } from "lucide-react";
 import { GOOGLE_REVIEW_URL } from "@/lib/constants";
 import AnimatedSection from "./AnimatedSection";
+import Image from "next/image";
 
-const testimonials = [
-  {
-    stars: 5,
-    result: "Mais leve e com a mente equilibrada",
-    text: "Estou me sentindo realmente muito melhor, mais leve, com a mente mais equilibrada! Agradeço por todo o carinho e atenção.",
-    location: "Caxias do Sul, RS",
-  },
-  {
-    stars: 5,
-    result: "Entrou mal, saiu leve e restaurada",
-    text: "Eu nunca tinha feito Reiki antes, só ouvia falar. O seu atendimento foi algo maravilhoso — eu entrei no consultório muito mal e saí de lá leve, restaurada. Parece impossível, mas realmente foi essa sensação que tive.",
-    location: "Caxias do Sul, RS",
-  },
-  {
-    stars: 5,
-    result: "Depois de muito tempo, se sentiu feliz de novo",
-    text: "Fazia muito tempo que minha cabeça não parava pelo tempo que parou depois da sessão. Fazia muito tempo que eu não me sentia tão bem e feliz. Depois de muito tempo, posso dizer que estou feliz.",
-    location: "Caxias do Sul, RS",
-  },
+const images = [
+  { src: "/images/depoimento-001.jpg", alt: "Depoimento de cliente — Ale Vencato Reiki" },
+  { src: "/images/depoimento-002.jpg", alt: "Depoimento de cliente — Ale Vencato Reiki" },
+  { src: "/images/depoimento-003.jpg", alt: "Depoimento de cliente — Ale Vencato Reiki" },
 ];
 
 export default function Testimonials() {
@@ -44,32 +30,17 @@ export default function Testimonials() {
           </div>
         </AnimatedSection>
 
-        {/* Cards */}
+        {/* Imagens dos depoimentos */}
         <div className="grid md:grid-cols-3 gap-4 mb-12">
-          {testimonials.map((t, i) => (
+          {images.map((img, i) => (
             <AnimatedSection key={i} delay={i * 0.1}>
-              <div className="bg-[#F0EBF2] p-9">
-                {/* Estrelas */}
-                <div className="flex gap-0.5 mb-3.5">
-                  {Array.from({ length: t.stars }).map((_, j) => (
-                    <Star
-                      key={j}
-                      className="h-3 w-3 fill-[#B8956A] text-[#B8956A]"
-                    />
-                  ))}
-                </div>
-                {/* Resultado */}
-                <span className="text-[0.75rem] text-[#B8956A] font-normal mb-3.5 block">
-                  → {t.result}
-                </span>
-                {/* Depoimento */}
-                <p className="font-cormorant text-[1.05rem] leading-[1.85] text-[#4A4040] italic font-light mb-4">
-                  &ldquo;{t.text}&rdquo;
-                </p>
-                {/* Localização */}
-                <div className="text-[0.65rem] tracking-[2px] uppercase text-[#524848] font-light">
-                  {t.location}
-                </div>
+              <div className="relative w-full aspect-[9/16] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  className="object-cover object-top"
+                />
               </div>
             </AnimatedSection>
           ))}
