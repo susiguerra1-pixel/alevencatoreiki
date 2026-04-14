@@ -4,6 +4,7 @@ import { MessageCircle, ChevronDown } from "lucide-react";
 import { whatsappLink, WHATSAPP_MESSAGES } from "@/lib/constants";
 import AnimatedSection from "./AnimatedSection";
 import Image from "next/image";
+import { trackWhatsAppClick } from "@/lib/analytics";
 
 export default function Hero() {
   const waHref = whatsappLink(WHATSAPP_MESSAGES.hero);
@@ -51,6 +52,7 @@ export default function Hero() {
                   href={waHref}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackWhatsAppClick("hero")}
                   className="inline-flex items-center gap-2.5 text-[0.8rem] tracking-[2px] uppercase text-[#FAFAF8] bg-[#B8956A] px-8 md:px-11 py-4 md:py-5 shadow-[0_6px_24px_rgba(184,149,106,0.45)] hover:bg-[#D4AF82] hover:-translate-y-0.5 hover:shadow-[0_10px_32px_rgba(184,149,106,0.5)] transition-all duration-300 font-normal w-full sm:w-auto justify-center sm:justify-start"
                 >
                   <MessageCircle className="h-4 w-4 shrink-0" />

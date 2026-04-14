@@ -4,6 +4,7 @@ import { MessageCircle } from "lucide-react";
 import { whatsappLink, WHATSAPP_MESSAGES } from "@/lib/constants";
 import AnimatedSection from "./AnimatedSection";
 import Image from "next/image";
+import { trackWhatsAppClick } from "@/lib/analytics";
 
 const sessions = [
   {
@@ -109,6 +110,7 @@ export default function Sessoes() {
                   href={whatsappLink(s.msg)}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackWhatsAppClick("sessoes")}
                   className="inline-flex items-center gap-2 text-[0.73rem] tracking-[1.5px] uppercase text-[#F5F0EB] bg-[#B8956A] px-6 py-4 shadow-[0_4px_16px_rgba(184,149,106,0.35)] hover:bg-[#D4AF82] hover:-translate-y-0.5 transition-all duration-300 font-normal self-start"
                 >
                   <MessageCircle className="h-3.5 w-3.5" />

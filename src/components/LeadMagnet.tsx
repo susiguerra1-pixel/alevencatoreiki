@@ -2,6 +2,7 @@
 
 import { MessageCircle } from "lucide-react";
 import { whatsappLink, WHATSAPP_MESSAGES } from "@/lib/constants";
+import { trackWhatsAppClick } from "@/lib/analytics";
 
 export default function LeadMagnet() {
   const waHref = whatsappLink(WHATSAPP_MESSAGES.vagas);
@@ -31,6 +32,7 @@ export default function LeadMagnet() {
           href={waHref}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => trackWhatsAppClick("lead_magnet")}
           className="inline-flex items-center gap-2.5 text-[0.8rem] tracking-[2px] uppercase text-[#4A4040] bg-[#D4AF82] px-10 py-4 hover:bg-[#B8956A] hover:-translate-y-px transition-all duration-300 font-normal shadow-[0_6px_24px_rgba(0,0,0,0.25)]"
         >
           <MessageCircle className="h-4 w-4" />

@@ -3,6 +3,7 @@
 import { MessageCircle } from "lucide-react";
 import { whatsappLink, WHATSAPP_MESSAGES, HOURS, ADDRESS } from "@/lib/constants";
 import AnimatedSection from "./AnimatedSection";
+import { trackWhatsAppClick } from "@/lib/analytics";
 
 export default function FinalCTA() {
   const waHref = whatsappLink(WHATSAPP_MESSAGES.cta);
@@ -43,6 +44,7 @@ export default function FinalCTA() {
             href={waHref}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackWhatsAppClick("final_cta")}
             className="inline-flex items-center gap-2.5 text-[0.8rem] tracking-[2px] uppercase text-[#F5F0EB] bg-[#B8956A] px-11 py-5 shadow-[0_6px_24px_rgba(184,149,106,0.45)] hover:bg-[#D4AF82] hover:-translate-y-0.5 transition-all duration-300 font-normal mx-auto"
           >
             <MessageCircle className="h-4 w-4" />
