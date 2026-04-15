@@ -1,3 +1,8 @@
+"use client";
+
+import { MessageCircle } from "lucide-react";
+import { whatsappLink, WHATSAPP_MESSAGES } from "@/lib/constants";
+import { trackWhatsAppClick } from "@/lib/analytics";
 import AnimatedSection from "./AnimatedSection";
 
 export default function OqueEReiki() {
@@ -42,6 +47,18 @@ export default function OqueEReiki() {
               <p>
                 Em Caxias do Sul, ofereço sessões de Reiki com atendimento presencial, exclusivo e foco no cuidado integral de cada pessoa.
               </p>
+            </div>
+            <div className="pt-6 text-center border-t border-[rgba(184,149,106,0.15)] mt-2">
+              <a
+                href={whatsappLink(WHATSAPP_MESSAGES.sobre)}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => trackWhatsAppClick("oque_e_reiki")}
+                className="inline-flex items-center gap-3 text-[0.8rem] tracking-[2px] uppercase text-[#FAFAF8] bg-[#4A4040] px-10 py-4 shadow-[0_6px_24px_rgba(74,64,64,0.25)] hover:bg-[#6B5B5B] hover:-translate-y-0.5 transition-all duration-300 font-normal"
+              >
+                <MessageCircle className="h-4 w-4" />
+                Quero experimentar o Reiki
+              </a>
             </div>
           </div>
         </AnimatedSection>

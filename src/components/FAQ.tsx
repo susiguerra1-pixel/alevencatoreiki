@@ -1,5 +1,8 @@
 "use client";
 
+import { MessageCircle } from "lucide-react";
+import { whatsappLink, WHATSAPP_MESSAGES } from "@/lib/constants";
+import { trackWhatsAppClick } from "@/lib/analytics";
 import AnimatedSection from "./AnimatedSection";
 
 const faqs = [
@@ -61,9 +64,9 @@ export default function FAQ() {
           {faqs.map((faq, i) => (
             <AnimatedSection key={i} delay={Math.floor(i / 2) * 0.1}>
               <div className="bg-[#F8F3EC] p-9 hover:bg-[rgba(255,255,255,0.65)] transition-colors duration-300 h-full">
-                <p className="font-cormorant text-[1.15rem] text-[#4A4040] font-normal mb-3 italic">
+                <h3 className="font-cormorant text-[1.15rem] text-[#4A4040] font-normal mb-3 italic">
                   {faq.q}
-                </p>
+                </h3>
                 <div className="flex flex-col gap-2">
                   {faq.a.map((para, j) => (
                     <p key={j} className="text-[0.95rem] leading-[1.85] text-[#524848] font-normal">
@@ -75,6 +78,26 @@ export default function FAQ() {
             </AnimatedSection>
           ))}
         </div>
+
+        {/* CTA após FAQ */}
+        <AnimatedSection delay={0.4}>
+          <div className="text-center mt-10">
+            <p className="text-[0.95rem] leading-[1.85] text-[#524848] font-normal mb-5">
+              Não encontrou o que procurava? Fale diretamente comigo.
+            </p>
+            <a
+              href={whatsappLink(WHATSAPP_MESSAGES.contato)}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackWhatsAppClick("faq")}
+              className="inline-flex items-center gap-3 text-[0.8rem] tracking-[2px] uppercase text-[#FAFAF8] bg-[#B8956A] px-10 py-4 shadow-[0_6px_24px_rgba(184,149,106,0.35)] hover:bg-[#D4AF82] hover:-translate-y-0.5 transition-all duration-300 font-normal"
+            >
+              <MessageCircle className="h-4 w-4" />
+              Tirar dúvidas pelo WhatsApp
+            </a>
+          </div>
+        </AnimatedSection>
+
       </div>
     </section>
   );

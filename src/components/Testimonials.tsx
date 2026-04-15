@@ -6,9 +6,9 @@ import AnimatedSection from "./AnimatedSection";
 import Image from "next/image";
 
 const images = [
-  { src: "/images/depoimento-001.jpg", alt: "Depoimento de cliente — Ale Vencato Reiki" },
-  { src: "/images/depoimento-002.jpg", alt: "Depoimento de cliente — Ale Vencato Reiki" },
-  { src: "/images/depoimento-003.jpg", alt: "Depoimento de cliente — Ale Vencato Reiki" },
+  { src: "/images/depoimento-001.jpg", alt: "Depoimento 1 — Sessão de Reiki com Ale Vencato em Caxias do Sul" },
+  { src: "/images/depoimento-002.jpg", alt: "Depoimento 2 — Sessão de Reiki com Ale Vencato em Caxias do Sul" },
+  { src: "/images/depoimento-003.jpg", alt: "Depoimento 3 — Sessão de Reiki com Ale Vencato em Caxias do Sul" },
 ];
 
 export default function Testimonials() {

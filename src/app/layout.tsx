@@ -66,7 +66,7 @@ export const metadata: Metadata = {
       "Reduza ansiedade, durma melhor e recupere sua energia com sessões de Reiki Usui em Caxias do Sul. Agende agora.",
     images: [
       {
-        url: "/images/og-image.jpg",
+        url: "/images/ale-hero.jpg",
         width: 1200,
         height: 630,
         alt: "Ale Vencato Reiki — Caxias do Sul",
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     title: "Reiki em Caxias do Sul | Ale Vencato Reiki",
     description:
       "Sessões de Reiki Usui para reduzir ansiedade, melhorar o sono e recuperar sua energia. Caxias do Sul, RS.",
-    images: ["/images/og-image.jpg"],
+    images: ["/images/ale-hero.jpg"],
   },
   robots: {
     index: true,
