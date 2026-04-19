@@ -115,9 +115,9 @@ export default function Contato() {
                     {item.icon}
                   </div>
                   <div>
-                    <h4 className="text-[0.62rem] tracking-[1px] uppercase text-[#4A2E0A] mb-1.5 font-light">
+                    <p className="text-[0.62rem] tracking-[1px] uppercase text-[#4A2E0A] mb-1.5 font-light">
                       {item.label}
-                    </h4>
+                    </p>
                     {item.content}
                   </div>
                 </div>

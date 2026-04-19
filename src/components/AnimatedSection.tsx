@@ -1,7 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
-import { ReactNode } from "react";
+import { useEffect, useRef, ReactNode } from "react";
 
 interface AnimatedSectionProps {
   children: ReactNode;
@@ -9,28 +8,48 @@ interface AnimatedSectionProps {
   delay?: number;
 }
 
+/**
+ * Substitui Framer Motion por IntersectionObserver nativo.
+ * — SSR renderiza o conteúdo SEM opacity:0 (melhora LCP)
+ * — Após hidratação, aplica fade-in apenas ao entrar no viewport
+ * — Respeita prefers-reduced-motion
+ * — ~0 KB de bundle extra (API nativa do browser)
+ */
 export default function AnimatedSection({
   children,
   className = "",
   delay = 0,
 }: AnimatedSectionProps) {
-  /* Respeita preferência do sistema "reduzir movimento"
-     — melhora acessibilidade e ajuda no CLS do PageSpeed */
-  const shouldReduceMotion = useReducedMotion();
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    el.style.opacity = "0";
+    el.style.transform = "translateY(16px)";
+    el.style.transition = `opacity 0.5s ease ${delay}s, transform 0.5s ease ${delay}s`;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          el.style.opacity = "1";
+          el.style.transform = "translateY(0)";
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "-50px" }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [delay]);
 
   return (
-    <motion.div
-      initial={shouldReduceMotion ? false : { opacity: 0, y: 16 }}
-      whileInView={shouldReduceMotion ? {} : { opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
-      transition={{
-        duration: 0.5,
-        delay: shouldReduceMotion ? 0 : delay,
-        ease: "easeOut",
-      }}
-      className={className}
-    >
+    <div ref={ref} className={className}>
       {children}
-    </motion.div>
+    </div>
   );
 }
