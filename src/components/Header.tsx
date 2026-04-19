@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, MessageCircle, Phone } from "lucide-react";
 import { NAV_ITEMS, whatsappLink, WHATSAPP_MESSAGES, WHATSAPP_NUMBER } from "@/lib/constants";
+import { trackWhatsAppClick } from "@/lib/analytics";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -52,6 +53,7 @@ export default function Header() {
             href={waHref}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackWhatsAppClick("header")}
             className="flex items-center gap-2 text-[0.75rem] tracking-[1.5px] uppercase text-[#FAFAF8] bg-[#B8956A] px-6 py-3 shadow-[0_4px_14px_rgba(184,149,106,0.4)] hover:bg-[#D4AF82] hover:-translate-y-px transition-all duration-300 font-normal whitespace-nowrap"
           >
             <MessageCircle className="h-3.5 w-3.5" />
@@ -89,7 +91,7 @@ export default function Header() {
             href={waHref}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={closeMenu}
+            onClick={() => { trackWhatsAppClick("header"); closeMenu(); }}
             className="flex items-center justify-center gap-2 text-[0.75rem] tracking-[1.5px] uppercase text-[#FAFAF8] bg-[#B8956A] px-6 py-3.5 w-full shadow-[0_4px_14px_rgba(184,149,106,0.4)] hover:bg-[#D4AF82] transition-all duration-300 font-normal"
           >
             <MessageCircle className="h-4 w-4" />
