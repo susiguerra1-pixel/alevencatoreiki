@@ -1,4 +1,7 @@
+"use client";
+
 import { NAV_ITEMS, INSTAGRAM_URL, GOOGLE_REVIEW_URL, whatsappLink, WHATSAPP_MESSAGES } from "@/lib/constants";
+import { trackWhatsAppClick } from "@/lib/analytics";
 
 export default function Footer() {
   return (
@@ -31,13 +34,14 @@ export default function Footer() {
           {/* Social */}
           <div className="flex gap-2.5">
             {[
-              { href: INSTAGRAM_URL, label: "Instagram", text: "ig" },
+              { href: INSTAGRAM_URL, label: "Instagram", text: "ig", track: false },
               {
                 href: whatsappLink(WHATSAPP_MESSAGES.generic),
                 label: "WhatsApp",
                 text: "wa",
+                track: true,
               },
-              { href: GOOGLE_REVIEW_URL, label: "Google", text: "g" },
+              { href: GOOGLE_REVIEW_URL, label: "Google", text: "g", track: false },
             ].map((s) => (
               <a
                 key={s.label}
@@ -45,6 +49,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={s.label}
+                onClick={s.track ? () => trackWhatsAppClick("footer") : undefined}
                 className="w-8.5 h-8.5 border border-[rgba(184,149,106,0.22)] flex items-center justify-center text-[#524848] text-[0.65rem] tracking-wider hover:border-[#B8956A] hover:text-[#B8956A] transition-all duration-300"
               >
                 {s.text}

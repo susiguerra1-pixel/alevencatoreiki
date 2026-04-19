@@ -31,8 +31,8 @@ const nextConfig: NextConfig = {
       "font-src 'self' https://fonts.gstatic.com",
       // Estilos
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-      // Frames: Google Ads + Meta
-      "frame-src https://bid.g.doubleclick.net https://td.doubleclick.net https://www.googletagmanager.com https://www.facebook.com",
+      // Frames: Google Ads + Meta + Google Maps
+      "frame-src https://bid.g.doubleclick.net https://td.doubleclick.net https://www.googletagmanager.com https://www.facebook.com https://maps.google.com https://www.google.com",
     ].join("; ");
 
     return [

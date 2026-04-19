@@ -11,6 +11,7 @@ import {
   ADDRESS,
   HOURS,
 } from "@/lib/constants";
+import { trackWhatsAppClick } from "@/lib/analytics";
 import AnimatedSection from "./AnimatedSection";
 
 const contactItems = [
@@ -22,6 +23,7 @@ const contactItems = [
         href={whatsappLink(WHATSAPP_MESSAGES.contato)}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => trackWhatsAppClick("contato")}
         className="text-[0.95rem] text-[#524848] font-light hover:text-[#B8956A] transition-colors duration-300 block"
       >
         ({WHATSAPP_NUMBER.slice(0, 2)}) 9{WHATSAPP_NUMBER.slice(3, 7)}-{WHATSAPP_NUMBER.slice(7)}
