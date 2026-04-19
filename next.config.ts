@@ -21,18 +21,18 @@ const nextConfig: NextConfig = {
   async headers() {
     const csp = [
       "default-src 'self'",
-      // Scripts: próprio site + GTM + GA4 + Google Ads
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://ssl.google-analytics.com https://www.google-analytics.com https://googleads.g.doubleclick.net https://www.googleadservices.com https://www.google.com",
-      // Imagens: próprio site + pixels Google
-      "img-src 'self' data: blob: https://www.googletagmanager.com https://www.google-analytics.com https://ssl.google-analytics.com https://stats.g.doubleclick.net https://www.google.com https://www.google.com.br https://googleads.g.doubleclick.net",
-      // Conexões: GA4 + GTM
-      "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://region1.google-analytics.com https://region1.analytics.google.com https://www.googletagmanager.com",
+      // Scripts: próprio site + GTM + GA4 + Google Ads + Meta Pixel
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://ssl.google-analytics.com https://www.google-analytics.com https://googleads.g.doubleclick.net https://www.googleadservices.com https://www.google.com https://connect.facebook.net",
+      // Imagens: próprio site + pixels Google + Meta
+      "img-src 'self' data: blob: https://www.googletagmanager.com https://www.google-analytics.com https://ssl.google-analytics.com https://stats.g.doubleclick.net https://www.google.com https://www.google.com.br https://googleads.g.doubleclick.net https://www.facebook.com",
+      // Conexões: GA4 + GTM + Meta
+      "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://region1.google-analytics.com https://region1.analytics.google.com https://www.googletagmanager.com https://www.facebook.com https://connect.facebook.net",
       // Fontes: Google Fonts
       "font-src 'self' https://fonts.gstatic.com",
       // Estilos
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-      // Frames: Google Ads
-      "frame-src https://bid.g.doubleclick.net https://td.doubleclick.net https://www.googletagmanager.com",
+      // Frames: Google Ads + Meta
+      "frame-src https://bid.g.doubleclick.net https://td.doubleclick.net https://www.googletagmanager.com https://www.facebook.com",
     ].join("; ");
 
     return [
