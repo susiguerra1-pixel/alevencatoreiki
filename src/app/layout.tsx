@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     template: "%s | Ale Vencato Reiki — Caxias do Sul",
   },
   description:
-    "Sessões de Reiki Usui em Caxias do Sul com Ale Vencato. Reduza ansiedade, melhore o sono e recupere sua energia. Agende pelo WhatsApp.",
+    "Reiki Usui em Caxias do Sul com Ale Vencato, terapeuta certificada nos três níveis. Sessões presenciais de 50–60 min para ansiedade, insônia e equilíbrio emocional. Terapia complementar sem contraindicações. Agende pelo WhatsApp.",
   keywords: [
     "reiki caxias do sul",
     "terapia energética caxias do sul",

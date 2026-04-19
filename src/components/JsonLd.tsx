@@ -240,10 +240,98 @@ export default function JsonLd() {
               text: "A sessão avulsa é ideal para quem quer conhecer o Reiki ou receber um momento de cuidado e relaxamento. O acompanhamento acontece com sessões ao longo do tempo, permitindo aprofundar o processo e favorecer um equilíbrio mais consistente e duradouro.",
             },
           },
+          {
+            "@type": "Question",
+            name: "Para que serve o Reiki?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "O Reiki serve para promover relaxamento profundo, reduzir ansiedade, melhorar a qualidade do sono e aliviar tensões físicas e emocionais. É utilizado como terapia complementar a tratamentos médicos e psicológicos, ajudando a restaurar o equilíbrio energético do organismo.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Quanto tempo dura uma sessão de Reiki?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Uma sessão de Reiki tem duração de 50 a 60 minutos. Durante esse tempo, você permanece deitada, vestida, em um ambiente acolhedor, enquanto a terapeuta realiza a imposição de mãos sobre ou próximo ao corpo.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "O que acontece depois de uma sessão de Reiki?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Após a sessão, é comum sentir relaxamento profundo, leveza e bem-estar. Algumas pessoas experimentam um sono mais profundo ou sensação de tranquilidade nas horas seguintes. Recomenda-se beber água e evitar esforços intensos após o atendimento.",
+            },
+          },
         ],
       },
 
-      /* ── 9. BREADCRUMB ── */
+      /* ── 9. ARTICLE — O que é o Reiki ── */
+      {
+        "@type": "Article",
+        "@id": `${SITE_URL}/#article-oque-e-reiki`,
+        headline: "O que é o Reiki?",
+        description:
+          "O Reiki é uma técnica japonesa de harmonização energética que busca equilibrar corpo, mente e emoções por meio da energia vital universal.",
+        articleBody:
+          "O Reiki é uma técnica japonesa de harmonização energética que busca equilibrar corpo, mente e emoções por meio da energia vital universal. A palavra Reiki vem da união de dois termos japoneses: Rei, que significa universal, e Ki, que representa a energia vital que circula em todos os seres vivos. Durante a sessão, essa energia é transmitida por meio da imposição de mãos, com toques leves ou apenas próximos ao corpo. O objetivo é ajudar o fluxo natural da energia do organismo, favorecendo o relaxamento profundo e o equilíbrio energético. A técnica foi desenvolvida no Japão pelo mestre Mikao Usui. O Reiki não é uma religião e não exige qualquer tipo de crença. Hoje, o Reiki Usui é utilizado no mundo todo como terapia complementar, auxiliando na redução do estresse, da ansiedade, da insônia e de tensões físicas e emocionais. No Brasil, práticas de imposição de mãos integram as Práticas Integrativas e Complementares em Saúde (PICS) reconhecidas pelo SUS. O Reiki não substitui tratamentos médicos ou psicológicos, mas pode ser utilizado como complemento para promover equilíbrio, relaxamento e qualidade de vida.",
+        author: { "@id": `${SITE_URL}/#ale` },
+        publisher: { "@id": `${SITE_URL}/#business` },
+        isPartOf: { "@id": `${SITE_URL}/#webpage` },
+        mainEntityOfPage: { "@id": `${SITE_URL}/#webpage` },
+        inLanguage: "pt-BR",
+        about: {
+          "@type": "Thing",
+          name: "Reiki Usui",
+          description: "Técnica japonesa de harmonização energética",
+        },
+      },
+
+      /* ── 10. HOW-TO — Como é uma sessão de Reiki ── */
+      {
+        "@type": "HowTo",
+        "@id": `${SITE_URL}/#howto-sessao-reiki`,
+        name: "Como é uma sessão de Reiki Usui",
+        description:
+          "Saiba o que esperar durante uma sessão de Reiki Usui com Ale Vencato em Caxias do Sul.",
+        totalTime: "PT60M",
+        step: [
+          {
+            "@type": "HowToStep",
+            position: 1,
+            name: "Chegada e acolhimento",
+            text: "Você chega ao espaço de atendimento, preparado com música suave e ambiente acolhedor para favorecer o relaxamento.",
+          },
+          {
+            "@type": "HowToStep",
+            position: 2,
+            name: "Deitar-se confortavelmente",
+            text: "Você se deita em uma maca, vestida, em posição confortável. Não é necessário remover roupas ou acessórios.",
+          },
+          {
+            "@type": "HowToStep",
+            position: 3,
+            name: "Imposição de mãos",
+            text: "A terapeuta realiza a imposição de mãos com toques leves ou apenas próximos ao corpo, transmitindo a energia Reiki pelos chakras e pontos energéticos.",
+          },
+          {
+            "@type": "HowToStep",
+            position: 4,
+            name: "Relaxamento profundo",
+            text: "Durante os 50 a 60 minutos da sessão, muitas pessoas sentem calor, leveza ou adormecem naturalmente. Cada experiência é única.",
+          },
+          {
+            "@type": "HowToStep",
+            position: 5,
+            name: "Finalização e cuidados pós-sessão",
+            text: "Ao encerrar, recomenda-se beber água e evitar esforços intensos. É comum sentir relaxamento profundo, leveza e bem-estar nas horas seguintes.",
+          },
+        ],
+        provider: { "@id": `${SITE_URL}/#business` },
+      },
+
+      /* ── 11. BREADCRUMB ── */
       {
         "@type": "BreadcrumbList",
         "@id": `${SITE_URL}/#breadcrumb`,

@@ -38,6 +38,18 @@ const faqs = [
     q: '"Qual a diferença entre sessão avulsa e acompanhamento?"',
     a: ["A sessão avulsa é ideal para quem quer conhecer o Reiki ou receber um momento de cuidado e relaxamento.", "O acompanhamento acontece com sessões ao longo do tempo, permitindo aprofundar o processo e favorecer um equilíbrio mais consistente."],
   },
+  {
+    q: '"Para que serve o Reiki?"',
+    a: ["O Reiki serve para promover relaxamento profundo, reduzir ansiedade, melhorar a qualidade do sono e aliviar tensões físicas e emocionais.", "É utilizado como terapia complementar a tratamentos médicos e psicológicos, ajudando a restaurar o equilíbrio energético do organismo."],
+  },
+  {
+    q: '"Quanto tempo dura uma sessão de Reiki?"',
+    a: ["Uma sessão tem duração de 50 a 60 minutos.", "Durante esse tempo, você permanece deitada, vestida, em um ambiente acolhedor, enquanto a terapeuta realiza a imposição de mãos sobre ou próximo ao corpo."],
+  },
+  {
+    q: '"O que acontece depois de uma sessão de Reiki?"',
+    a: ["Após a sessão, é comum sentir relaxamento profundo, leveza e bem-estar.", "Algumas pessoas experimentam um sono mais profundo ou sensação de tranquilidade nas horas seguintes. Recomenda-se beber água e evitar esforços intensos após o atendimento."],
+  },
 ];
 
 export default function FAQ() {
