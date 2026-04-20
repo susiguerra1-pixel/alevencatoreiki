@@ -66,12 +66,12 @@ export default function Hero() {
 
             {/* Foto — mobile only, abaixo do CTA */}
             <div className="block lg:hidden mt-10 relative">
-              <div className="relative w-full aspect-[2/3] overflow-hidden image-frame-offset">
+              <div className="relative w-full aspect-[3/4] overflow-hidden image-frame-offset">
                 <Image
                   src="/images/ale-hero.jpg"
                   alt="Ale Vencato — Terapeuta de Reiki em Caxias do Sul"
                   fill
-                  sizes="(min-width: 1024px) 0px, 100vw"
+                  sizes="100vw"
                   className="object-cover object-top"
                   priority
                 />
@@ -82,12 +82,12 @@ export default function Hero() {
           {/* Imagem — oculta no mobile para não empurrar o CTA */}
           <div className="relative mx-auto max-w-md hidden lg:block">
             {/* Frame principal */}
-            <div className="relative w-full aspect-[2/3] overflow-hidden image-frame-offset">
+            <div className="relative w-full aspect-[3/4] overflow-hidden image-frame-offset">
               <Image
                 src="/images/ale-hero.jpg"
                 alt="Ale Vencato — Terapeuta de Reiki em Caxias do Sul"
                 fill
-                sizes="(max-width: 1023px) 0px, 45vw"
+                sizes="45vw"
                 className="object-cover object-top"
                 priority
               />
