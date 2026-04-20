@@ -79,27 +79,29 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Imagem — oculta no mobile para não empurrar o CTA */}
-          <div className="relative mx-auto max-w-md hidden lg:block">
-            {/* Frame principal */}
-            <div className="relative w-full aspect-[3/4] overflow-hidden image-frame-offset">
-              <Image
-                src="/images/ale-hero.jpg"
-                alt="Ale Vencato — Terapeuta de Reiki em Caxias do Sul"
-                fill
-                sizes="45vw"
-                className="object-cover object-top"
-                priority
-              />
-            </div>
-
-            {/* Float card */}
-            <div className="absolute -bottom-4 -left-4 bg-[#F5F0EB] px-5 py-4 border border-[rgba(184,149,106,0.15)]">
-              <div className="font-cormorant text-[1.8rem] text-[#B8956A] font-light leading-none">
-                ∞
+          {/* Imagem — item do grid sempre presente; inner div oculto no mobile */}
+          <div>
+            <div className="relative mx-auto max-w-md hidden lg:block">
+              {/* Frame principal */}
+              <div className="relative w-full aspect-[3/4] overflow-hidden image-frame-offset">
+                <Image
+                  src="/images/ale-hero.jpg"
+                  alt="Ale Vencato — Terapeuta de Reiki em Caxias do Sul"
+                  fill
+                  sizes="45vw"
+                  className="object-cover object-top"
+                  priority
+                />
               </div>
-              <div className="text-[0.62rem] tracking-[2px] uppercase text-[#524848] mt-1 font-light">
-                Energia Universal
+
+              {/* Float card */}
+              <div className="absolute -bottom-4 -left-4 bg-[#F5F0EB] px-5 py-4 border border-[rgba(184,149,106,0.15)]">
+                <div className="font-cormorant text-[1.8rem] text-[#B8956A] font-light leading-none">
+                  ∞
+                </div>
+                <div className="text-[0.62rem] tracking-[2px] uppercase text-[#524848] mt-1 font-light">
+                  Energia Universal
+                </div>
               </div>
             </div>
           </div>
