@@ -82,7 +82,7 @@ export default function ComoFunciona() {
             <div className="flex flex-col gap-1.5 mb-5">
               {["sem medicamentos", "sem julgamentos", "sem contraindicações"].map((item) => (
                 <span key={item} className="text-[0.95rem] text-[#524848] font-light">
-                  ✓ {item}
+                  — {item}
                 </span>
               ))}
             </div>
