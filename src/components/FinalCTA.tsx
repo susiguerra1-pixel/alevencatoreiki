@@ -31,13 +31,11 @@ export default function FinalCTA() {
 
           <div className="flex flex-col gap-4 text-[1rem] leading-[1.85] text-[#524848] font-normal mb-10 text-left">
             <p>
-              Muitas vezes adiamos o nosso próprio cuidado enquanto damos conta de tudo ao nosso redor. Mas chega um momento em que o corpo e a mente pedem pausa.
+              A gente costuma cuidar de tudo e de todos antes de cuidar de si. Mas chega um ponto em que o corpo começa a cobrar isso.
             </p>
-            <p>Talvez este seja o seu momento.</p>
             <p>
-              Enquanto você lê estas palavras, a possibilidade de se reconectar com a sua energia e encontrar mais equilíbrio já está disponível para você.
+              Se você chegou até aqui, talvez já saiba que precisa de uma pausa. A sessão pode ser esse espaço.
             </p>
-            <p>Permita-se dar esse passo por si mesma. ✨</p>
           </div>
 
           <a

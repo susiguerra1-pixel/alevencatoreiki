@@ -41,7 +41,7 @@ export default function SobreAle() {
             <div className="gold-line" />
 
             <p className="text-[0.72rem] tracking-[1px] uppercase text-[#4A2E0A] mb-5 font-light">
-              ✨ Minha jornada até o Reiki
+              Minha jornada até o Reiki
             </p>
 
             <div className="flex flex-col gap-4">
@@ -70,7 +70,7 @@ export default function SobreAle() {
 
             {/* Tagline */}
             <blockquote className="font-cormorant text-[1.3rem] italic text-[#4A4040] mt-7 px-6 py-6 bg-[rgba(255,255,255,0.4)] border-l-2 border-[#D4AF82] leading-[1.7] font-light">
-              ✨ &ldquo;Reconecte-se com a sua luz.&rdquo;
+              &ldquo;Reconecte-se com a sua luz.&rdquo;
             </blockquote>
 
             {/* Tags */}

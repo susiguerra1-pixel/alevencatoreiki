@@ -69,8 +69,7 @@ export default function ComoFunciona() {
             </ul>
 
             <p className="text-[1rem] leading-[1.9] font-light italic mb-5" style={{color:"var(--gold,#B8956A)"}}>
-              Esses sinais não são fraqueza. São convites para desacelerar e se
-              reconectar consigo mesma.
+              Esses sinais dizem alguma coisa. O Reiki cria espaço para ouvir.
             </p>
 
             <p className="text-[1rem] leading-[1.85] text-[#524848] font-normal mb-5">
@@ -83,14 +82,13 @@ export default function ComoFunciona() {
             <div className="flex flex-col gap-1.5 mb-5">
               {["sem medicamentos", "sem julgamentos", "sem contraindicações"].map((item) => (
                 <span key={item} className="text-[0.95rem] text-[#524848] font-light">
-                  ✨ {item}
+                  ✓ {item}
                 </span>
               ))}
             </div>
 
             <p className="text-[1rem] leading-[1.85] text-[#524848] font-normal italic mb-8">
-              Um momento para pausar, respirar e reconectar-se com a sua luz.
-              Permita-se viver essa experiência.
+              Uma hora deitada, em silêncio, cuidando de você. Sem precisar fazer nada além disso.
             </p>
 
             <a
