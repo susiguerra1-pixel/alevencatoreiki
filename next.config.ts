@@ -17,6 +17,22 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 31536000, // 1 ano
   },
 
+  /* ── Redirecionamentos com UTM para rastreamento de canais ── */
+  async redirects() {
+    return [
+      {
+        source: "/gmb",
+        destination: "/?utm_source=google&utm_medium=gmb&utm_campaign=google-meu-negocio",
+        permanent: false,
+      },
+      {
+        source: "/instagram",
+        destination: "/?utm_source=instagram&utm_medium=social&utm_campaign=bio",
+        permanent: false,
+      },
+    ];
+  },
+
   /* ── Headers HTTP de segurança e cache ── */
   async headers() {
     const csp = [
