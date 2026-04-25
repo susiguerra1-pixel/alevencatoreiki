@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Ale Vencato Reiki — Carrossel "Cansaço Invisível"</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream:      #F5F0EB;
+      --cream-deep: #EDE4D8;
+      --gold:       #B8956A;
+      --gold-light: #D4AF82;
+      --gold-pale:  rgba(184, 149, 106, 0.18);
+      --brown-dark: #4A2E0A;
+      --text-main:  #4A4040;
+      --text-body:  #524848;
+      --lilac:      rgba(180, 164, 200, 0.35);
+    }
+
+    html, body {
+      background: #1a1a1a;
+      font-family: 'Jost', sans-serif;
+      color: var(--text-main);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body.preview {
+      padding: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1080px);
+      gap: 32px;
+      justify-content: center;
+      transform-origin: top center;
+    }
+
+    /* --- SLIDE 1080x1350 --- */
+    .slide {
+      width: 1080px;
+      height: 1350px;
+      background: var(--cream);
+      position: relative;
+      overflow: hidden;
+      padding: 100px 100px 90px 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* decorative blobs */
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(90px);
+      pointer-events: none;
+    }
+    .blob--gold {
+      top: -360px;
+      right: -240px;
+      width: 1200px;
+      height: 1200px;
+      background: radial-gradient(closest-side, rgba(212, 175, 130, 0.65), transparent 70%);
+    }
+    .blob--lilac {
+      bottom: -400px;
+      left: -400px;
+      width: 900px;
+      height: 900px;
+      background: radial-gradient(closest-side, var(--lilac), transparent 70%);
+    }
+
+    .top, .main, .footer { z-index: 2; position: relative; }
+
+    /* eyebrow caps + gold rule */
+    .eyebrow {
+      font-family: 'Jost', sans-serif;
+      font-size: 17px;
+      font-weight: 400;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--brown-dark);
+    }
+    .gold-rule {
+      width: 44px;
+      height: 1px;
+      background: var(--gold);
+      margin-top: 20px;
+    }
+
+    /* main text area */
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .headline {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 300;
+      color: var(--text-main);
+      letter-spacing: -1.2px;
+      max-width: 900px;
+    }
+    .headline.xl { font-size: 148px; line-height: 1.02; }
+    .headline.lg { font-size: 110px; line-height: 1.08; }
+    .headline.md { font-size: 86px;  line-height: 1.12; }
+    .headline.sm { font-size: 72px;  line-height: 1.15; }
+
+    .body {
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      font-size: 28px;
+      line-height: 1.65;
+      color: var(--text-body);
+      margin-top: 44px;
+      max-width: 820px;
+    }
+
+    .body-serif {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 1.45;
+      color: var(--text-body);
+      margin-top: 40px;
+      max-width: 840px;
+    }
+
+    .reiki-word {
+      color: var(--gold);
+      font-style: italic;
+    }
+
+    .cta-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 44px;
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 1.9;
+      color: var(--text-body);
+    }
+    .cta-list li {
+      padding-left: 2px;
+    }
+    .cta-arrow {
+      color: var(--gold);
+      margin-right: 14px;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+    }
+
+    /* footer — brand block + dots */
+    .footer {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .infinity {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 72px;
+      color: var(--gold);
+      line-height: 0.8;
+    }
+    .brand-name {
+      font-family: 'Jost', sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--brown-dark);
+    }
+    .brand-tag {
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      font-size: 12px;
+      letter-spacing: 3.2px;
+      text-transform: uppercase;
+      color: var(--text-body);
+      margin-top: 6px;
+    }
+
+    .dots {
+      display: flex;
+      gap: 11px;
+      align-items: center;
+    }
+    .dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--gold-pale);
+    }
+    .dot.filled { background: var(--gold); }
+
+    /* slide 10 handle label */
+    .handle {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 26px;
+      color: var(--gold);
+      margin-top: 14px;
+    }
+
+    /* ---- photo panel (right column) ---- */
+    .photo-panel {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 520px;
+      background-size: cover;
+      background-position: center;
+      z-index: 1;
+    }
+    .photo-panel::before {
+      /* cream wash — makes photo feel of the same world as the slide */
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(245, 240, 235, 0.38);
+      pointer-events: none;
+    }
+    .photo-panel::after {
+      /* soft fade from cream on the inner edge into the photo */
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 260px;
+      background: linear-gradient(90deg, var(--cream) 0%, rgba(245, 240, 235, 0) 100%);
+      pointer-events: none;
+    }
+
+    /* when a slide has a photo panel, constrain text to left half */
+    .slide--with-photo .main .headline,
+    .slide--with-photo .main .body,
+    .slide--with-photo .main .body-serif {
+      max-width: 520px;
+    }
+    .slide--with-photo .main .headline.xl { font-size: 120px; }
+    .slide--with-photo .main .headline.lg { font-size: 88px; }
+    .slide--with-photo .main .headline.md { font-size: 72px; }
+  </style>
+</head>
+<body class="preview">
+  <div class="grid">
+
+    <!-- ============ SLIDE 01 — CAPA / GANCHO ============ -->
+    <section class="slide slide--with-photo" id="slide-01">
+      <div class="photo-panel" style="background-image: url('img/slide-01-woman.jpg'); background-position: 60% center;"></div>
+      <div class="blob blob--gold"></div>
+      <div class="blob blob--lilac"></div>
+
+      <div class="top">
+        <div class="eyebrow">PARA QUEM SE RECONHECE</div>
+        <div class="gold-rule"></div>
+      </div>
+
+      <div class="main">
+        <h1 class="headline md">Você já chorou no banho só pra ter 5 minutos em paz?</h1>
+        <p class="body">Se sim — arrasta. Talvez o que você sente tenha nome.</p>
+      </div>
+
+      <div class="footer">
+        <div class="brand">
+          <div class="infinity">∞</div>
+          <div>
+            <div class="brand-name">ALE VENCATO REIKI</div>
+            <div class="brand-tag">REIKI · CAXIAS DO SUL</div>
+          </div>
+        </div>
+        <div class="dots">
+          <span class="dot filled"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 02 — AMPLIFICAÇÃO ============ -->
+    <section class="slide" id="slide-02">
+      <div class="blob blob--gold"></div>
+      <div class="blob blob--lilac"></div>
+
+      <div class="top">
+        <div class="eyebrow">O QUE PROVAVELMENTE É</div>
+        <div class="gold-rule"></div>
+      </div>
+
+      <div class="main">
+        <h1 class="headline xl">Não é fraqueza.</h1>
+        <p class="body">É um tipo de cansaço que dorme com você.<br>Abaixo, 5 sinais de que ele te encontrou.</p>
+      </div>
+
+      <div class="footer">
+        <div class="brand">
+          <div class="infinity">∞</div>
+          <div>
+            <div class="brand-name">ALE VENCATO REIKI</div>
+            <div class="brand-tag">REIKI · CAXIAS DO SUL</div>
+          </div>
+        </div>
+        <div class="dots">
+          <span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 03 — SINAL 01 ============ -->
+    <section class="slide" id="slide-03">
+      <div class="blob blob--gold"></div>
+      <div class="blob blob--lilac"></div>
+
+      <div class="top">
+        <div class="eyebrow">SINAL · 01</div>
+        <div class="gold-rule"></div>
+      </div>
+
+      <div class="main">
+        <h1 class="headline lg">Dorme 8 horas.<br>Acorda cansada.</h1>
+        <p class="body">Como se o descanso passasse por cima de você — sem te tocar.</p>
+      </div>
+
+      <div class="footer">
+        <div class="brand">
+          <div class="infinity">∞</div>
+          <div>
+            <div class="brand-name">ALE VENCATO REIKI</div>
+            <div class="brand-tag">REIKI · CAXIAS DO SUL</div>
+          </div>
+        </div>
+        <div class="dots">
+          <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span>
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 04 — SINAL 02 ============ -->
+    <section class="slide" id="slide-04">
+      <div class="blob blob--gold"></div>
+      <div class="blob blob--lilac"></div>
+
+      <div class="top">
+        <div class="eyebrow">SINAL · 02</div>
+        <div class="gold-rule"></div>
+      </div>
+
+      <div class="main">
+        <h1 class="headline lg">Descansa —<br>e sente culpa.</h1>
+        <p class="body">Tem 20 minutos livres, e a cabeça já lista 5 coisas que você "devia" tar fazendo.</p>
+      </div>
+
+      <div class="footer">
+        <div class="brand">
+          <div class="infinity">∞</div>
+          <div>
+            <div class="brand-name">ALE VENCATO REIKI</div>
+            <div class="brand-tag">REIKI · CAXIAS DO SUL</div>
+          </div>
+        </div>
+        <div class="dots">
+          <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span>
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 05 — SINAL 03 ============ -->
+    <section class="slide" id="slide-05">
+      <div class="blob blob--gold"></div>
+      <div class="blob blob--lilac"></div>
+
+      <div class="top">
+        <div class="eyebrow">SINAL · 03</div>
+        <div class="gold-rule"></div>
+      </div>
+
+      <div class="main">
+        <h1 class="headline lg">A pia cheia<br>te tira do eixo.</h1>
+        <p class="body">Não é a louça. É que o seu copo tá cheio há tempo demais — e uma gota transborda tudo.</p>
+      </div>
+
+      <div class="footer">
+        <div class="brand">
+          <div class="infinity">∞</div>
+          <div>
+            <div class="brand-name">ALE VENCATO REIKI</div>
+            <div class="brand-tag">REIKI · CAXIAS DO SUL</div>
+          </div>
+        </div>
+        <div class="dots">
+          <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 06 — SINAL 04 ============ -->
+    <section class="slide" id="slide-06">
+      <div class="blob blob--gold"></div>
+      <div class="blob blob--lilac"></div>
+
+      <div class="top">
+        <div class="eyebrow">SINAL · 04</div>
+        <div class="gold-rule"></div>
+      </div>
+
+      <div class="main">
+        <h1 class="headline md">De dia some você.<br>À noite, só tem pensamento.</h1>
+        <p class="body">A cama vira tribunal: revisa o que falou, planeja amanhã, revive 2015. Dormir vira tarefa.</p>
+      </div>
+
+      <div class="footer">
+        <div class="brand">
+          <div class="infinity">∞</div>
+          <div>
+            <div class="brand-name">ALE VENCATO REIKI</div>
+            <div class="brand-tag">REIKI · CAXIAS DO SUL</div>
+          </div>
+        </div>
+        <div class="dots">
+          <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+          <span class="dot filled"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 07 — SINAL 05 ============ -->
+    <section class="slide" id="slide-07">
+      <div class="blob blob--gold"></div>
+      <div class="blob blob--lilac"></div>
+
+      <div class="top">
+        <div class="eyebrow">SINAL · 05</div>
+        <div class="gold-rule"></div>
+      </div>
+
+      <div class="main">
+        <h1 class="headline lg">O corpo avisa<br>antes da cabeça.</h1>
+        <p class="body">Ombro duro. Mandíbula travada. Respiração curta. Ele carrega o que a cabeça ainda tenta negar.</p>
+      </div>
+
+      <div class="footer">
+        <div class="brand">
+          <div class="infinity">∞</div>
+          <div>
+            <div class="brand-name">ALE VENCATO REIKI</div>
+            <div class="brand-tag">REIKI · CAXIAS DO SUL</div>
+          </div>
+        </div>
+        <div class="dots">
+          <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+          <span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 08 — REFRAME ============ -->
+    <section class="slide" id="slide-08">
+      <div class="blob blob--gold"></div>
+      <div class="blob blob--lilac"></div>
+
+      <div class="top">
+        <div class="eyebrow">O NOME DISSO</div>
+        <div class="gold-rule"></div>
+      </div>
+
+      <div class="main">
+        <h1 class="headline md">Se 3 desses são seus —<br>não é preguiça.</h1>
+        <p class="body">É sistema nervoso em modo sobrevivência. Você não tá fraca. Tá há tempo demais no "pra frente".</p>
+      </div>
+
+      <div class="footer">
+        <div class="brand">
+          <div class="infinity">∞</div>
+          <div>
+            <div class="brand-name">ALE VENCATO REIKI</div>
+            <div class="brand-tag">REIKI · CAXIAS DO SUL</div>
+          </div>
+        </div>
+        <div class="dots">
+          <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+          <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 09 — PAUSA SUAVE / REIKI ============ -->
+    <section class="slide slide--with-photo" id="slide-09">
+      <div class="photo-panel" style="background-image: url('img/slide-09-hands.jpg'); background-position: center 40%;"></div>
+      <div class="blob blob--gold"></div>
+      <div class="blob blob--lilac"></div>
+
+      <div class="top">
+        <div class="eyebrow">UM GESTO POSSÍVEL</div>
+        <div class="gold-rule"></div>
+      </div>
+
+      <div class="main">
+        <h1 class="headline lg">Descansar também<br>é aprendido.</h1>
+        <p class="body-serif">Existem gestos que ensinam o corpo a lembrar o que é pausa. O <span class="reiki-word">Reiki</span> é um deles — silêncio, toque leve, 50 minutos sem precisar resolver nada.</p>
+      </div>
+
+      <div class="footer">
+        <div class="brand">
+          <div class="infinity">∞</div>
+          <div>
+            <div class="brand-name">ALE VENCATO REIKI</div>
+            <div class="brand-tag">REIKI · CAXIAS DO SUL</div>
+          </div>
+        </div>
+        <div class="dots">
+          <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+          <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 10 — CTA AUDIÊNCIA ============ -->
+    <section class="slide" id="slide-10">
+      <div class="blob blob--gold"></div>
+      <div class="blob blob--lilac"></div>
+
+      <div class="top">
+        <div class="eyebrow">SE RESSOOU</div>
+        <div class="gold-rule"></div>
+      </div>
+
+      <div class="main">
+        <h1 class="headline lg">Não passa direto.</h1>
+        <ul class="cta-list">
+          <li><span class="cta-arrow">↳</span>Salva pra reler numa quinta difícil.</li>
+          <li><span class="cta-arrow">↳</span>Manda pra quem anda no limite.</li>
+          <li><span class="cta-arrow">↳</span>Me segue — escrevo sobre o cansaço de quem cuida de tudo.</li>
+        </ul>
+      </div>
+
+      <div class="footer">
+        <div class="brand">
+          <div class="infinity">∞</div>
+          <div>
+            <div class="brand-name">ALE VENCATO REIKI</div>
+            <div class="brand-tag">@ALEVENCATOREIKI · CAXIAS DO SUL</div>
+          </div>
+        </div>
+        <div class="dots">
+          <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+          <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>

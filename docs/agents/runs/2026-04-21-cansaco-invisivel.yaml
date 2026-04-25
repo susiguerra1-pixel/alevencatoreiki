@@ -1,0 +1,231 @@
+# Run: Ale Vencato Reiki — Carrossel "Cansaço Invisível"
+# Data: 2026-04-21
+# Pipeline: growth → content → copy → designer(local)
+# Entregável: 10 slides 1080x1350 em HTML + PNG (Figma MCP bateu paywall Starter)
+
+run:
+  id: "2026-04-21-cansaco-invisivel"
+  date: "2026-04-21"
+  orchestrator: claude
+  status: completed
+  deliverable_type: "local_files"  # Figma MCP paywalled — pivot pra HTML+PNG
+  output_folder: "docs/agents/runs/2026-04-21-cansaco-invisivel/"
+
+# ============================================================
+# STAGE 1 — GROWTH STRATEGIST
+# ============================================================
+brand:
+  name: "Ale Vencato Reiki"
+  url: "alevencatoreiki.com.br"
+  promise: "Equilibre sua energia e acalme sua mente com Reiki em Caxias do Sul"
+  tone_do: [suave, feminino, acolhedor, pausado, etéreo, sensorial]
+  tone_dont: [mistico-raso, pseudo-cientifico, promessa-de-cura, urgencia-marketeira, emoji-excessivo]
+
+audience:
+  primary_persona: "Mulher 30–45, Caxias do Sul e região serrana"
+  pain: "Exaustão mental, rotina em modo automático, culpa de não se cuidar"
+  language_they_use: "tô no limite / sem pilha / cabeça a mil / preciso de uma pausa"
+  moment: "Fim de tarde no transporte ou noite no sofá — scroll de descompressão"
+
+channel:
+  primary: "Instagram"
+  format: "Carrossel estático — feed"
+  dimensions: "1080x1350 (4:5)"
+  volume: "1 post avulso"
+
+hypothesis:
+  if: "Publicarmos um carrossel que NOMEIA o cansaço invisível dessa mulher (sem vender sessão no 1º contato)"
+  then: "Gera salvamentos e compartilhamentos entre amigas → alcance orgânico + seguidores novos"
+  metric: "Novos seguidores (7 dias) + salvamentos/alcance (ratio)"
+  target: "+50–120 seguidores novos; salvamento ≥3% do alcance"
+  acceptable_floor: "+20 seguidores, desde que salvamento ≥2%"
+
+constraints:
+  budget: "Orgânico, zero mídia"
+  compliance:
+    - "Não prometer cura/diagnóstico"
+    - "Reiki = prática complementar, não substitui médico/psicólogo"
+  deadline: "Agora (hoje)"
+
+# ============================================================
+# STAGE 2 — CONTENT STRATEGIST
+# ============================================================
+piece:
+  channel: "Instagram"
+  format: "carrossel"
+  dimensions: "1080x1350"
+  quantity: 10
+  pillar: "Sintoma-reconhecimento"
+  angle: "Existe um cansaço que não passa dormindo — e tem nome."
+  tone_notes: "Frases curtas. Segunda pessoa íntima. Sem 'amiga', sem 'guerreira'."
+
+structure:
+  framework: "Gancho → Reconhecimento (5 sinais) → Reframe → Pausa → CTA"
+  cta_literal: "Salva, manda pra quem precisa, e me segue — @alevencatoreiki"
+  beats:
+    - index: 1
+      role: capa_gancho
+      intent: "Parar o scroll nomeando estado invisível"
+    - index: 2
+      role: amplificacao
+      intent: "Confirmar ressonância + promessa de diagnóstico"
+    - index: 3
+      role: sinal_01
+      intent: "Dorme e acorda cansada"
+    - index: 4
+      role: sinal_02
+      intent: "Culpa de descansar"
+    - index: 5
+      role: sinal_03
+      intent: "Irritação com coisa pequena"
+    - index: 6
+      role: sinal_04
+      intent: "Mente que não desliga à noite"
+    - index: 7
+      role: sinal_05
+      intent: "Corpo travado"
+    - index: 8
+      role: reframe
+      intent: "Não é preguiça — é sistema nervoso em modo sobrevivência"
+    - index: 9
+      role: pausa_suave
+      intent: "Reiki como gesto, não oferta"
+    - index: 10
+      role: cta_audiencia
+      intent: "Salvar + compartilhar + seguir"
+
+# ============================================================
+# STAGE 3 — COPYWRITER
+# ============================================================
+copy:
+  headline_winner: "Você já chorou no banho só pra ter 5 minutos em paz?"
+  caption_short: "Se você já chorou no banho pra ter 5 minutos em paz — esse carrossel é pra você. Aqui não tem julgamento."
+  caption_full: |
+    Se você já chorou no banho pra ter 5 minutos em paz — esse carrossel é pra você.
+    Aqui não tem julgamento.
+
+    Existe um tipo de cansaço que não passa dormindo. Que as férias não resolvem.
+    Ele tem nome, e reconhecer é o primeiro gesto de pausa.
+
+    Se em algum slide você pensou "é sobre mim":
+    ↳ salva pra reler numa quinta difícil
+    ↳ manda pra quem você sabe que anda no limite
+    ↳ me segue pra mais — escrevo sobre o cansaço de quem cuida de tudo
+
+    Com carinho,
+    Ale — Reiki em Caxias do Sul
+
+    #reiki #reikicaxias #terapiasintegrativas #saudemental
+    #cansacomental #autocuidado #serranagaucha
+
+beats_copy:
+  - index: 1
+    eyebrow: "PARA QUEM SE RECONHECE"
+    headline: "Você já chorou no banho só pra ter 5 minutos em paz?"
+    body: "Se sim — arrasta. Talvez o que você sente tenha nome."
+  - index: 2
+    eyebrow: "O QUE PROVAVELMENTE É"
+    headline: "Não é fraqueza."
+    body: "É um tipo de cansaço que dorme com você. Abaixo, 5 sinais de que ele te encontrou."
+  - index: 3
+    eyebrow: "SINAL · 01"
+    headline: "Dorme 8 horas. Acorda cansada."
+    body: "Como se o descanso passasse por cima de você — sem te tocar."
+  - index: 4
+    eyebrow: "SINAL · 02"
+    headline: "Descansa — e sente culpa."
+    body: "Tem 20 minutos livres, e a cabeça já lista 5 coisas que você 'devia' tar fazendo."
+  - index: 5
+    eyebrow: "SINAL · 03"
+    headline: "A pia cheia te tira do eixo."
+    body: "Não é a louça. É que o seu copo tá cheio há tempo demais — e uma gota transborda tudo."
+  - index: 6
+    eyebrow: "SINAL · 04"
+    headline: "De dia some você. À noite, só tem pensamento."
+    body: "A cama vira tribunal: revisa o que falou, planeja amanhã, revive 2015. Dormir vira tarefa."
+  - index: 7
+    eyebrow: "SINAL · 05"
+    headline: "O corpo avisa antes da cabeça."
+    body: "Ombro duro. Mandíbula travada. Respiração curta. Ele carrega o que a cabeça ainda tenta negar."
+  - index: 8
+    eyebrow: "O NOME DISSO"
+    headline: "Se 3 desses são seus — não é preguiça."
+    body: "É sistema nervoso em modo sobrevivência. Você não tá fraca. Tá há tempo demais no 'pra frente'."
+  - index: 9
+    eyebrow: "UM GESTO POSSÍVEL"
+    headline: "Descansar também é aprendido."
+    body: "Existem gestos que ensinam o corpo a lembrar o que é pausa. O <em>Reiki</em> é um deles — silêncio, toque leve, 50 minutos sem precisar resolver nada."
+  - index: 10
+    eyebrow: "SE RESSOOU"
+    headline: "Não passa direto."
+    cta_list:
+      - "Salva pra reler numa quinta difícil."
+      - "Manda pra quem anda no limite."
+      - "Me segue — escrevo sobre o cansaço de quem cuida de tudo."
+
+banned_words_respected:
+  - "cura"
+  - "bloqueio energético"
+  - "amiga"
+  - "guerreira"
+  - "emoji ornamental (✨, etc)"
+compliance_notes: "Reiki mencionado 1x (slide 9) em italic, como prática complementar. Zero claim de cura."
+
+# ============================================================
+# STAGE 4 — DESIGNER (LOCAL)
+# ============================================================
+deliverable:
+  render_engine: "playwright-chromium (Node 22)"
+  html_source: "carrossel.html"
+  png_folder: "slides/"
+  png_dimensions: "1080x1350"
+  png_count: 10
+  figma_attempted: true
+  figma_blocked_reason: "Starter plan MCP tool call limit — get_design_context / get_variable_defs / use_figma rate-limited before first write"
+  figma_file_reference: "https://www.figma.com/design/payP5Pl00wJawrKX5LduvX"
+  figma_template_node_reference: "17003:204  (Reiki — Carrossel Gokai, 3 slides)"
+  figma_apply_script: "figma-apply.js"  # roda no plugin Figma quando quota resetar
+  images:
+    slide_01:
+      file: "img/slide-01-woman.jpg"
+      source: "Unsplash photo-1698231209258-03de1b427e0f"
+      role: "identificação emocional — mulher pensativa na janela"
+      layout: "painel lateral direita 520px, overlay creme 38%, fade linear na borda interna"
+    slide_09:
+      file: "img/slide-09-hands.jpg"
+      source: "Unsplash photo-1762894110127-87fee1d11a57"
+      role: "atmosfera Reiki — mãos com contas/terço, toque contemplativo"
+      layout: "painel lateral direita 520px, overlay creme 38%, fade linear na borda interna"
+
+tokens_used:
+  cream_bg: "#F5F0EB"
+  cream_deep: "#EDE4D8"
+  gold: "#B8956A"
+  gold_light: "#D4AF82"
+  brown_dark: "#4A2E0A"
+  text_main: "#4A4040"
+  text_body: "#524848"
+  lilac_blob: "rgba(180, 164, 200, 0.35)"
+  font_serif_italic: "Cormorant Garamond (Google Fonts)"
+  font_sans: "Jost (Google Fonts)"
+  note: "Tokens inferidos do site alevencatoreiki.com.br — não lidos do Figma por bloqueio de quota"
+
+# ============================================================
+# QA
+# ============================================================
+qa_check:
+  frames_count_matches_beats: true    # 10 slides === 10 beats
+  fonts_loaded_ok: true               # Cormorant + Jost carregaram via Google Fonts
+  variables_bound: false              # usou hex direto (Figma MCP paywalled)
+  safe_margins_respected: true        # padding 90-100px em todos os lados
+  pagination_dots_correct: true       # dots preenchem progressivamente
+  reiki_mentioned_once: true          # slide 9 apenas, em italic dourado
+  compliance_ok: true                 # sem claim de cura/diagnóstico
+  images_placed_correctly: true       # slides 1 e 9, painel direito, fade suave
+  images_license_ok: true             # ambas livres do Unsplash (não plus/premium)
+
+next_steps_suggested:
+  - "Postar carrossel no @alevencatoreiki (feed IG), publicar às 19h-21h (janela dessa persona)"
+  - "Quando Figma MCP resetar, retomar pipeline e clonar pra página nova no arquivo Templates (fidelidade visual + edição colaborativa)"
+  - "Monitorar salvamentos/alcance 72h → feedback pro Growth Strategist pra ajustar tese"
+  - "Se ressonância alta, desdobrar: slide 'antes/depois de uma sessão de Reiki' como carrossel #2 (Conteúdo de Consideração)"
