@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { WHATSAPP_NUMBER } from "@/lib/constants";
+import { whatsappLink, WHATSAPP_MESSAGES } from "@/lib/constants";
 import ObrigadaWhatsAppButton from "@/components/ObrigadaWhatsAppButton";
 
 export const metadata: Metadata = {
@@ -81,7 +81,9 @@ export default function ObrigadaPage() {
           <p className="text-[0.78rem] leading-[1.7] text-[rgba(74,64,64,0.5)] font-light mt-10">
             💡 Dica: salve o número da Ale na agenda —&nbsp;
             <a
-              href={`tel:+55${WHATSAPP_NUMBER}`}
+              href={whatsappLink(WHATSAPP_MESSAGES.ebook)}
+              target="_blank"
+              rel="noopener noreferrer"
               className="underline underline-offset-2 hover:text-[#B8956A] transition-colors"
             >
               +55 (54) 98117-8795
