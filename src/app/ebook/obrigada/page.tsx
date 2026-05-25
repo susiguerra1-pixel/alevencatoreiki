@@ -1,16 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { whatsappLink, WHATSAPP_NUMBER } from "@/lib/constants";
+import { WHATSAPP_NUMBER } from "@/lib/constants";
+import ObrigadaWhatsAppButton from "@/components/ObrigadaWhatsAppButton";
 
 export const metadata: Metadata = {
   title: "Seu ebook está pronto! | Ale Vencato Reiki",
   description: "Baixe agora o ebook Mente que Não Para — 5 técnicas de Reiki para a ansiedade.",
   robots: { index: false, follow: false },
 };
-
-const waHref = whatsappLink(
-  "Olá, Ale! Acabei de baixar o ebook e adorei. Quero saber mais sobre as sessões de Reiki."
-);
 
 export default function ObrigadaPage() {
   return (
@@ -77,14 +74,7 @@ export default function ObrigadaPage() {
               Uma sessão de Reiki com a Ale trabalha as camadas mais profundas
               da ansiedade — de forma presencial ou online.
             </p>
-            <a
-              href={waHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 text-[0.75rem] tracking-[2px] uppercase text-[#4A4040] bg-[#D4AF82] px-8 py-4 hover:bg-[#B8956A] hover:text-white hover:-translate-y-px transition-all duration-300 font-normal shadow-[0_4px_16px_rgba(0,0,0,0.1)]"
-            >
-              Quero agendar uma sessão
-            </a>
+            <ObrigadaWhatsAppButton />
           </div>
 
           {/* Instrução para salvar contato */}

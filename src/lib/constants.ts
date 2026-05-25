@@ -34,11 +34,14 @@ export const WHATSAPP_MESSAGES = {
     "Olá! Tenho uma dúvida antes de agendar. Pode me ajudar?",
   vagas:
     "Olá, Ale! Quero ser avisada quando abrirem novas vagas para sessão de Reiki. Pode me incluir na lista?",
+  ebook:
+    "Olá, Ale! Acabei de baixar o ebook e adorei. Quero saber mais sobre as sessões de Reiki.",
 };
 
 /* ── Função para gerar o link de WhatsApp ── */
+// Prefixo 55 = código do Brasil. WHATSAPP_NUMBER contém só DDD + número.
 export const whatsappLink = (message: string) =>
-  `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+  `https://wa.me/55${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
 /* ── Itens de navegação ── */
 export const NAV_ITEMS = [
