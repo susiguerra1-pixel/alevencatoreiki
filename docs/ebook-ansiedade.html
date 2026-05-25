@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Mente que Não Para — Ale Vencato Reiki</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Jost', sans-serif;
+  background: #F5F0EB;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+@page { size: A4; margin: 0; }
+
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  page-break-after: always;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* ═══════════════════════════════════
+   PÁGINA 1 — CAPA
+═══════════════════════════════════ */
+.page-cover {
+  background: #2E2828;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 60px 70px 55px;
+}
+
+.cover-top {
+  font-family: 'Jost', sans-serif;
+  font-size: 9px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgba(212,175,130,0.5);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  justify-content: center;
+}
+
+.cover-top-line {
+  flex: 1;
+  height: 1px;
+  background: rgba(212,175,130,0.15);
+  max-width: 80px;
+}
+
+.cover-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cover-symbol {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 140px;
+  color: rgba(212,175,130,0.12);
+  line-height: 1;
+  margin-bottom: 36px;
+  letter-spacing: -4px;
+}
+
+.cover-eyebrow {
+  font-family: 'Jost', sans-serif;
+  font-size: 9px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgba(212,175,130,0.6);
+  margin-bottom: 22px;
+}
+
+.cover-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 74px;
+  font-weight: 300;
+  font-style: italic;
+  color: #F5F0EB;
+  line-height: 1.05;
+  margin-bottom: 28px;
+  letter-spacing: 0.5px;
+}
+
+.cover-rule {
+  width: 48px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #D4AF82, transparent);
+  margin: 0 auto 28px;
+}
+
+.cover-subtitle {
+  font-family: 'Jost', sans-serif;
+  font-size: 13.5px;
+  font-weight: 300;
+  color: rgba(245,240,235,0.58);
+  line-height: 1.85;
+  max-width: 340px;
+  letter-spacing: 0.2px;
+}
+
+.cover-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.cover-badge {
+  font-family: 'Jost', sans-serif;
+  font-size: 8px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(212,175,130,0.45);
+  border: 1px solid rgba(212,175,130,0.2);
+  padding: 6px 16px;
+}
+
+.cover-author {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 300;
+  color: rgba(212,175,130,0.7);
+}
+
+/* ═══════════════════════════════════
+   HEADER DAS PÁGINAS DE CONTEÚDO
+═══════════════════════════════════ */
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(184,149,106,0.14);
+}
+
+.page-brand {
+  font-family: 'Jost', sans-serif;
+  font-size: 8px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: rgba(74,64,64,0.3);
+}
+
+.page-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 13px;
+  font-style: italic;
+  color: rgba(184,149,106,0.45);
+}
+
+/* ═══════════════════════════════════
+   CONTEÚDO PADRÃO
+═══════════════════════════════════ */
+.page-content {
+  background: #F5F0EB;
+  padding: 62px 72px;
+  min-height: 297mm;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ═══════════════════════════════════
+   PÁGINA CARTA — fundo ligeiramente diferente
+═══════════════════════════════════ */
+.page-letter {
+  background: #EFEBE5;
+  padding: 62px 80px;
+  min-height: 297mm;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ═══════════════════════════════════
+   TIPOGRAFIA
+═══════════════════════════════════ */
+.section-label {
+  font-family: 'Jost', sans-serif;
+  font-size: 8.5px;
+  letter-spacing: 4.5px;
+  text-transform: uppercase;
+  color: #B8956A;
+  margin-bottom: 14px;
+}
+
+.heading-xl {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 52px;
+  font-weight: 300;
+  color: #4A4040;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+.heading-xl em { font-style: italic; color: #B8956A; }
+
+.heading-lg {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 40px;
+  font-weight: 300;
+  color: #4A4040;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.heading-lg em { font-style: italic; color: #B8956A; }
+
+.gold-line {
+  width: 32px;
+  height: 1px;
+  background: #D4AF82;
+  margin: 18px 0 26px;
+}
+
+.body {
+  font-family: 'Jost', sans-serif;
+  font-size: 12.5px;
+  font-weight: 300;
+  color: #524848;
+  line-height: 1.95;
+}
+
+.body + .body { margin-top: 16px; }
+
+.letter {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 17.5px;
+  font-weight: 300;
+  color: #524848;
+  line-height: 1.9;
+}
+
+.letter + .letter { margin-top: 22px; }
+
+.signature {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  font-style: italic;
+  color: #B8956A;
+  margin-top: 38px;
+}
+
+.note {
+  font-family: 'Jost', sans-serif;
+  font-size: 10.5px;
+  font-weight: 300;
+  font-style: italic;
+  color: rgba(82,72,72,0.5);
+  margin-top: 18px;
+  line-height: 1.7;
+}
+
+/* ═══════════════════════════════════
+   HIGHLIGHT / CITAÇÃO
+═══════════════════════════════════ */
+.highlight {
+  background: rgba(184,149,106,0.07);
+  border-left: 2px solid #D4AF82;
+  padding: 18px 22px;
+  margin: 24px 0;
+}
+
+.highlight-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 300;
+  color: #4A4040;
+  line-height: 1.65;
+}
+
+/* ═══════════════════════════════════
+   LISTA DE BULLETS
+═══════════════════════════════════ */
+.bullet-list {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.bullet-list li {
+  font-family: 'Jost', sans-serif;
+  font-size: 12.5px;
+  font-weight: 300;
+  color: #524848;
+  line-height: 1.75;
+  padding: 9px 0 9px 22px;
+  position: relative;
+  border-bottom: 1px solid rgba(184,149,106,0.08);
+}
+
+.bullet-list li:first-child { border-top: 1px solid rgba(184,149,106,0.08); }
+
+.bullet-list li::before {
+  content: '✦';
+  position: absolute;
+  left: 0;
+  top: 11px;
+  font-size: 7px;
+  color: #D4AF82;
+}
+
+/* ═══════════════════════════════════
+   PÁGINAS DE TÉCNICA
+═══════════════════════════════════ */
+.technique-num-bg {
+  position: absolute;
+  top: 42px;
+  right: 55px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 150px;
+  font-weight: 300;
+  color: rgba(184,149,106,0.07);
+  line-height: 1;
+  pointer-events: none;
+}
+
+.technique-badge {
+  display: inline-block;
+  font-family: 'Jost', sans-serif;
+  font-size: 8px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #B8956A;
+  border: 1px solid rgba(184,149,106,0.3);
+  padding: 5px 14px;
+  margin-bottom: 20px;
+}
+
+.technique-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 46px;
+  font-weight: 300;
+  color: #4A4040;
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+
+.technique-sub {
+  font-family: 'Jost', sans-serif;
+  font-size: 11.5px;
+  font-weight: 300;
+  color: rgba(82,72,72,0.6);
+  font-style: italic;
+  margin-bottom: 28px;
+  letter-spacing: 0.2px;
+}
+
+/* Steps */
+.steps { margin-top: 10px; }
+
+.step {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.step-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-style: italic;
+  color: rgba(212,175,130,0.5);
+  line-height: 1;
+  min-width: 30px;
+  margin-top: 1px;
+}
+
+.step-body { flex: 1; }
+
+.step-title {
+  font-family: 'Jost', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #4A4040;
+  margin-bottom: 5px;
+}
+
+.step-text {
+  font-family: 'Jost', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #524848;
+  line-height: 1.85;
+}
+
+/* Pontos — cards */
+.point-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.point-card {
+  background: white;
+  border: 1px solid rgba(184,149,106,0.14);
+  padding: 20px 22px;
+}
+
+.point-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  font-style: italic;
+  color: rgba(212,175,130,0.3);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.point-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 19px;
+  font-weight: 300;
+  color: #4A4040;
+  margin-bottom: 6px;
+}
+
+.point-text {
+  font-family: 'Jost', sans-serif;
+  font-size: 11px;
+  font-weight: 300;
+  color: #524848;
+  line-height: 1.8;
+}
+
+.point-duration {
+  font-family: 'Jost', sans-serif;
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #B8956A;
+  margin-top: 10px;
+}
+
+/* ═══════════════════════════════════
+   GUIA DE REFERÊNCIA
+═══════════════════════════════════ */
+.ref-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+.ref-table thead tr {
+  border-bottom: 1px solid rgba(184,149,106,0.3);
+}
+
+.ref-table th {
+  font-family: 'Jost', sans-serif;
+  font-size: 8px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: #B8956A;
+  font-weight: 300;
+  text-align: left;
+  padding: 12px 18px;
+}
+
+.ref-table td {
+  font-family: 'Jost', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #524848;
+  padding: 13px 18px;
+  border-bottom: 1px solid rgba(184,149,106,0.08);
+  vertical-align: top;
+  line-height: 1.55;
+}
+
+.ref-table tr:nth-child(even) td {
+  background: rgba(184,149,106,0.04);
+}
+
+.ref-table td:first-child {
+  color: #4A4040;
+  font-weight: 300;
+}
+
+.ref-table td:last-child {
+  color: #B8956A;
+  font-size: 11px;
+}
+
+/* ═══════════════════════════════════
+   PÁGINA CTA — FUNDO ESCURO
+═══════════════════════════════════ */
+.page-cta {
+  background: #2E2828;
+  padding: 68px 72px;
+  min-height: 297mm;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cta-header-line {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(212,175,130,0.12);
+}
+
+.cta-brand {
+  font-family: 'Jost', sans-serif;
+  font-size: 8px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: rgba(212,175,130,0.35);
+}
+
+.cta-label {
+  font-family: 'Jost', sans-serif;
+  font-size: 8.5px;
+  letter-spacing: 4.5px;
+  text-transform: uppercase;
+  color: rgba(212,175,130,0.55);
+  margin-bottom: 22px;
+}
+
+.cta-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 54px;
+  font-weight: 300;
+  color: #F5F0EB;
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+
+.cta-heading em { font-style: italic; color: #D4AF82; }
+
+.cta-rule {
+  width: 32px;
+  height: 1px;
+  background: rgba(212,175,130,0.35);
+  margin: 24px 0 28px;
+}
+
+.cta-body {
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: rgba(245,240,235,0.68);
+  line-height: 1.95;
+  max-width: 460px;
+}
+
+.cta-body + .cta-body { margin-top: 16px; }
+
+.cta-box {
+  margin-top: 48px;
+  border: 1px solid rgba(212,175,130,0.18);
+  padding: 34px 38px;
+}
+
+.cta-box-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 300;
+  color: #D4AF82;
+  margin-bottom: 22px;
+}
+
+.cta-contact-item {
+  font-family: 'Jost', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: rgba(245,240,235,0.55);
+  line-height: 2.1;
+  letter-spacing: 0.2px;
+}
+
+.cta-contact-item strong {
+  font-weight: 300;
+  color: rgba(245,240,235,0.85);
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════
+     PÁGINA 1 — CAPA
+══════════════════════════════════════════════════════ -->
+<div class="page page-cover">
+
+  <div class="cover-top">
+    <div class="cover-top-line"></div>
+    Ale Vencato Reiki
+    <div class="cover-top-line"></div>
+  </div>
+
+  <div class="cover-center">
+    <div class="cover-symbol">∞</div>
+    <div class="cover-eyebrow">Ebook gratuito</div>
+    <h1 class="cover-title">Mente que<br>Não Para</h1>
+    <div class="cover-rule"></div>
+    <p class="cover-subtitle">
+      5 técnicas de Reiki para desacelerar<br>
+      a ansiedade em 10 minutos por dia
+    </p>
+  </div>
+
+  <div class="cover-bottom">
+    <div class="cover-badge">Para mentes aceleradas e corpos em alerta</div>
+    <div class="cover-author">por Ale Vencato</div>
+  </div>
+
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════
+     PÁGINA 2 — CARTA DA ALE
+══════════════════════════════════════════════════════ -->
+<div class="page page-letter">
+
+  <div class="page-header">
+    <span class="page-brand">Ale Vencato Reiki</span>
+    <span class="page-num">02</span>
+  </div>
+
+  <div class="section-label">Uma carta antes de começar</div>
+  <h2 class="heading-lg">Isso chegou<br>até você por <em>algum motivo.</em></h2>
+  <div class="gold-line"></div>
+
+  <p class="letter">
+    Quando comecei a estudar Reiki, eu mesma não entendia por que pessoas buscavam isso. Me parecia vago demais. Fui entender de verdade quando meu próprio corpo me parou.
+  </p>
+
+  <p class="letter">
+    Era aquela sensação que você provavelmente conhece: acordar cansada, a mente já acelerada antes de levantar da cama, o peito apertado sem saber exatamente por quê. O corpo funcionando em modo de emergência constante — mesmo sem nenhuma emergência à vista.
+  </p>
+
+  <p class="letter">
+    O que o Reiki me ensinou não foi sobre energia mística. Foi sobre o sistema nervoso. Sobre a diferença entre um corpo que vive em alerta e um corpo que sabe, de fato, que pode descansar.
+  </p>
+
+  <p class="letter">
+    As técnicas deste ebook são as que eu uso com clientes e uso eu mesma. São simples porque precisam ser — você não vai ter paciência para complicações quando está ansiosa. E funcionam porque atuam diretamente no que está desregulado.
+  </p>
+
+  <p class="letter">
+    Leia com calma. Experimente uma de cada vez. Não precisa fazer tudo de uma vez.
+  </p>
+
+  <p class="signature">Com cuidado, Ale Vencato</p>
+
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════
+     PÁGINA 3 — O QUE ESTÁ ACONTECENDO NO SEU CORPO
+══════════════════════════════════════════════════════ -->
+<div class="page page-content">
+
+  <div class="page-header">
+    <span class="page-brand">Ale Vencato Reiki</span>
+    <span class="page-num">03</span>
+  </div>
+
+  <div class="section-label">Antes das técnicas</div>
+  <h2 class="heading-xl">Isso não é<br><em>frescura.</em></h2>
+  <div class="gold-line"></div>
+
+  <p class="body">
+    Quando você sente tensão constante no peito, pensamentos que não param, irritação sem causa aparente — não é fraqueza nem falta de força de vontade. É biologia.
+  </p>
+
+  <p class="body">
+    Seu sistema nervoso tem um mecanismo de sobrevivência chamado resposta ao estresse. Quando percebe ameaça — real ou imaginada — libera cortisol e adrenalina, tensiona os músculos, acelera o coração e ativa o modo de alerta.
+  </p>
+
+  <div class="highlight">
+    <p class="highlight-text">O problema não é esse mecanismo. O problema é quando ele não desliga.</p>
+  </div>
+
+  <p class="body">
+    Em 2026, 62% dos brasileiros dizem ter dificuldade para "desligar a mente" fora do trabalho. Casos de burnout triplicaram entre 2023 e 2025. O cortisol fica cronicamente elevado. O corpo entra em loop: estresse → tensão → mais estresse → mais tensão.
+  </p>
+
+  <p class="body" style="margin-top:22px; font-size:11.5px; letter-spacing:0.5px; text-transform:uppercase; color:#4A4040;">Você talvez reconheça:</p>
+
+  <ul class="bullet-list">
+    <li>Acordar já cansada, mesmo depois de dormir</li>
+    <li>Ombros e pescoço sempre tensos sem motivo aparente</li>
+    <li>Pensamentos circulares que você não consegue parar</li>
+    <li>Irritação súbita, aquela sensação de "estar no limite"</li>
+    <li>O corpo em alerta mesmo quando não há nada urgente</li>
+  </ul>
+
+  <p class="note">O que seu sistema nervoso precisa não é de mais força de vontade. É de um sinal concreto de que você está segura.</p>
+
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════
+     PÁGINA 4 — POR QUE O REIKI AGE
+══════════════════════════════════════════════════════ -->
+<div class="page page-content">
+
+  <div class="page-header">
+    <span class="page-brand">Ale Vencato Reiki</span>
+    <span class="page-num">04</span>
+  </div>
+
+  <div class="section-label">Como o Reiki funciona</div>
+  <h2 class="heading-xl">Não é misticismo.<br><em>É o sistema nervoso.</em></h2>
+  <div class="gold-line"></div>
+
+  <p class="body">
+    Quando você aplica Reiki — nas sessões ou na autoaplicação — o contato intencional das mãos ativa o sistema nervoso parassimpático. Essa é a parte responsável pelo descanso, digestão e recuperação. O oposto exato do modo de alerta.
+  </p>
+
+  <p class="body">
+    Em termos práticos: diminui a frequência cardíaca, relaxa a musculatura, reduz o cortisol, melhora a qualidade do sono.
+  </p>
+
+  <div class="highlight">
+    <p class="highlight-text">"Desde que comecei o Reiki, durmo melhor, estou menos ansiosa. Quando ficava muito nervosa, tinha falta de respiração e tremores — hoje consigo controlar."</p>
+  </div>
+
+  <p class="body">
+    O Reiki é reconhecido pelo SUS como Prática Integrativa e Complementar desde 2017. Estudos publicados na Revista da Escola de Enfermagem da USP mostram redução significativa de ansiedade e melhora do sono em participantes que usaram o Reiki como terapia complementar.
+  </p>
+
+  <p class="body">
+    Você não precisa acreditar em nada para experimentar. O sistema nervoso responde independente de crença.
+  </p>
+
+  <div style="margin-top:32px; padding: 22px 24px; border: 1px solid rgba(184,149,106,0.2); display:flex; gap:40px;">
+    <div style="text-align:center; flex:1;">
+      <span style="font-family:'Cormorant Garamond',serif; font-size:40px; font-style:italic; color:#B8956A; display:block;">2017</span>
+      <span style="font-family:'Jost',sans-serif; font-size:10px; font-weight:300; color:rgba(82,72,72,0.6); letter-spacing:1px;">Reconhecido pelo SUS</span>
+    </div>
+    <div style="width:1px; background:rgba(184,149,106,0.15);"></div>
+    <div style="text-align:center; flex:1;">
+      <span style="font-family:'Cormorant Garamond',serif; font-size:40px; font-style:italic; color:#B8956A; display:block;">29</span>
+      <span style="font-family:'Jost',sans-serif; font-size:10px; font-weight:300; color:rgba(82,72,72,0.6); letter-spacing:1px;">Práticas integradas ao SUS</span>
+    </div>
+    <div style="width:1px; background:rgba(184,149,106,0.15);"></div>
+    <div style="text-align:center; flex:1;">
+      <span style="font-family:'Cormorant Garamond',serif; font-size:40px; font-style:italic; color:#B8956A; display:block;">18M</span>
+      <span style="font-family:'Jost',sans-serif; font-size:10px; font-weight:300; color:rgba(82,72,72,0.6); letter-spacing:1px;">Brasileiros com ansiedade</span>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════
+     PÁGINA 5 — TÉCNICA 01
+══════════════════════════════════════════════════════ -->
+<div class="page page-content">
+  <div class="technique-num-bg">01</div>
+
+  <div class="page-header">
+    <span class="page-brand">Ale Vencato Reiki</span>
+    <span class="page-num">05</span>
+  </div>
+
+  <div class="technique-badge">Técnica 01 de 05</div>
+  <h2 class="technique-title">O Ritual<br>da Manhã</h2>
+  <p class="technique-sub">5 minutos antes de pegar o celular — baseado no Hatsurei Ho</p>
+  <div class="gold-line"></div>
+
+  <p class="body" style="margin-bottom:24px;">
+    O estado mental ao acordar define a frequência do resto do dia. Cinco minutos antes de checar notificações é o investimento mais barato que existe.
+  </p>
+
+  <div class="steps">
+
+    <div class="step">
+      <span class="step-num">1</span>
+      <div class="step-body">
+        <div class="step-title">Kenyoku Ho — 2 minutos</div>
+        <p class="step-text">
+          Sente confortavelmente. Coloque a mão direita na clavícula esquerda e deslize em diagonal até o quadril direito, como se estivesse varrendo algo para fora. Repita com a mão esquerda no lado direito. Depois deslize cada mão do ombro até as pontas dos dedos, alternando. Movimento lento, intencional. Repita 3 vezes de cada lado.
+        </p>
+      </div>
+    </div>
+
+    <div class="step">
+      <span class="step-num">2</span>
+      <div class="step-body">
+        <div class="step-title">Mãos sobre o coração — 2 minutos</div>
+        <p class="step-text">
+          Sobreponha as mãos no centro do peito. Respire lentamente. A cada expiração, imagine que a tensão está saindo. Não force nenhum pensamento — apenas observe o que aparecer sem se prender a nada.
+        </p>
+      </div>
+    </div>
+
+    <div class="step">
+      <span class="step-num">3</span>
+      <div class="step-body">
+        <div class="step-title">Intenção do dia — 1 minuto</div>
+        <p class="step-text">
+          Ainda com as mãos no coração, defina mentalmente uma intenção simples para o dia. Não uma lista de tarefas. Uma qualidade: presença, paciência, clareza.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="note">Nos primeiros dias, a mente vai tentar escapar. É normal. Continue. A consistência é o que calibra o sistema nervoso — não a perfeição de cada sessão.</p>
+
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════
+     PÁGINA 6 — TÉCNICA 02
+══════════════════════════════════════════════════════ -->
+<div class="page page-content">
+  <div class="technique-num-bg">02</div>
+
+  <div class="page-header">
+    <span class="page-brand">Ale Vencato Reiki</span>
+    <span class="page-num">06</span>
+  </div>
+
+  <div class="technique-badge">Técnica 02 de 05</div>
+  <h2 class="technique-title">Os Pontos<br>da Ansiedade</h2>
+  <p class="technique-sub">Autoaplicação direcionada — onde e como aplicar Reiki em si mesma</p>
+  <div class="gold-line"></div>
+
+  <p class="body" style="margin-bottom:20px;">
+    No Reiki Usui, posições específicas de mãos correspondem a diferentes regiões do corpo. Estas quatro são as mais efetivas para ansiedade. Você pode aplicar todas em sequência (~15 min) ou escolher a que corresponde ao que está sentindo agora.
+  </p>
+
+  <div class="point-grid">
+
+    <div class="point-card">
+      <div class="point-num">I</div>
+      <div class="point-title">Topo da cabeça</div>
+      <p class="point-text">Mãos sobrepostas na coroa. Indicado quando os pensamentos estão em espiral — aquele loop mental que não para. Atua no sistema nervoso central.</p>
+      <div class="point-duration">3–5 minutos</div>
+    </div>
+
+    <div class="point-card">
+      <div class="point-num">II</div>
+      <div class="point-title">Olhos e face</div>
+      <p class="point-text">Palmas cobrindo suavemente os olhos e bochechas, sem pressão. Alivia tensão ocular e diminui a atividade do nervo trigêmeo — ligado diretamente ao estresse.</p>
+      <div class="point-duration">3 minutos</div>
+    </div>
+
+    <div class="point-card">
+      <div class="point-num">III</div>
+      <div class="point-title">Garganta</div>
+      <p class="point-text">Uma mão na garganta, outra no peito. Para quando a ansiedade aparece como aperto ou dificuldade de respirar. A garganta contrai sob estresse — o calor solta.</p>
+      <div class="point-duration">3 minutos</div>
+    </div>
+
+    <div class="point-card">
+      <div class="point-num">IV</div>
+      <div class="point-title">Plexo solar</div>
+      <p class="point-text">Mãos sobrepostas logo abaixo do umbigo. É onde a ansiedade se instala fisicamente — "borboletas no estômago", enjoo, tensão abdominal.</p>
+      <div class="point-duration">5 minutos</div>
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════
+     PÁGINA 7 — TÉCNICA 03
+══════════════════════════════════════════════════════ -->
+<div class="page page-content">
+  <div class="technique-num-bg">03</div>
+
+  <div class="page-header">
+    <span class="page-brand">Ale Vencato Reiki</span>
+    <span class="page-num">07</span>
+  </div>
+
+  <div class="technique-badge">Técnica 03 de 05</div>
+  <h2 class="technique-title">A Respiração<br>do Coração</h2>
+  <p class="technique-sub">Pode ser feita em qualquer lugar — baseado no Joshin Kokyuu Ho</p>
+  <div class="gold-line"></div>
+
+  <p class="body" style="margin-bottom:8px;">
+    A respiração é a única função autônoma do corpo que você pode controlar conscientemente. E controlá-la é a entrada mais rápida para o sistema nervoso parassimpático — o modo de descanso.
+  </p>
+
+  <p class="body" style="margin-bottom:24px;">
+    Esta técnica combina respiração consciente com a intenção do Reiki. Leva 2 minutos. Pode ser feita no banheiro do trabalho, no carro, em uma sala de espera.
+  </p>
+
+  <div class="highlight" style="margin-bottom:28px;">
+    <p class="highlight-text">A expiração mais longa do que a inspiração é o que ativa o parassimpático. Não é sugestão — é fisiologia.</p>
+  </div>
+
+  <div class="steps">
+
+    <div class="step">
+      <span class="step-num">1</span>
+      <div class="step-body">
+        <div class="step-title">Posição</div>
+        <p class="step-text">Sente ou fique em pé. Se estiver em um lugar público, pode fazer com os olhos abertos. Coloque uma mão no coração — ou apenas imagine que está.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <span class="step-num">2</span>
+      <div class="step-body">
+        <div class="step-title">O ritmo — 4 · 4 · 6</div>
+        <p class="step-text">
+          Inspire pelo nariz contando 4 tempos. Segure 4 tempos. Expire pela boca contando 6 tempos. Repita 6 vezes seguidas.
+        </p>
+      </div>
+    </div>
+
+    <div class="step">
+      <span class="step-num">3</span>
+      <div class="step-body">
+        <div class="step-title">A intenção</div>
+        <p class="step-text">
+          Na inspiração, visualize que está recebendo calma e clareza. Na expiração, que está soltando o que não precisa mais carregar. Não precisa ver imagens — a intenção basta.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="note">6 ciclos levam aproximadamente 2 minutos. Não subestime algo que parece tão simples — a ciência do controle respiratório é uma das mais sólidas da neurociência.</p>
+
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════
+     PÁGINA 8 — TÉCNICA 04
+══════════════════════════════════════════════════════ -->
+<div class="page page-content">
+  <div class="technique-num-bg">04</div>
+
+  <div class="page-header">
+    <span class="page-brand">Ale Vencato Reiki</span>
+    <span class="page-num">08</span>
+  </div>
+
+  <div class="technique-badge">Técnica 04 de 05</div>
+  <h2 class="technique-title">O Ritual<br>da Noite</h2>
+  <p class="technique-sub">Para quem deita e a mente não deixa dormir — 13 minutos</p>
+  <div class="gold-line"></div>
+
+  <p class="body" style="margin-bottom:24px;">
+    Este é o ritual mais completo. Feito na cama, com calma, sem pressa para dormir. O paradoxo é esse: quando você para de tentar dormir e simplesmente aplica as técnicas, o sono vem.
+  </p>
+
+  <div class="steps">
+
+    <div class="step">
+      <span class="step-num">1</span>
+      <div class="step-body">
+        <div class="step-title">Descompressão do dia — 5 minutos</div>
+        <p class="step-text">
+          Deite de costas. Coloque as mãos sobre o plexo solar. Respire naturalmente. Por 5 minutos, deixe os pensamentos do dia passarem sem tentar resolvê-los. Você não vai resolver nada agora — e seu sistema nervoso precisa saber disso.
+        </p>
+      </div>
+    </div>
+
+    <div class="step">
+      <span class="step-num">2</span>
+      <div class="step-body">
+        <div class="step-title">Escaneamento do corpo — 3 minutos</div>
+        <p class="step-text">
+          Mentalmente, percorra o corpo de baixo para cima: pés, panturrilhas, joelhos, coxas, abdômen, peito, ombros, pescoço, rosto. Em cada região, respire e convide o relaxamento. Sem forçar — apenas observar.
+        </p>
+      </div>
+    </div>
+
+    <div class="step">
+      <span class="step-num">3</span>
+      <div class="step-body">
+        <div class="step-title">Aplicação nos pontos do sono — 5 minutos</div>
+        <p class="step-text">
+          Mãos sobre os olhos por 2 minutos. Depois sobre o coração por 3 minutos. Mantenha a respiração longa. Não tente dormir — apenas fique presente no momento.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="highlight" style="margin-top:20px;">
+    <p class="highlight-text">O sono costuma vir antes mesmo do ritual terminar. Nas primeiras noites, a mente vai resistir. Continue. A consistência calibra o sistema nervoso — uma noite de cada vez.</p>
+  </div>
+
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════
+     PÁGINA 9 — TÉCNICA 05
+══════════════════════════════════════════════════════ -->
+<div class="page page-content">
+  <div class="technique-num-bg">05</div>
+
+  <div class="page-header">
+    <span class="page-brand">Ale Vencato Reiki</span>
+    <span class="page-num">09</span>
+  </div>
+
+  <div class="technique-badge">Técnica 05 de 05</div>
+  <h2 class="technique-title">O Protocolo<br>de Emergência</h2>
+  <p class="technique-sub">Para quando a ansiedade chega de vez — menos de 5 minutos</p>
+  <div class="gold-line"></div>
+
+  <p class="body" style="margin-bottom:10px;">
+    Este não é um ritual para praticar todo dia — é um recurso para os momentos de pico. Quando a ansiedade aumenta muito, o sistema nervoso interpreta como emergência e tudo acelera. O objetivo aqui é dar ao corpo um sinal claro de que você está segura.
+  </p>
+
+  <p class="body" style="margin-bottom:26px;">
+    Pode ser feito em qualquer lugar, a qualquer hora.
+  </p>
+
+  <div class="steps">
+
+    <div class="step">
+      <span class="step-num">1</span>
+      <div class="step-body">
+        <div class="step-title">Pés no chão — 30 segundos</div>
+        <p class="step-text">
+          Se possível, tire os sapatos. Sinta o chão sob os pés. Pressione-os conscientemente. Essa conexão física interrompe o espiral mental — o corpo não pode estar em pânico e presente ao mesmo tempo.
+        </p>
+      </div>
+    </div>
+
+    <div class="step">
+      <span class="step-num">2</span>
+      <div class="step-body">
+        <div class="step-title">Uma mão no peito, uma no ventre — 2 minutos</div>
+        <p class="step-text">
+          Mão direita no coração, mão esquerda no abdômen. Sinta as duas mãos simultaneamente. Respire: 4 dentro, 4 segura, 6 fora. Repita até sentir que o peito começou a desacelerar.
+        </p>
+      </div>
+    </div>
+
+    <div class="step">
+      <span class="step-num">3</span>
+      <div class="step-body">
+        <div class="step-title">Frase âncora — 1 minuto</div>
+        <p class="step-text">
+          Mentalmente, repita algo concreto — não uma afirmação vaga: <em style="color:#B8956A;">"estou aqui, estou respirando, estou bem."</em> Repita enquanto mantém as mãos no lugar. O sistema nervoso responde a declarações presentes, não futuras.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="highlight" style="margin-top:20px;">
+    <p class="highlight-text">Se precisar, pode fazer duas ou três rodadas seguidas. Não existe overdose de calma.</p>
+  </div>
+
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════
+     PÁGINA 10 — GUIA RÁPIDO DE REFERÊNCIA
+══════════════════════════════════════════════════════ -->
+<div class="page page-content">
+
+  <div class="page-header">
+    <span class="page-brand">Ale Vencato Reiki</span>
+    <span class="page-num">10</span>
+  </div>
+
+  <div class="section-label">Guia de referência</div>
+  <h2 class="heading-xl">Qual técnica<br>usar <em>agora?</em></h2>
+  <div class="gold-line"></div>
+
+  <p class="body" style="margin-bottom:28px;">
+    Cole esta página onde você possa ver sempre — na geladeira, na mesa de trabalho, na tela do celular como foto. Quando a ansiedade chegar, você não vai querer pensar em qual técnica usar.
+  </p>
+
+  <table class="ref-table">
+    <thead>
+      <tr>
+        <th>Situação</th>
+        <th>Técnica</th>
+        <th>Tempo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Manhã, antes do celular</td>
+        <td>Técnica 01 — O Ritual da Manhã</td>
+        <td>5 min</td>
+      </tr>
+      <tr>
+        <td>Pensamentos em espiral</td>
+        <td>Técnica 02 — Ponto I (topo da cabeça)</td>
+        <td>3–5 min</td>
+      </tr>
+      <tr>
+        <td>Aperto no peito ou garganta</td>
+        <td>Técnica 02 — Ponto III (garganta)</td>
+        <td>3 min</td>
+      </tr>
+      <tr>
+        <td>No trabalho, precisando resetar</td>
+        <td>Técnica 03 — A Respiração do Coração</td>
+        <td>2 min</td>
+      </tr>
+      <tr>
+        <td>Noite, mente não desliga</td>
+        <td>Técnica 04 — O Ritual da Noite</td>
+        <td>13 min</td>
+      </tr>
+      <tr>
+        <td>Crise de ansiedade agora</td>
+        <td>Técnica 05 — Protocolo de Emergência</td>
+        <td>5 min</td>
+      </tr>
+      <tr>
+        <td>Tensão geral no corpo</td>
+        <td>Técnica 02 — Ponto IV (plexo solar)</td>
+        <td>5 min</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div style="margin-top:36px; padding:22px 24px; background:rgba(184,149,106,0.06); border:1px solid rgba(184,149,106,0.15);">
+    <p style="font-family:'Cormorant Garamond',serif; font-size:16px; font-style:italic; font-weight:300; color:#4A4040; line-height:1.7;">
+      Você não precisa fazer tudo todos os dias. Uma técnica feita com presença vale mais do que cinco feitas na pressa. Comece por uma. Deixe o corpo te mostrar o que precisa.
+    </p>
+    <p style="font-family:'Jost',sans-serif; font-size:10px; letter-spacing:2px; text-transform:uppercase; color:#B8956A; margin-top:14px;">— Ale Vencato</p>
+  </div>
+
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════
+     PÁGINA 11 — CTA
+══════════════════════════════════════════════════════ -->
+<div class="page page-cta">
+
+  <div class="cta-header-line">
+    <span class="cta-brand">Ale Vencato Reiki</span>
+    <span style="font-family:'Cormorant Garamond',serif; font-size:13px; font-style:italic; color:rgba(212,175,130,0.35);">11</span>
+  </div>
+
+  <div class="cta-label">O que vem depois daqui</div>
+
+  <h2 class="cta-heading">As técnicas funcionam.<br><em>E há um próximo passo</em><br>se você quiser ir mais fundo.</h2>
+
+  <div class="cta-rule"></div>
+
+  <p class="cta-body">
+    A autoaplicação é real e efetiva. Com consistência, você vai sentir a diferença no sono, na reação ao estresse, na tensão que o corpo carrega.
+  </p>
+
+  <p class="cta-body">
+    E talvez, em algum momento, você perceba que quer ir além do que pode fazer sozinha. Uma sessão de Reiki comigo não substitui a autoaplicação — ela complementa. Trabalho com o campo energético de forma mais abrangente, chegando em camadas que a prática individual não alcança.
+  </p>
+
+  <p class="cta-body">
+    Clientes que chegam com ansiedade crônica costumam notar a diferença já nas primeiras sessões: dormem melhor, reagem com mais calma, o corpo para de viver no modo de emergência constante.
+  </p>
+
+  <p class="cta-body">
+    Se você quiser saber como funciona antes de decidir, me manda uma mensagem. Não tem compromisso — é só uma conversa para entender o que faz sentido para você agora.
+  </p>
+
+  <div class="cta-box">
+    <div class="cta-box-title">Fale comigo</div>
+    <div class="cta-contact-item">
+      <strong>WhatsApp</strong> · (54) 98117-8795
+    </div>
+    <div class="cta-contact-item">
+      <strong>Instagram</strong> · @alevencato.reiki
+    </div>
+    <div class="cta-contact-item">
+      <strong>Site</strong> · alevencatoreiki.com.br
+    </div>
+    <div class="cta-contact-item" style="margin-top:8px;">
+      <strong>Atendimento</strong> · Presencial em Caxias do Sul, RS · Online para todo o Brasil
+    </div>
+  </div>
+
+</div>
+
+
+</body>
+</html>
